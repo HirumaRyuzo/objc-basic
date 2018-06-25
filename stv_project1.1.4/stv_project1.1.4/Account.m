@@ -9,4 +9,7 @@
 #import "Account.h"
 
 @implementation Account
+
+-(id)initWithName:(NSString *)name age:(NSInteger *)age gender:(NSString *)gender language:(NSString *)language ;
+
 @end
