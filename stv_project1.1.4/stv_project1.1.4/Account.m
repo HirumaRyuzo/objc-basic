@@ -10,6 +10,7 @@
 
 @implementation Account
 
+//インスタンスに初期値を与える
 -(id)initWithName:(NSString *)name age:(NSInteger)age gender:(NSString *)gender language:(NSString *)language{
     if(self = [super init])
     { //Account.hのプロパティにアクセス
