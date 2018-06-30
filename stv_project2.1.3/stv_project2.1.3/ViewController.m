@@ -18,8 +18,8 @@
     self.view2 = @[@"Image_0", @"Image_1", @"Image_2", @"Image_3"];
     NSLog(@"%@", self.view2);
 }
-//ヘッダにIBActionで接続するとこっちにも自動にあらわれる。
-//なので直接こっちにつなげてもよいけど他のクラスでアクセスはできなくなるのでヘッダーに接続したほうが確実
+//ヘッダにIBActionで接続するとこっちにも自動にあらわれるので、
+//直接こっちにつなげてもよいけど他のクラスでアクセスはできなくなるのでヘッダーに接続したほうが確実
 - (IBAction)tap:(id)sender {//ボタンがタップされた時の処理
     int rNum = arc4random_uniform(4);
     NSLog(@"%@", self.view2);
