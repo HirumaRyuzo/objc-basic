@@ -10,16 +10,13 @@
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *localizedLabel;
-
 @end
 
 @implementation ViewController
-
 - (void)viewDidLoad {
     [super viewDidLoad];
 
     NSString* localizedText = NSLocalizedString(@"I started the Obj-C course.", nil);
     self.localizedLabel.text = localizedText;
 }
-
 @end
