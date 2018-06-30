@@ -18,7 +18,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
+//    以下は画像のサイズを取得してUIImageのサイズを合わせる方法のメモ
 //    CGFloat imageMargin = 20;
 //    CGFloat width = [UIScreen mainScreen].bounds.size.width - imageMargin * 2;
 //
@@ -42,7 +43,6 @@
 //    [imageView layer].cornerRadius = 10;
 }
 @end
-
 
 @implementation UIImage (Additional)
 //
