@@ -1,0 +1,20 @@
+//
+//  UICustomTextField.h
+//  stv_project2.1.7
+//
+//  Created by 比留間龍三 on 2018/07/03.
+//  Copyright © 2018年 比留間龍三. All rights reserved.
+//
+
+//#import <Foundation/Foundation.h>
+//
+//@interface UICustomTextField : NSObject
+//
+//@end
+
+
+#import <UIKit/UIKit.h>
+
+@interface UICustomTextField : UITextField
+
+@end
