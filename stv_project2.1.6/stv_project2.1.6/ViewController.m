@@ -31,7 +31,6 @@
 
 @interface UIViewController ()
 @end
-
 @implementation ViewController
 
 - (void)viewDidLoad {
@@ -63,6 +62,9 @@
     [wkWebView goBack];
     [wkWebView canGoBack];
     [wkWebView canGoForward];
+    
+//    フリックで戻る＆進む
+//    wkWebView.allowsBackForwardNavigationGestures = true;
 }
 
 @end
