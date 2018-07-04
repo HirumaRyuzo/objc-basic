@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,11 +19,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OQO-2k-0dI">
-                                <rect key="frame" x="16" y="43" width="343" height="545"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OQO-2k-0dI">
+                                <rect key="frame" x="16" y="60" width="343" height="547"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="OQO-2k-0dI" secondAttribute="height" multiplier="343:547" id="ovp-zw-M9f"/>
+                                </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M7b-1S-4s5">
-                                <rect key="frame" x="164" y="609" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M7b-1S-4s5">
+                                <rect key="frame" x="164" y="623" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="tap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gcE-tq-fep"/>
@@ -31,9 +35,11 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="OQO-2k-0dI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KTZ-2j-M09"/>
-                            <constraint firstItem="M7b-1S-4s5" firstAttribute="top" secondItem="OQO-2k-0dI" secondAttribute="bottom" constant="20" id="P7Q-1o-wEC"/>
-                            <constraint firstItem="OQO-2k-0dI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="jSE-eC-fke"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="M7b-1S-4s5" secondAttribute="bottom" constant="14" id="Mtc-2A-L6f"/>
+                            <constraint firstItem="M7b-1S-4s5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SXY-lX-7ww"/>
+                            <constraint firstItem="OQO-2k-0dI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="UAZ-x4-P2Z"/>
+                            <constraint firstItem="OQO-2k-0dI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="jEC-lX-8n6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OQO-2k-0dI" secondAttribute="trailing" constant="16" id="vrl-9Z-WXT"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
