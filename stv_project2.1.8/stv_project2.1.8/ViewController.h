@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
-
-@end
-
+@interface  ViewController  : UIViewController < UIPickerViewDataSource ,   UIPickerViewDelegate >
+@property   ( weak ,   nonatomic )   IBOutlet   UIPickerView   *picker ;
+@end 
