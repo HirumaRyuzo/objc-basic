@@ -36,35 +36,33 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
     // UIWebViewのインスタンス初期化
     WKWebView *wkWebView = [[WKWebView alloc]init];
-    
+
     // デリゲート
     wkWebView.UIDelegate = self;
-    
+
     // Webページの大きさを画_webView合わせる
     // iPhoneXではSafeAreaの考慮が必要
     CGRect rect = self.view.frame;
     wkWebView.frame = rect;
-    
+
     // インスタンスをビューに追加する
     [self.view addSubview:wkWebView];
-    
+
     // URLを指定
-//    NSURL *url = [NSURL URLWithString:@"https://www.tokyodisneyresort.jp/"];
-    NSURL *url = [NSURL URLWithString:@"https://www.apple.com/iphone/"];
+    NSURL *url = [NSURL URLWithString:@"https://www.tokyodisneyresort.jp/tdl/"];
+//    NSURL *url = [NSURL URLWithString:@"https://www.apple.com/iphone/"];
+//    NSURL *url = [NSURL URLWithString:@"http://www.apple.com/iphone/"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
-    
     // リクエストを投げる
     [wkWebView loadRequest:request];
-    
-    [wkWebView canGoBack];
-    [wkWebView canGoForward];
     [wkWebView reload];
     [wkWebView goForward];
     [wkWebView goBack];
-    
+    [wkWebView canGoBack];
+    [wkWebView canGoForward];
 }
 
 @end
