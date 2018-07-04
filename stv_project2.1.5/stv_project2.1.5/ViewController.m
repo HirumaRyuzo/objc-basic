@@ -21,14 +21,18 @@
     
     // 上から順にボタンが配置
     [alertController addAction:[UIAlertAction actionWithTitle:@"Facebook" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
-        [self selectedActionWith:1];
+//        [self selectedActionWith:1];
+         NSLog(@"Facebook");
     }]];
+    
     [alertController addAction:[UIAlertAction actionWithTitle:@"twitter" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
         [self selectedActionWith:2];
     }]];
+    
     [alertController addAction:[UIAlertAction actionWithTitle:@"LINE" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
         [self selectedActionWith:3];
     }]];
+    
     [alertController addAction:[UIAlertAction actionWithTitle:@"クリア" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
         [self selectedActionWith:0];
     }]];
@@ -37,13 +41,11 @@
 //    alertController.popoverPresentationController.sourceView = self.view;
 //    alertController.popoverPresentationController.sourceRect = CGRectMake(_actionSheetBtn.frame.origin.x, _actionSheetBtn.frame.origin.y, 20.0, 20.0);
 //    alertController.popoverPresentationController.sourceView = _actionSheetBtn; //でも良い?
-    
     [self presentViewController:alertController animated:YES completion:nil];
-    
 }
 
 -(void)selectedActionWith:(int)index{
-    NSLog(@"選択: %d",index);
+    NSLog(@"%d", index);
     // 選択時の処理    
 }
 @end
