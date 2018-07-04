@@ -21,6 +21,8 @@
 
     self . picker . dataSource   =   self ;
     self . picker . delegate   =   self ;
+    
+    _character.text = @"Disney Character";
 }
 
 // データの列数
@@ -36,8 +38,6 @@
 // 渡された行とコンポーネント（列）に対して返されるデータ
 -   ( NSString * ) pickerView : ( UIPickerView   * ) pickerView  titleForRow : ( NSInteger ) row  forComponent : ( NSInteger ) component{
     return   _pickerData [ row ] ;
-
-
 }
 
 @end

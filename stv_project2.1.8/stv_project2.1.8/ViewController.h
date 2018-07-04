@@ -9,10 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface  ViewController  : UIViewController < UIPickerViewDataSource ,   UIPickerViewDelegate >
-{
-@private
-    UIWebView* SHOW_TARGET;
-}
+
+//ラベルを定義
 @property (weak, nonatomic) IBOutlet UILabel *character;
+//ピッカーを定義
 @property   ( weak ,  nonatomic ) IBOutlet UIPickerView *picker ;
+//ピッカーを操作した時のイベントを定義
+
 @end 
