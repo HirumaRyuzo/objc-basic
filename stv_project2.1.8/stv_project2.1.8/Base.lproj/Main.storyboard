@@ -44,6 +44,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="character" destination="fHb-7P-ZXB" id="N0d-8I-ma8"/>
                         <outlet property="picker" destination="mrA-mQ-AHo" id="rGZ-3P-cy1"/>
                     </connections>
                 </viewController>
