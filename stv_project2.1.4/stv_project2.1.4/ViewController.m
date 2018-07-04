@@ -17,15 +17,16 @@
     [super viewDidLoad];
 }
 - (IBAction)alert:(id)sender {
-    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"タイトル" message:@"メッセージ" preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"注意" message:@"このまま進んでよろしいですか？" preferredStyle:UIAlertControllerStyleAlert];
     
-    [alertController addAction:[UIAlertAction actionWithTitle:@"はい" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
-        // 「はい」ボタンが押された時の処理
-        [self otherButtonPushed];
-    }]];
-    [alertController addAction:[UIAlertAction actionWithTitle:@"いいえ" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+    [alertController addAction:[UIAlertAction actionWithTitle:@"CANCEL" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
         // 「いいえ」ボタンが押された時の処理
         [self cancelButtonPushed];
+    }]];
+    
+    [alertController addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+        // 「はい」ボタンが押された時の処理
+        [self otherButtonPushed];
     }]];
     // 画面に表示します
     [self presentViewController:alertController animated:YES completion:nil];
