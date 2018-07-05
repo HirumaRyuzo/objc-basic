@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2FA2A0A420EDE23B006C3D44 /* Account.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA2A0A320EDE23B006C3D44 /* Account.m */; };
 		2FBE6DB120E60EF2001750C3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FBE6DB020E60EF2001750C3 /* AppDelegate.m */; };
 		2FBE6DB420E60EF2001750C3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FBE6DB320E60EF2001750C3 /* ViewController.m */; };
 		2FBE6DB720E60EF2001750C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FBE6DB520E60EF2001750C3 /* Main.storyboard */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2FA2A0A220EDE23B006C3D44 /* Account.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Account.h; sourceTree = "<group>"; };
+		2FA2A0A320EDE23B006C3D44 /* Account.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Account.m; sourceTree = "<group>"; };
 		2FBE6DAC20E60EF2001750C3 /* stv_project1.1.5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = stv_project1.1.5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FBE6DAF20E60EF2001750C3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2FBE6DB020E60EF2001750C3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -63,10 +66,12 @@
 			children = (
 				2FBE6DAF20E60EF2001750C3 /* AppDelegate.h */,
 				2FBE6DB020E60EF2001750C3 /* AppDelegate.m */,
-				2FBE6DB220E60EF2001750C3 /* ViewController.h */,
-				2FBE6DB320E60EF2001750C3 /* ViewController.m */,
+				2FA2A0A220EDE23B006C3D44 /* Account.h */,
+				2FA2A0A320EDE23B006C3D44 /* Account.m */,
 				2FBE6DC720E623E8001750C3 /* FavoriteProgrammingLanguage.h */,
 				2FBE6DC820E623E8001750C3 /* FavoriteProgrammingLanguage.m */,
+				2FBE6DB220E60EF2001750C3 /* ViewController.h */,
+				2FBE6DB320E60EF2001750C3 /* ViewController.m */,
 				2FBE6DB520E60EF2001750C3 /* Main.storyboard */,
 				2FBE6DB820E60EF3001750C3 /* Assets.xcassets */,
 				2FBE6DBA20E60EF3001750C3 /* LaunchScreen.storyboard */,
@@ -149,6 +154,7 @@
 				2FBE6DB420E60EF2001750C3 /* ViewController.m in Sources */,
 				2FBE6DBF20E60EF3001750C3 /* main.m in Sources */,
 				2FBE6DB120E60EF2001750C3 /* AppDelegate.m in Sources */,
+				2FA2A0A420EDE23B006C3D44 /* Account.m in Sources */,
 				2FBE6DC920E623E8001750C3 /* FavoriteProgrammingLanguage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

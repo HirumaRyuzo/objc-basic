@@ -1,0 +1,12 @@
+//
+//  Account.h
+//  stv_project1.1.5
+//
+//  Created by 比留間龍三 on 2018/07/05.
+//  Copyright © 2018年 比留間龍三. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+@interface Account : NSObject
+@end

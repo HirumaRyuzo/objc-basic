@@ -10,4 +10,6 @@
 
 @implementation FavoriteProgrammingLanguage
 
+
+//inturnに参加するメソッドを定義
 @end
