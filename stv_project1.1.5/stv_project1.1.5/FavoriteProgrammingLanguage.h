@@ -8,6 +8,19 @@
 
 #import <Foundation/Foundation.h>
 
+//protocol宣言
+@protocol SampleDelegate<NSObject>
+//デリゲート経由で呼ばれるメソッドを宣言
+@optional
+- (void)sample;
+@end
+
 @interface FavoriteProgrammingLanguage : NSObject
+//デリゲートのプロパティ宣言
+@property (nonatomic, assign) id<SampleDelegate> delegate;
+
+//ViewControllerから呼ばれるサンプルメソッド
+- (void)callDelegate;
 
 @end
+

@@ -9,7 +9,8 @@
 #import "FavoriteProgrammingLanguage.h"
 
 @implementation FavoriteProgrammingLanguage
-
-
-//inturnに参加するメソッドを定義
+//ViewControllerから呼ばれるメソッド
+- (void)callDelegate{
+    [_delegate sample];
+}
 @end

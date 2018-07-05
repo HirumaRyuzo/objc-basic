@@ -8,5 +8,14 @@
 
 #import "Account.h"
 
+//@implementation Account
+//@end
+
+@interface Account ()
+@end
+
 @implementation Account
+
+//delegateを宣言しておく
+//@synthesize delegate;
 @end

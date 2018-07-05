@@ -19,6 +19,19 @@
 //インターンに参加メソッドを呼ぶと、
 //FavoriteProgrammingLanguageから「Obj-Cができる」通知を受信する。
 
+//#import "ViewController.h"
+//
+//@interface ViewController ()
+//@end
+//
+//@implementation ViewController
+//
+//- (void)viewDidLoad {
+//    [super viewDidLoad];
+//}
+//
+//@end
+//
 #import "ViewController.h"
 
 @interface ViewController ()
@@ -26,8 +39,23 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad{
     [super viewDidLoad];
+    [self main];
+}
+
+- (void)main{
+    //MyClass初期化
+    Account *aaa = [[Account alloc] init];
+    //MyClassの delegateに自分自身を渡す
+    aaa.delegate = self;
+    //MyClassのデリゲートメソッド呼び出し
+    [aaa callDelegate];
+}
+
+//デリゲートメソッド
+- (void)sample{
+    NSLog(@"obj-cができる");
 }
 
 @end

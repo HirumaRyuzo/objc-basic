@@ -8,5 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+//@interface ViewController : UIViewController
+//@end
+
+#import "Account.h"
+//ここでデリゲートを指定しておく
+@interface ViewController : UIViewController <SampleDelegate>
 @end
