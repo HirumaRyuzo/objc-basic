@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface  ViewController  : UIViewController < UIPickerViewDataSource ,   UIPickerViewDelegate >
+@interface  ViewController : UIViewController <UIPickerViewDataSource ,  UIPickerViewDelegate>
 
 //ラベルを定義
 @property (weak, nonatomic) IBOutlet UILabel *character;
