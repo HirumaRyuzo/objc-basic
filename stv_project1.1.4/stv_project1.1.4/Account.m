@@ -13,7 +13,7 @@
 //インスタンスに初期値を与える
 -(id)initWithName:(NSString *)name age:(NSInteger)age gender:(NSString *)gender language:(NSString *)language {
     if(self = [super init]) { //Account.hのプロパティにアクセス
-        self.name = name; //selfは「自分自身(=Account)のクラス」
+        self.name = name; //selfは「自分自身(=Account)のクラス」　引数（Viewコンでインスタンス化した太郎と花子の名前や性別など）の値をインスタンスの変数（空箱）に代入する
         self.age = age;
         self.gender = gender;
         self.language = language;

@@ -23,7 +23,7 @@
 //    女性の場合、「○○さんは、○○が得意な○○歳です。」と表示する。
 
 #import "ViewController.h"
-#import "Account.h" //Accountクラスのヘッダーをインポート　ヘッダーをインポートすれば実装ファイルに書い内容もインポートされる
+#import "Account.h" //Accountクラスのヘッダーをインポート　ヘッダーをインポートすれば実装ファイルに書いた内容もインポートされる
 
 @interface ViewController ()
 @end
@@ -33,13 +33,13 @@
     [super viewDidLoad];
 
     //インスタンス化　　[クラス名 new] は [[クラス名 alloc]initWith] と同じ. init がイニシャライザ
-Account *tarou = [[Account alloc] initWithName:@"太郎" age:30 gender:@"男性" language:@"objective-c"];
-Account *hanako = [[Account alloc] initWithName:@"花子" age:25 gender:@"女性" language:@"swift"];
+    Account *tarou = [[Account alloc] initWithName:@"太郎" age:30 gender:@"男性" language:@"objective-c"];
+    Account *hanako = [[Account alloc] initWithName:@"花子" age:25 gender:@"女性" language:@"swift"];
 
     //一人ずつ自動的に取得する
     NSArray *lists = @[tarou, hanako];
     for (Account *list in lists) {
-        [list inturn]; //NSLog(@"%@", list);だと「Account.h」で実装したメッソドの文章で出ない。
+        [list inturn]; //NSLog(@"%@", list);だと「Account.h」で実装したメソッドの文章で出ない。
     }
 }
 
