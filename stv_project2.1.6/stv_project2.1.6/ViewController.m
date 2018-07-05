@@ -37,34 +37,49 @@
     [super viewDidLoad];
 
     // UIWebViewのインスタンス初期化
-    WKWebView *wkWebView = [[WKWebView alloc]init];
-
+    self.wkWebView = [[WKWebView alloc]init];
+    
     // デリゲート
-    wkWebView.UIDelegate = self;
+    self.wkWebView.UIDelegate = self;
 
     // Webページの大きさを画_webView合わせる
     // iPhoneXではSafeAreaの考慮が必要
     CGRect rect = self.view.frame;
-    wkWebView.frame = rect;
+    self.wkWebView.frame = rect;
 
     // インスタンスをビューに追加する
-    [self.view addSubview:wkWebView];
-
+    [self.view addSubview:self.wkWebView];
+    [self.view addSubview:_toolBar];
+    
     // URLを指定
     NSURL *url = [NSURL URLWithString:@"https://www.tokyodisneyresort.jp/tdl/"];
 //    NSURL *url = [NSURL URLWithString:@"https://www.apple.com/iphone/"];
 //    NSURL *url = [NSURL URLWithString:@"http://www.apple.com/iphone/"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     // リクエストを投げる
-    [wkWebView loadRequest:request];
-    [wkWebView reload];
-    [wkWebView goForward];
-    [wkWebView goBack];
-    [wkWebView canGoBack];
-    [wkWebView canGoForward];
+    [self.wkWebView loadRequest:request];
+    
+//    ViewControllern内は上から自動的に処理を行っていくのでこれを入れておくと勝手に戻って勝手に進んで… となる！！
+//    [self.wkWebView reload];
+//    [self.wkWebView goForward];
+//    [self.wkWebView canGoBack];
+//    [self.wkWebView canGoForward];
     
 //    フリックで戻る＆進む
 //    wkWebView.allowsBackForwardNavigationGestures = true;
 }
 
+
+- (IBAction)goBack:(id)sender {
+    [self.wkWebView goBack ];
+}
+
+- (IBAction)goForward:(id)sender {
+    [self.wkWebView goForward ];
+}
+
+- (IBAction)reload:(id)sender {
+    [self.wkWebView reload ];
+}
 @end
+

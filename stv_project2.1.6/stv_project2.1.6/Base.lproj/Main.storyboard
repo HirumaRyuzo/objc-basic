@@ -17,11 +17,45 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qes-9d-ZKi">
+                                <rect key="frame" x="0.0" y="561" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem width="31" style="plain" systemItem="fixedSpace" id="TDt-1m-xrJ"/>
+                                    <barButtonItem systemItem="undo" id="xaF-65-b4d">
+                                        <connections>
+                                            <action selector="goBack:" destination="BYZ-38-t0r" id="fG3-4H-aa2"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="71" style="plain" systemItem="fixedSpace" id="yHM-5V-e4I"/>
+                                    <barButtonItem systemItem="refresh" id="ud5-gY-De2">
+                                        <connections>
+                                            <action selector="reload:" destination="BYZ-38-t0r" id="DYc-z5-7K5"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="67" style="plain" systemItem="fixedSpace" id="f1T-dP-iqx"/>
+                                    <barButtonItem systemItem="redo" id="Ttz-4h-zHG">
+                                        <connections>
+                                            <action selector="goForward:" destination="BYZ-38-t0r" id="ZHE-xI-SPS"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="57" style="plain" systemItem="fixedSpace" id="6Ve-k4-heQ"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qes-9d-ZKi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="SyG-p6-WrY"/>
+                            <constraint firstAttribute="bottom" secondItem="qes-9d-ZKi" secondAttribute="bottom" id="YUR-ds-YD9"/>
+                            <constraint firstAttribute="trailing" secondItem="qes-9d-ZKi" secondAttribute="trailing" id="uqn-ki-0DB"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="toolBar" destination="qes-9d-ZKi" id="jEz-vo-3Ci"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
