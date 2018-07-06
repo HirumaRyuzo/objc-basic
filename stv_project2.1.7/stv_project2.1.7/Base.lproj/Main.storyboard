@@ -39,8 +39,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="fin" destination="eaK-4v-fhD" id="P7J-Qj-dsP"/>
-                        <outlet property="text" destination="D9n-em-S0d" id="Xbq-jP-cQ8"/>
+                        <outlet property="tapGestureRecognizer" destination="eaK-4v-fhD" id="P7J-Qj-dsP"/>
+                        <outlet property="textField" destination="D9n-em-S0d" id="qhJ-AA-KZp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

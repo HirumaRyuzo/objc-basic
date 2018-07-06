@@ -9,51 +9,49 @@
 #import "ViewController.h"
 
 @interface ViewController ()
-
 @end
 
 @implementation ViewController
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     // キーボードが表示：消す
-    if (self.text.isFirstResponder) {
-//      [_searchField resignFirstResponder];
+    if (self.textField.isFirstResponder) {
+        //[_searchField resignFirstResponder];
         [self.view endEditing:YES];   // こちらでもOK
     }
     // キーボードが非表示：表示する
     else {
-        [self.text becomeFirstResponder];
+        [self.textField becomeFirstResponder];
     }
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     //プレースホルダー
-    self.text.placeholder = @"スマートテックベンチャーズ";
-    [self.text setDelegate:self];
-    //textFieldに入力後enterキーでキーボード非表示
-    [self.view endEditing:YES];
+    self.textField.placeholder = @"文字列を入力してください。";
+    self.textField.delegate = self;
+    //textFieldに入力後enterキーでキーボード非表示するのはデフォルトでなるのでここにあると最初に消してしまう
+//    [self.view endEditing:YES];
     //textFieldが空の時にenterキー非活性化（ストーリーボードで”Auto-enable Return Key”みつからず）
-    self.text.enablesReturnKeyAutomatically = YES;
+    self.textField.enablesReturnKeyAutomatically = YES;
 }
 
-- (BOOL)textFieldShouldReturn:(UITextField *)textField
-{
+- (BOOL) textFieldShouldReturn:(UITextField *)textField {
     [textField resignFirstResponder];
     return YES;
 }
 
-- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
-{
+- (BOOL) textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string{
     // 最大入力文字数
     int maxInputLength = 30;
     // 入力済みのテキストを取得
     NSMutableString *str = [textField.text mutableCopy];
     // 入力済みのテキストと入力が行われたテキストを結合
     [str replaceCharactersInRange:range withString:string];
+    
     if ([str length] > maxInputLength) {
-    // ※ここに文字数制限を超えたことを通知する処理を追加
-    return NO;
+        // ※ここに文字数制限を超えたことを通知する処理を追加
+        return NO;
     }
     return YES;
 }
