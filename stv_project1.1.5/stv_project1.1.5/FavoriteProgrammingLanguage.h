@@ -7,20 +7,19 @@
 //
 
 #import <Foundation/Foundation.h>
-
 //protocol宣言
-@protocol SampleDelegate<NSObject>
+@protocol FavoriteProgrammingLanguageDelegate <NSObject>
 //デリゲート経由で呼ばれるメソッドを宣言
+//オプショナルは実装しなくてもよい
 @optional
-- (void)sample;
+- (void)canObjc;
 @end
 
-@interface FavoriteProgrammingLanguage : NSObject
-//デリゲートのプロパティ宣言
-@property (nonatomic, assign) id<SampleDelegate> delegate;
-
+@interface FavoriteProgrammingLanguage: NSObject
+//デリゲートのプロパティ宣言（デリゲートオブジェクト）
+@property (nonatomic, assign) id<FavoriteProgrammingLanguageDelegate> delegate;
 //ViewControllerから呼ばれるサンプルメソッド
-- (void)callDelegate;
+- (void)callCanObjc;
 
 @end
 

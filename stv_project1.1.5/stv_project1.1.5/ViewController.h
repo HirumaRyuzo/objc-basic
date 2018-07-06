@@ -7,11 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-//@interface ViewController : UIViewController
-//@end
-
-#import "Account.h"
+#import "FavoriteProgrammingLanguage.h"
 //ここでデリゲートを指定しておく
-@interface ViewController : UIViewController <SampleDelegate>
+@interface ViewController : UIViewController <FavoriteProgrammingLanguageDelegate>
 @end

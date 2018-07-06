@@ -10,7 +10,10 @@
 
 @implementation FavoriteProgrammingLanguage
 //ViewControllerから呼ばれるメソッド
-- (void)callDelegate{
-    [_delegate sample];
+- (void)callCanObjc {//delegategメソッドが＠optionalの場合、実装されていない可能がある。なので”respondsToSelector”で実装有無を判定
+    if ([self.delegate respondsToSelector:@selector(canObjc)]) {
+        [self.delegate canObjc];
+    }
 }
+
 @end
