@@ -26,49 +26,43 @@
 //}
 //@end
 
+// WKWebViewがストーリーボードからデコードされたときにアプリが理解できるように、アプリケーションターゲットをWebKitフレームワークにリンクする必要があります。
+//https://translate.googleusercontent.com/translate_c?depth=1&hl=ja&prev=search&rurl=translate.google.com&sl=en&sp=nmt4&u=https://stackoverflow.com/questions/47142434/ios11-wkwebview-crash-due-to-nsinvalidunarchiveoperationexception&xid=17259,15700002,15700021,15700124,15700149,15700168,15700186,15700191,15700201,15700208&usg=ALkJrhi5ZO-PzytkwZrUYMjTd0tw1-ejLQ
 
 #import "ViewController.h"
 
 @interface UIViewController ()
 @end
+
 @implementation ViewController
+
+- (void)loadView {
+    [super loadView];
+    // デリゲート
+    self.wkWebView.UIDelegate = self;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    // UIWebViewのインスタンス初期化
-    self.wkWebView = [[WKWebView alloc]init];
-    
-    // デリゲート
-    self.wkWebView.UIDelegate = self;
-
     // Webページの大きさを画_webView合わせる
     // iPhoneXではSafeAreaの考慮が必要
-    CGRect rect = self.view.frame;
-    self.wkWebView.frame = rect;
-
+//    CGRect rect = self.view.frame;
+//    self.wkWebView.frame = rect;
     // インスタンスをビューに追加する
-    [self.view addSubview:self.wkWebView];
-    [self.view addSubview:_toolBar];
+//    [self.view addSubview:self.wkWebView];
+//    [self.view addSubview:_toolBar];
     
     // URLを指定
-    NSURL *url = [NSURL URLWithString:@"https://www.tokyodisneyresort.jp/tdl/"];
-//    NSURL *url = [NSURL URLWithString:@"https://www.apple.com/iphone/"];
-//    NSURL *url = [NSURL URLWithString:@"http://www.apple.com/iphone/"];
+//    NSURL *url = [NSURL URLWithString:@"https://www.tokyodisneyresort.jp/tdl/"];
+    NSURL *url = [NSURL URLWithString:@"http://www.metro.tokyo.jp/"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     // リクエストを投げる
     [self.wkWebView loadRequest:request];
     
-//    ViewControllern内は上から自動的に処理を行っていくのでこれを入れておくと勝手に戻って勝手に進んで… となる！！
-//    [self.wkWebView reload];
-//    [self.wkWebView goForward];
-//    [self.wkWebView canGoBack];
-//    [self.wkWebView canGoForward];
-    
 //    フリックで戻る＆進む
-//    wkWebView.allowsBackForwardNavigationGestures = true;
+    self.wkWebView.allowsBackForwardNavigationGestures = true;
 }
-
 
 - (IBAction)goBack:(id)sender {
     [self.wkWebView goBack ];

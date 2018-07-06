@@ -20,8 +20,8 @@
 #import <WebKit/WebKit.h>
 @interface ViewController : UIViewController <WKUIDelegate>
 @property (weak, nonatomic) IBOutlet UIToolbar *toolBar;
-@property WKWebView *wkWebView;
 - (IBAction)goBack:(id)sender;
 - (IBAction)goForward:(id)sender;
 - (IBAction)reload:(id)sender;
+@property IBOutlet WKWebView *wkWebView;
 @end

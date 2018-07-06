@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2FA2A0EE20EF76E8006C3D44 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FA2A0ED20EF76E8006C3D44 /* WebKit.framework */; };
 		2FBE6E3E20EB0A5C001750C3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FBE6E3D20EB0A5C001750C3 /* AppDelegate.m */; };
 		2FBE6E4120EB0A5C001750C3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FBE6E4020EB0A5C001750C3 /* ViewController.m */; };
 		2FBE6E4420EB0A5C001750C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FBE6E4220EB0A5C001750C3 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2FA2A0ED20EF76E8006C3D44 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		2FBE6E3920EB0A5C001750C3 /* stv_project2.1.6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = stv_project2.1.6.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FBE6E3C20EB0A5C001750C3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2FBE6E3D20EB0A5C001750C3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -33,17 +35,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FA2A0EE20EF76E8006C3D44 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2FA2A0EC20EF76E8006C3D44 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2FA2A0ED20EF76E8006C3D44 /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2FBE6E3020EB0A5C001750C3 = {
 			isa = PBXGroup;
 			children = (
 				2FBE6E3B20EB0A5C001750C3 /* stv_project2.1.6 */,
 				2FBE6E3A20EB0A5C001750C3 /* Products */,
+				2FA2A0EC20EF76E8006C3D44 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
