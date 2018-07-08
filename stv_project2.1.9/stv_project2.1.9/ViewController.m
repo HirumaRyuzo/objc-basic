@@ -12,8 +12,22 @@
 @end
 
 @implementation ViewController
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    // toolbarの表示をONにする
+    [self.navigationController setToolbarHidden:NO animated:NO];
+
+    // ボタン「Done」を生成する
+    UIBarButtonItem *button = [[UIBarButtonItem alloc]
+                               initWithTitle:@"Done" style: UIBarButtonItemStyleBordered
+                               target:self action:@selector(Done)];
+
+    // toolbarにボタンとラベルをセットする
+    NSArray *items =
+    [NSArray arrayWithObjects:button,nil];
+    self.toolbarItems = items;
    }
 
 - (IBAction)changeDate:(id)sender {
