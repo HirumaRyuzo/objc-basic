@@ -8,18 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface  ViewController : UIViewController <UIPickerViewDataSource ,  UIPickerViewDelegate>{
-    UIToolbar *toolbarView;
-}
-
+@interface ViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
 //ラベルを定義
-@property (weak, nonatomic) IBOutlet UILabel *character;
+@property(weak, nonatomic) IBOutlet UILabel *characterLabel;
 //ピッカーを定義
-@property   ( weak ,  nonatomic ) IBOutlet UIPickerView *picker ;
+@property(weak, nonatomic) IBOutlet UIPickerView *characterPicker;
 //ツーツバーを定義
-@property (weak, nonatomic) IBOutlet UIToolbar *toolBarView;
--(void)toolbarBcode;
--(void)toolbarAction;
+@property(weak, nonatomic) IBOutlet UIToolbar *toolBar;
 //Doneボタン
 - (IBAction)done:(id)sender;
 
