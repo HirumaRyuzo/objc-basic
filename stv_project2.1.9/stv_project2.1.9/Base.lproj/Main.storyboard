@@ -14,7 +14,7 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" tag="1" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -33,11 +33,15 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="rye-Eb-s4b"/>
-                                    <barButtonItem title="Done" id="cLG-oQ-lbX"/>
+                                    <barButtonItem title="Done" id="cLG-oQ-lbX">
+                                        <connections>
+                                            <action selector="done:" destination="BYZ-38-t0r" id="rlo-Rr-k60"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="日時選択" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NNz-Vy-rYh">
-                                <rect key="frame" x="153.5" y="159" width="69.5" height="21"/>
+                                <rect key="frame" x="153" y="159" width="69.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -52,7 +56,8 @@
                     </view>
                     <connections>
                         <outlet property="dateLabel" destination="NNz-Vy-rYh" id="o8p-hT-gfY"/>
-                        <outlet property="myDatePicker" destination="dqS-nh-bnm" id="xsB-oU-2O8"/>
+                        <outlet property="datePicker" destination="dqS-nh-bnm" id="xsB-oU-2O8"/>
+                        <outlet property="toolBar" destination="su6-JA-EzU" id="IlZ-Nt-znZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

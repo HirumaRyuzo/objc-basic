@@ -1,4 +1,3 @@
-ｓ//
 //  main.m
 //  stv_project2.1.9
 //
