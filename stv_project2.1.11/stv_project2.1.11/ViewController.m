@@ -9,21 +9,85 @@
 #import "ViewController.h"
 
 @interface ViewController ()
-
 @end
 
-@implementation ViewController
+@implementation ViewController{
+    NSArray *imgArray;
+    NSArray *label2Array;
+    UIImageView *plist;
+}
 
-- (void)viewDidLoad {
+- (void)viewDidLoad{
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    NSLog(@"viewDidLoad");
+    imgArray = @[@"img0.JPG",@"img1.JPG",@"img2.JPG",@"img3.JPG",
+                 @"img4.JPG",@"img5.JPG",@"img6.JPG",@"img7.JPG"];
+    label2Array = @[@"2013/8/23/16:04",@"2013/8/23/16:15",@"2013/8/23/16:47",@"2013/8/23/17:10",
+                    @"2013/8/23/1715:",@"2013/8/23/17:21",@"2013/8/23/17:33",@"2013/8/23/17:41"];
+    _table.estimatedRowHeight = 50;
+    _table.rowHeight = UITableViewAutomaticDimension;
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+//Table Viewのセクション数を指定
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    // 今回はセクション１個
+    return 2;
 }
 
+// セルの高さを設定する
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    float height = 120.0f;
+    
+    return height;
+}
+
+//Table Viewのセルの数を指定
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    // 今回は要素８個
+    return 8;
+}
+
+//各セルの要素を設定する
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *CellIdentifier = @"tableCell";
+    // tableCell の ID で UITableViewCell のインスタンスを生成
+    UITableViewCell *cell =
+    [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    
+    if(cell==nil){
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
+    }
+    
+    UIImage *img = [UIImage imageNamed:imgArray[indexPath.row]];
+    // Tag番号 1 で UIImageView インスタンスの生成
+    plist = (UIImageView *)[cell viewWithTag:1];
+    plist.image = img;
+    
+    // Tag番号 ２ で UILabel インスタンスの生成
+    UILabel *label1 = (UILabel *)[cell viewWithTag:2];
+    label1.text = [NSString stringWithFormat:@"No.%d",(int)(indexPath.row+1)];
+    
+    // Tag番号 ３ で UILabel インスタンスの生成
+    UILabel *label2 = (UILabel *)[cell viewWithTag:3];
+    label2.text = label2Array[indexPath.row];
+    
+    return cell;
+}
+
+//ヘッダータイトル　　titleForHeaderInSection を　titleForFooterInSection に変更すればフッタータイトル編集できる
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{  //tableView 対象テーブル
+    switch (section) { //対象セクション　（section）のところ編集？
+        case 0:
+            return @"セクションヘッダー1"; //設定するタイトル
+            break;
+        case 1:
+            return @"セクションヘッダー2";
+            break;
+        default:
+            return @"";
+//            return [NSString stringWithFormat:@"%ld 番目のセクションヘッダー", (long)section]; //セクション数で返せる？
+            break;
+    }
+}
 
 @end
