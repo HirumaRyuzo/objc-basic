@@ -16,6 +16,6 @@
 //ツーツバーを定義
 @property(weak, nonatomic) IBOutlet UIToolbar *toolBar;
 //Doneボタン
-- (IBAction)done:(id)sender;
+- (IBAction)doneButton:(id)sender;
 
 @end
