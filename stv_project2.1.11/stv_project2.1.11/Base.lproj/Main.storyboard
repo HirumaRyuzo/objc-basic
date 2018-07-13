@@ -35,6 +35,7 @@
                                                     <rect key="frame" x="16" y="8" width="104" height="77.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="pzj-se-jwk" secondAttribute="height" multiplier="39:29" id="CEW-jb-bBN"/>
+                                                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="104" id="HyN-Xi-u0X"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I0n-gD-xV7">

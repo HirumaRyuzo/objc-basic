@@ -9,20 +9,19 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property NSArray *imgArray;
+@property NSArray *label2Array;
+@property UIImageView *plist;
 @end
 
-@implementation ViewController{
-    NSArray *imgArray;
-    NSArray *label2Array;
-    UIImageView *plist;
-}
+@implementation ViewController
 
 - (void)viewDidLoad{
     [super viewDidLoad];
     NSLog(@"viewDidLoad");
-    imgArray = @[@"img0.JPG",@"img1.JPG",@"img2.JPG",@"img3.JPG",
+    self.imgArray = @[@"img0.JPG",@"img1.JPG",@"img2.JPG",@"img3.JPG",
                  @"img4.JPG",@"img5.JPG",@"img6.JPG",@"img7.JPG"];
-    label2Array = @[@"2013/8/23/16:04",@"2013/8/23/16:15",@"2013/8/23/16:47",@"2013/8/23/17:10",
+    self.label2Array = @[@"2013/8/23/16:04",@"2013/8/23/16:15",@"2013/8/23/16:47",@"2013/8/23/17:10",
                     @"2013/8/23/1715:",@"2013/8/23/17:21",@"2013/8/23/17:33",@"2013/8/23/17:41"];
     _table.estimatedRowHeight = 50;
     _table.rowHeight = UITableViewAutomaticDimension;
@@ -58,10 +57,10 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
     
-    UIImage *img = [UIImage imageNamed:imgArray[indexPath.row]];
+    UIImage *img = [UIImage imageNamed:self.imgArray[indexPath.row]];
     // Tag番号 1 で UIImageView インスタンスの生成
-    plist = (UIImageView *)[cell viewWithTag:1];
-    plist.image = img;
+    self.plist = (UIImageView *)[cell viewWithTag:1];
+    self.plist.image = img;
     
     // Tag番号 ２ で UILabel インスタンスの生成
     UILabel *label1 = (UILabel *)[cell viewWithTag:2];
@@ -69,7 +68,7 @@
     
     // Tag番号 ３ で UILabel インスタンスの生成
     UILabel *label2 = (UILabel *)[cell viewWithTag:3];
-    label2.text = label2Array[indexPath.row];
+    label2.text = self.label2Array[indexPath.row];
     
     return cell;
 }
@@ -78,10 +77,10 @@
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{  //tableView 対象テーブル
     switch (section) { //対象セクション　（section）のところ編集？
         case 0:
-            return @"セクションヘッダー1"; //設定するタイトル
+            return @"ToykoDicneyLand"; //設定するタイトル
             break;
         case 1:
-            return @"セクションヘッダー2";
+            return @"TokyoDisneySea";
             break;
         default:
             return @"";
