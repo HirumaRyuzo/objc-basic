@@ -60,6 +60,7 @@
     //ラベルに日付を表示
     self.dateLabel.text = [dateFormatter stringFromDate:self.datePicker.date];
 }
+
 //Doneボタンタップされた時の動作
 - (IBAction)done:(id)sender {
     NSLog(@"Doneにタップされたのでピッカーとツールバー非表示");
