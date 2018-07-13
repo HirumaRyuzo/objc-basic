@@ -9,26 +9,25 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property NSArray *imgArray;
+@property NSArray *label2Array;
+@property UIImageView *plist;
 @end
 
-@implementation ViewController{
-    NSArray *imgArray;
-    NSArray *label2Array;
-    UIImageView *plist;
-}
+@implementation ViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     NSLog(@"viewDidLoad");
     
-    imgArray = @[@"img0.JPG",@"img1.JPG",@"img2.JPG",@"img3.JPG",
+    self.imgArray = @[@"img0.JPG",@"img1.JPG",@"img2.JPG",@"img3.JPG",
                  @"img4.JPG",@"img5.JPG",@"img6.JPG",@"img7.JPG"];
-    label2Array = @[@"2013/8/23/16:04",@"2013/8/23/16:15",@"2013/8/23/16:47",@"2013/8/23/17:10",
+    self.label2Array = @[@"2013/8/23/16:04",@"2013/8/23/16:15",@"2013/8/23/16:47",@"2013/8/23/17:10",
                     @"2013/8/23/1715:",@"2013/8/23/17:21",@"2013/8/23/17:33",@"2013/8/23/17:41"];
     
-    _table.estimatedRowHeight = 50;
-    _table.rowHeight = UITableViewAutomaticDimension;
+//    _tableView.estimatedRowHeight = 50;
+    _tableView.rowHeight = UITableViewAutomaticDimension;
     
 }
 
@@ -41,25 +40,25 @@
 //Table Viewのセルの数を指定
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // 今回は要素８個
-    return 8;
+    return self.imgArray.count;
 }
 
 //各セルの要素を設定する
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *CellIdentifier = @"tableCell";
+//    static NSString *CellIdentifier = @"tableCell";
     
     // tableCell の ID で UITableViewCell のインスタンスを生成
     UITableViewCell *cell =
-    [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    [tableView dequeueReusableCellWithIdentifier:@"tableCell"];
     
-    if(cell==nil){
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
-    }
+//    if(cell==nil){
+//        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier: @"tableCell"];
+//    }
     
-    UIImage *img = [UIImage imageNamed:imgArray[indexPath.row]];
+    UIImage *img = [UIImage imageNamed:self.imgArray[indexPath.row]];
     // Tag番号 1 で UIImageView インスタンスの生成
-    plist = (UIImageView *)[cell viewWithTag:1];
-    plist.image = img;
+    self.plist = (UIImageView *)[cell viewWithTag:1];
+    self.plist.image = img;
     
     // Tag番号 ２ で UILabel インスタンスの生成
     UILabel *label1 = (UILabel *)[cell viewWithTag:2];
@@ -67,16 +66,16 @@
     
     // Tag番号 ３ で UILabel インスタンスの生成
     UILabel *label2 = (UILabel *)[cell viewWithTag:3];
-    label2.text = label2Array[indexPath.row];
+    label2.text = self.label2Array[indexPath.row];
     
     return cell;
 }
 
-// セルの高さを設定する
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    float height = 120.0f;
-    
-    return height;
-}
+//// セルの高さを設定する
+//- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+//    float height = 120.0f;
+//
+//    return height;
+//}
 
 @end
