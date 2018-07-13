@@ -77,7 +77,7 @@
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{  //tableView 対象テーブル
     switch (section) { //対象セクション　（section）のところ編集？
         case 0:
-            return @"ToykoDicneyLand"; //設定するタイトル
+            return @"ToykoDisneyLand"; //設定するタイトル
             break;
         case 1:
             return @"TokyoDisneySea";
