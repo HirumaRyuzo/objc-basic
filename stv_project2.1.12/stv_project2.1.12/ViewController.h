@@ -11,6 +11,5 @@
 @interface ViewController : UIViewController<UICollectionViewDataSource, UICollectionViewDelegate>
 
 @property IBOutlet UICollectionView *collectionView;
-
 @end
 
