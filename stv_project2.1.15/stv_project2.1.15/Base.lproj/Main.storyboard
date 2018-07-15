@@ -1,24 +1,122 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="E6F-mL-fVO">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--cocktail-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="cocktail" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ac1-Ln-H1k">
+                                <rect key="frame" x="158" y="323" width="59.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ac1-Ln-H1k" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="KKi-vc-fa8"/>
+                            <constraint firstItem="ac1-Ln-H1k" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pqx-tA-A6E"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="cocktail" image="Cocktail35" selectedImage="Cocktail35" id="aUT-c2-23X"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1668" y="162"/>
+        </scene>
+        <!--sunglasses-->
+        <scene sceneID="7rZ-Zf-9cK">
+            <objects>
+                <viewController id="giW-JH-i9C" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BHj-bH-6Zs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sunglasses" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Db3-Kb-45f">
+                                <rect key="frame" x="145" y="323" width="85.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Db3-Kb-45f" firstAttribute="centerX" secondItem="BHj-bH-6Zs" secondAttribute="centerX" id="XaF-c2-xbf"/>
+                            <constraint firstItem="Db3-Kb-45f" firstAttribute="centerY" secondItem="BHj-bH-6Zs" secondAttribute="centerY" id="xex-YW-v8x"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="I60-tu-zH7"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="sunglasses" image="Sunglass35" selectedImage="Sunglass35" id="f5g-mx-Iat"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ApQ-10-GfU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="921" y="-302"/>
+        </scene>
+        <!--umbrella-->
+        <scene sceneID="eER-OJ-fGN">
+            <objects>
+                <viewController id="wVA-KF-9Ag" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bXV-tV-QZe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="umbrella" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fxr-kf-7JZ">
+                                <rect key="frame" x="154.5" y="323" width="66" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fxr-kf-7JZ" firstAttribute="centerY" secondItem="bXV-tV-QZe" secondAttribute="centerY" id="R19-Cu-vAU"/>
+                            <constraint firstItem="fxr-kf-7JZ" firstAttribute="centerX" secondItem="bXV-tV-QZe" secondAttribute="centerX" id="u3S-EQ-2xw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4xS-4m-lxF"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="umbrella" image="Umbrella35" selectedImage="Umbrella35" id="X4Z-hm-gV8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Un-N5-OaS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="921" y="668"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="EU6-Fa-DGI">
+            <objects>
+                <tabBarController id="E6F-mL-fVO" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kgJ-Dr-iq7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="qKV-SE-gNm"/>
+                        <segue destination="giW-JH-i9C" kind="relationship" relationship="viewControllers" id="FkX-JN-j0L"/>
+                        <segue destination="wVA-KF-9Ag" kind="relationship" relationship="viewControllers" id="Kq6-XB-1uJ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iLI-Bh-KvR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="129" y="134"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Cocktail35" width="17" height="17"/>
+        <image name="Sunglass35" width="17" height="17"/>
+        <image name="Umbrella35" width="17" height="17"/>
+    </resources>
 </document>
