@@ -13,11 +13,12 @@
 		2F08D79720FD819400E84ECD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F08D79620FD819400E84ECD /* Assets.xcassets */; };
 		2F08D79A20FD819400E84ECD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F08D79820FD819400E84ECD /* LaunchScreen.storyboard */; };
 		2F08D79D20FD819400E84ECD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F08D79C20FD819400E84ECD /* main.m */; };
-		2F9EB62620FD93D200B66287 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9EB61C20FD93D200B66287 /* FMDatabaseAdditions.m */; };
-		2F9EB62720FD93D200B66287 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9EB61E20FD93D200B66287 /* FMResultSet.m */; };
-		2F9EB62820FD93D200B66287 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9EB62020FD93D200B66287 /* FMDatabase.m */; };
-		2F9EB62920FD93D200B66287 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9EB62220FD93D200B66287 /* FMDatabaseQueue.m */; };
-		2F9EB62A20FD93D200B66287 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9EB62520FD93D200B66287 /* FMDatabasePool.m */; };
+		2F23D74720FDB7BF009E7ED4 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F23D74620FDB7BF009E7ED4 /* libsqlite3.tbd */; };
+		2F23D76420FDB8ED009E7ED4 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F23D75920FDB8EC009E7ED4 /* FMDatabaseAdditions.m */; };
+		2F23D76520FDB8ED009E7ED4 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F23D75B20FDB8ED009E7ED4 /* FMResultSet.m */; };
+		2F23D76620FDB8ED009E7ED4 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F23D75D20FDB8ED009E7ED4 /* FMDatabase.m */; };
+		2F23D76720FDB8ED009E7ED4 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F23D76020FDB8ED009E7ED4 /* FMDatabaseQueue.m */; };
+		2F23D76820FDB8ED009E7ED4 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F23D76320FDB8ED009E7ED4 /* FMDatabasePool.m */; };
 		2F9EB62C20FD94F500B66287 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9EB62B20FD94F500B66287 /* libsqlite3.dylib */; };
 		FE4459C83116532115763818 /* libPods-stv_project2.3.2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7AA83490AA24CEE98C452DA /* libPods-stv_project2.3.2.a */; };
 /* End PBXBuildFile section */
@@ -34,16 +35,18 @@
 		2F08D79920FD819400E84ECD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F08D79B20FD819400E84ECD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F08D79C20FD819400E84ECD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2F9EB61C20FD93D200B66287 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = "../../../Desktop/fmdb-master/src/fmdb/FMDatabaseAdditions.m"; sourceTree = "<group>"; };
-		2F9EB61D20FD93D200B66287 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = "../../../Desktop/fmdb-master/src/fmdb/FMDatabase.h"; sourceTree = "<group>"; };
-		2F9EB61E20FD93D200B66287 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = "../../../Desktop/fmdb-master/src/fmdb/FMResultSet.m"; sourceTree = "<group>"; };
-		2F9EB61F20FD93D200B66287 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseQueue.h; path = "../../../Desktop/fmdb-master/src/fmdb/FMDatabaseQueue.h"; sourceTree = "<group>"; };
-		2F9EB62020FD93D200B66287 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = "../../../Desktop/fmdb-master/src/fmdb/FMDatabase.m"; sourceTree = "<group>"; };
-		2F9EB62120FD93D200B66287 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = "../../../Desktop/fmdb-master/src/fmdb/FMDatabaseAdditions.h"; sourceTree = "<group>"; };
-		2F9EB62220FD93D200B66287 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = "../../../Desktop/fmdb-master/src/fmdb/FMDatabaseQueue.m"; sourceTree = "<group>"; };
-		2F9EB62320FD93D200B66287 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabasePool.h; path = "../../../Desktop/fmdb-master/src/fmdb/FMDatabasePool.h"; sourceTree = "<group>"; };
-		2F9EB62420FD93D200B66287 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = "../../../Desktop/fmdb-master/src/fmdb/FMResultSet.h"; sourceTree = "<group>"; };
-		2F9EB62520FD93D200B66287 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = "../../../Desktop/fmdb-master/src/fmdb/FMDatabasePool.m"; sourceTree = "<group>"; };
+		2F23D74620FDB7BF009E7ED4 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		2F23D75920FDB8EC009E7ED4 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = "../../../Desktop/fmdb-master/src/fmdb/FMDatabaseAdditions.m"; sourceTree = "<group>"; };
+		2F23D75A20FDB8ED009E7ED4 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = "../../../Desktop/fmdb-master/src/fmdb/FMDatabase.h"; sourceTree = "<group>"; };
+		2F23D75B20FDB8ED009E7ED4 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = "../../../Desktop/fmdb-master/src/fmdb/FMResultSet.m"; sourceTree = "<group>"; };
+		2F23D75C20FDB8ED009E7ED4 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseQueue.h; path = "../../../Desktop/fmdb-master/src/fmdb/FMDatabaseQueue.h"; sourceTree = "<group>"; };
+		2F23D75D20FDB8ED009E7ED4 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = "../../../Desktop/fmdb-master/src/fmdb/FMDatabase.m"; sourceTree = "<group>"; };
+		2F23D75E20FDB8ED009E7ED4 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = "../../../Desktop/fmdb-master/src/fmdb/FMDatabaseAdditions.h"; sourceTree = "<group>"; };
+		2F23D75F20FDB8ED009E7ED4 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDB.h; path = "../../../Desktop/fmdb-master/src/fmdb/FMDB.h"; sourceTree = "<group>"; };
+		2F23D76020FDB8ED009E7ED4 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = "../../../Desktop/fmdb-master/src/fmdb/FMDatabaseQueue.m"; sourceTree = "<group>"; };
+		2F23D76120FDB8ED009E7ED4 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabasePool.h; path = "../../../Desktop/fmdb-master/src/fmdb/FMDatabasePool.h"; sourceTree = "<group>"; };
+		2F23D76220FDB8ED009E7ED4 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = "../../../Desktop/fmdb-master/src/fmdb/FMResultSet.h"; sourceTree = "<group>"; };
+		2F23D76320FDB8ED009E7ED4 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = "../../../Desktop/fmdb-master/src/fmdb/FMDatabasePool.m"; sourceTree = "<group>"; };
 		2F9EB62B20FD94F500B66287 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = ../../../../usr/lib/libsqlite3.dylib; sourceTree = "<group>"; };
 		49165F84CADA853B12BDB916 /* Pods-stv_project2.3.2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stv_project2.3.2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-stv_project2.3.2/Pods-stv_project2.3.2.debug.xcconfig"; sourceTree = "<group>"; };
 		A7AA83490AA24CEE98C452DA /* libPods-stv_project2.3.2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-stv_project2.3.2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F23D74720FDB7BF009E7ED4 /* libsqlite3.tbd in Frameworks */,
 				2F9EB62C20FD94F500B66287 /* libsqlite3.dylib in Frameworks */,
 				FE4459C83116532115763818 /* libPods-stv_project2.3.2.a in Frameworks */,
 			);
@@ -65,7 +69,6 @@
 		2F08D78120FD819300E84ECD = {
 			isa = PBXGroup;
 			children = (
-				2F9EB61B20FD93B000B66287 /* FMDB */,
 				2F08D78C20FD819300E84ECD /* stv_project2.3.2 */,
 				2F08D78B20FD819300E84ECD /* Products */,
 				4B0A67530117BAE8EAD508BF /* Pods */,
@@ -93,25 +96,19 @@
 				2F08D79820FD819400E84ECD /* LaunchScreen.storyboard */,
 				2F08D79B20FD819400E84ECD /* Info.plist */,
 				2F08D79C20FD819400E84ECD /* main.m */,
+				2F23D75A20FDB8ED009E7ED4 /* FMDatabase.h */,
+				2F23D75D20FDB8ED009E7ED4 /* FMDatabase.m */,
+				2F23D75E20FDB8ED009E7ED4 /* FMDatabaseAdditions.h */,
+				2F23D75920FDB8EC009E7ED4 /* FMDatabaseAdditions.m */,
+				2F23D76120FDB8ED009E7ED4 /* FMDatabasePool.h */,
+				2F23D76320FDB8ED009E7ED4 /* FMDatabasePool.m */,
+				2F23D75C20FDB8ED009E7ED4 /* FMDatabaseQueue.h */,
+				2F23D76020FDB8ED009E7ED4 /* FMDatabaseQueue.m */,
+				2F23D75F20FDB8ED009E7ED4 /* FMDB.h */,
+				2F23D76220FDB8ED009E7ED4 /* FMResultSet.h */,
+				2F23D75B20FDB8ED009E7ED4 /* FMResultSet.m */,
 			);
 			path = stv_project2.3.2;
-			sourceTree = "<group>";
-		};
-		2F9EB61B20FD93B000B66287 /* FMDB */ = {
-			isa = PBXGroup;
-			children = (
-				2F9EB61D20FD93D200B66287 /* FMDatabase.h */,
-				2F9EB62020FD93D200B66287 /* FMDatabase.m */,
-				2F9EB62120FD93D200B66287 /* FMDatabaseAdditions.h */,
-				2F9EB61C20FD93D200B66287 /* FMDatabaseAdditions.m */,
-				2F9EB62320FD93D200B66287 /* FMDatabasePool.h */,
-				2F9EB62520FD93D200B66287 /* FMDatabasePool.m */,
-				2F9EB61F20FD93D200B66287 /* FMDatabaseQueue.h */,
-				2F9EB62220FD93D200B66287 /* FMDatabaseQueue.m */,
-				2F9EB62420FD93D200B66287 /* FMResultSet.h */,
-				2F9EB61E20FD93D200B66287 /* FMResultSet.m */,
-			);
-			path = FMDB;
 			sourceTree = "<group>";
 		};
 		4B0A67530117BAE8EAD508BF /* Pods */ = {
@@ -126,6 +123,7 @@
 		D113DB4BCADD1EB6ED83FC8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2F23D74620FDB7BF009E7ED4 /* libsqlite3.tbd */,
 				A7AA83490AA24CEE98C452DA /* libPods-stv_project2.3.2.a */,
 				2F9EB62B20FD94F500B66287 /* libsqlite3.dylib */,
 			);
@@ -227,11 +225,11 @@
 				2F08D79220FD819300E84ECD /* ViewController.m in Sources */,
 				2F08D79D20FD819400E84ECD /* main.m in Sources */,
 				2F08D78F20FD819300E84ECD /* AppDelegate.m in Sources */,
-				2F9EB62920FD93D200B66287 /* FMDatabaseQueue.m in Sources */,
-				2F9EB62820FD93D200B66287 /* FMDatabase.m in Sources */,
-				2F9EB62A20FD93D200B66287 /* FMDatabasePool.m in Sources */,
-				2F9EB62620FD93D200B66287 /* FMDatabaseAdditions.m in Sources */,
-				2F9EB62720FD93D200B66287 /* FMResultSet.m in Sources */,
+				2F23D76720FDB8ED009E7ED4 /* FMDatabaseQueue.m in Sources */,
+				2F23D76620FDB8ED009E7ED4 /* FMDatabase.m in Sources */,
+				2F23D76820FDB8ED009E7ED4 /* FMDatabasePool.m in Sources */,
+				2F23D76420FDB8ED009E7ED4 /* FMDatabaseAdditions.m in Sources */,
+				2F23D76520FDB8ED009E7ED4 /* FMResultSet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +376,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.stv.stv-project2-3-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -395,6 +394,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.stv.stv-project2-3-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
