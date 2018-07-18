@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2F0E4A3320FEE46A0037A9C2 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F0E4A3220FEE46A0037A9C2 /* Register.storyboard */; };
+		2F0E4A3B20FEF73D0037A9C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F0E4A3920FEF73D0037A9C2 /* LaunchScreen.storyboard */; };
 		2F23D74720FDB7BF009E7ED4 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F23D74620FDB7BF009E7ED4 /* libsqlite3.tbd */; };
 		2F837F9620FEE11000CDD0AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F837F8620FEE11000CDD0AA /* Assets.xcassets */; };
 		2F837F9820FEE11000CDD0AA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F837F8920FEE11000CDD0AA /* AppDelegate.m */; };
@@ -31,9 +32,10 @@
 		2F08D78A20FD819300E84ECD /* stv_project2.3.2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = stv_project2.3.2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F08D79B20FD819400E84ECD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F0E4A3220FEE46A0037A9C2 /* Register.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Register.storyboard; path = "../../../Desktop/objc-basic-master/stv_project 2.3.5/stv_project 2.3.4/Register.storyboard"; sourceTree = "<group>"; };
+		2F0E4A3A20FEF73D0037A9C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F23D74620FDB7BF009E7ED4 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		2F837F8620FEE11000CDD0AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../Desktop/objc-basic-master/stv_project 2.3.6/stv_project 2.3.4/Assets.xcassets"; sourceTree = "<group>"; };
-		2F837F8920FEE11000CDD0AA /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = "../../../Desktop/objc-basic-master/stv_project 2.3.6/stv_project 2.3.4/AppDelegate.m"; sourceTree = "<group>"; };
+		2F837F8920FEE11000CDD0AA /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		2F837F8A20FEE11000CDD0AA /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegisterViewController.m; path = "../../../Desktop/objc-basic-master/stv_project 2.3.6/stv_project 2.3.4/RegisterViewController.m"; sourceTree = "<group>"; };
 		2F837F8B20FEE11000CDD0AA /* TodoList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TodoList.h; path = "../../../Desktop/objc-basic-master/stv_project 2.3.6/stv_project 2.3.4/TodoList.h"; sourceTree = "<group>"; };
 		2F837F8C20FEE11000CDD0AA /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomTableViewCell.h; path = "../../../Desktop/objc-basic-master/stv_project 2.3.6/stv_project 2.3.4/CustomTableViewCell.h"; sourceTree = "<group>"; };
@@ -42,7 +44,7 @@
 		2F837F9020FEE11000CDD0AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2F837F9220FEE11000CDD0AA /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = "../../../Desktop/objc-basic-master/stv_project 2.3.6/stv_project 2.3.4/ViewController.h"; sourceTree = "<group>"; };
 		2F837F9320FEE11000CDD0AA /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = "../../../Desktop/objc-basic-master/stv_project 2.3.6/stv_project 2.3.4/ViewController.m"; sourceTree = "<group>"; };
-		2F837F9420FEE11000CDD0AA /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = "../../../Desktop/objc-basic-master/stv_project 2.3.6/stv_project 2.3.4/AppDelegate.h"; sourceTree = "<group>"; };
+		2F837F9420FEE11000CDD0AA /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2F837F9520FEE11000CDD0AA /* TodoList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TodoList.m; path = "../../../Desktop/objc-basic-master/stv_project 2.3.6/stv_project 2.3.4/TodoList.m"; sourceTree = "<group>"; };
 		2F837F9F20FEE16400CDD0AA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "../../../Desktop/objc-basic-master/stv_project 2.3.6/stv_project 2.3.4/main.m"; sourceTree = "<group>"; };
 		2F837FA120FEE26F00CDD0AA /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = "../../../Desktop/fmdb-master/src/fmdb/FMDatabaseAdditions.m"; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				2F837F8920FEE11000CDD0AA /* AppDelegate.m */,
 				2F837F8C20FEE11000CDD0AA /* CustomTableViewCell.h */,
 				2F837F8E20FEE11000CDD0AA /* CustomTableViewCell.m */,
+				2F0E4A3920FEF73D0037A9C2 /* LaunchScreen.storyboard */,
 				2F0E4A3220FEE46A0037A9C2 /* Register.storyboard */,
 				2F837F8F20FEE11000CDD0AA /* Main.storyboard */,
 				2F837F8D20FEE11000CDD0AA /* RegisterViewController.h */,
@@ -204,6 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F837F9620FEE11000CDD0AA /* Assets.xcassets in Resources */,
+				2F0E4A3B20FEF73D0037A9C2 /* LaunchScreen.storyboard in Resources */,
 				2F837F9B20FEE11000CDD0AA /* Main.storyboard in Resources */,
 				2F0E4A3320FEE46A0037A9C2 /* Register.storyboard in Resources */,
 			);
@@ -254,6 +258,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		2F0E4A3920FEF73D0037A9C2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F0E4A3A20FEF73D0037A9C2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		2F837F8F20FEE11000CDD0AA /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
