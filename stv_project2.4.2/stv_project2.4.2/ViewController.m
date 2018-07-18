@@ -9,9 +9,10 @@
 #import "ViewController.h"
 #import "AFNetworking.h"
 
+
 @interface ViewController ()
 @end
-
+//ATS対策をする際にはNSAllowsArbitraryLoadsのみで良い！！
 NSString *const weather = @"http://weather.livedoor.com/forecast/webservice/json/v1?city=130010";
 
 @implementation ViewController
