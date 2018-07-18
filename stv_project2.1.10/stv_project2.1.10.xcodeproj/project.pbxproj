@@ -10,11 +10,10 @@
 		2F01E8FB20F5DC8F00428D6F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F01E8FA20F5DC8F00428D6F /* AppDelegate.m */; };
 		2F01E8FE20F5DC8F00428D6F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F01E8FD20F5DC8F00428D6F /* ViewController.m */; };
 		2F01E90120F5DC8F00428D6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F01E8FF20F5DC8F00428D6F /* Main.storyboard */; };
-		2F01E90320F5DC8F00428D6F /* plist.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F01E90220F5DC8F00428D6F /* plist.xcassets */; };
+		2F01E90320F5DC8F00428D6F /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F01E90220F5DC8F00428D6F /* Media.xcassets */; };
 		2F01E90620F5DC8F00428D6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F01E90420F5DC8F00428D6F /* LaunchScreen.storyboard */; };
 		2F01E90920F5DC8F00428D6F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F01E90820F5DC8F00428D6F /* main.m */; };
-		2F2718D820F832B100A5A489 /* imageList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2F2718D720F832B100A5A489 /* imageList.plist */; };
-		2F2718DC20F89D3B00A5A489 /* imageList2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2F2718DB20F89D3B00A5A489 /* imageList2.plist */; };
+		2F0E4A3D20FEFA030037A9C2 /* dList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2F0E4A3C20FEFA030037A9C2 /* dList.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,12 +23,11 @@
 		2F01E8FC20F5DC8F00428D6F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		2F01E8FD20F5DC8F00428D6F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		2F01E90020F5DC8F00428D6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2F01E90220F5DC8F00428D6F /* plist.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = plist.xcassets; sourceTree = "<group>"; };
+		2F01E90220F5DC8F00428D6F /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		2F01E90520F5DC8F00428D6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F01E90720F5DC8F00428D6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F01E90820F5DC8F00428D6F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2F2718D720F832B100A5A489 /* imageList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = imageList.plist; sourceTree = "<group>"; };
-		2F2718DB20F89D3B00A5A489 /* imageList2.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = imageList2.plist; sourceTree = "<group>"; };
+		2F0E4A3C20FEFA030037A9C2 /* dList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = dList.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,16 +60,15 @@
 		2F01E8F820F5DC8F00428D6F /* stv_project2.1.10 */ = {
 			isa = PBXGroup;
 			children = (
+				2F0E4A3C20FEFA030037A9C2 /* dList.plist */,
 				2F01E8F920F5DC8F00428D6F /* AppDelegate.h */,
 				2F01E8FA20F5DC8F00428D6F /* AppDelegate.m */,
 				2F01E8FC20F5DC8F00428D6F /* ViewController.h */,
 				2F01E8FD20F5DC8F00428D6F /* ViewController.m */,
 				2F01E8FF20F5DC8F00428D6F /* Main.storyboard */,
-				2F01E90220F5DC8F00428D6F /* plist.xcassets */,
+				2F01E90220F5DC8F00428D6F /* Media.xcassets */,
 				2F01E90420F5DC8F00428D6F /* LaunchScreen.storyboard */,
 				2F01E90720F5DC8F00428D6F /* Info.plist */,
-				2F2718D720F832B100A5A489 /* imageList.plist */,
-				2F2718DB20F89D3B00A5A489 /* imageList2.plist */,
 				2F01E90820F5DC8F00428D6F /* main.m */,
 			);
 			path = stv_project2.1.10;
@@ -135,9 +132,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F01E90620F5DC8F00428D6F /* LaunchScreen.storyboard in Resources */,
-				2F2718DC20F89D3B00A5A489 /* imageList2.plist in Resources */,
-				2F01E90320F5DC8F00428D6F /* plist.xcassets in Resources */,
-				2F2718D820F832B100A5A489 /* imageList.plist in Resources */,
+				2F01E90320F5DC8F00428D6F /* Media.xcassets in Resources */,
+				2F0E4A3D20FEFA030037A9C2 /* dList.plist in Resources */,
 				2F01E90120F5DC8F00428D6F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
