@@ -19,6 +19,7 @@
 		2F23D76620FDB8ED009E7ED4 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F23D75D20FDB8ED009E7ED4 /* FMDatabase.m */; };
 		2F23D76720FDB8ED009E7ED4 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F23D76020FDB8ED009E7ED4 /* FMDatabaseQueue.m */; };
 		2F23D76820FDB8ED009E7ED4 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F23D76320FDB8ED009E7ED4 /* FMDatabasePool.m */; };
+		2F8C2EEE20FDEE0000DFFD18 /* InputViwController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8C2EED20FDEE0000DFFD18 /* InputViwController.m */; };
 		2F9EB62C20FD94F500B66287 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9EB62B20FD94F500B66287 /* libsqlite3.dylib */; };
 		FE4459C83116532115763818 /* libPods-stv_project2.3.2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7AA83490AA24CEE98C452DA /* libPods-stv_project2.3.2.a */; };
 /* End PBXBuildFile section */
@@ -47,6 +48,8 @@
 		2F23D76120FDB8ED009E7ED4 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabasePool.h; path = "../../../Desktop/fmdb-master/src/fmdb/FMDatabasePool.h"; sourceTree = "<group>"; };
 		2F23D76220FDB8ED009E7ED4 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = "../../../Desktop/fmdb-master/src/fmdb/FMResultSet.h"; sourceTree = "<group>"; };
 		2F23D76320FDB8ED009E7ED4 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = "../../../Desktop/fmdb-master/src/fmdb/FMDatabasePool.m"; sourceTree = "<group>"; };
+		2F8C2EEC20FDEE0000DFFD18 /* InputViwController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputViwController.h; sourceTree = "<group>"; };
+		2F8C2EED20FDEE0000DFFD18 /* InputViwController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputViwController.m; sourceTree = "<group>"; };
 		2F9EB62B20FD94F500B66287 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = ../../../../usr/lib/libsqlite3.dylib; sourceTree = "<group>"; };
 		49165F84CADA853B12BDB916 /* Pods-stv_project2.3.2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stv_project2.3.2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-stv_project2.3.2/Pods-stv_project2.3.2.debug.xcconfig"; sourceTree = "<group>"; };
 		A7AA83490AA24CEE98C452DA /* libPods-stv_project2.3.2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-stv_project2.3.2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,6 +94,8 @@
 				2F08D78E20FD819300E84ECD /* AppDelegate.m */,
 				2F08D79020FD819300E84ECD /* ViewController.h */,
 				2F08D79120FD819300E84ECD /* ViewController.m */,
+				2F8C2EEC20FDEE0000DFFD18 /* InputViwController.h */,
+				2F8C2EED20FDEE0000DFFD18 /* InputViwController.m */,
 				2F08D79320FD819300E84ECD /* Main.storyboard */,
 				2F08D79620FD819400E84ECD /* Assets.xcassets */,
 				2F08D79820FD819400E84ECD /* LaunchScreen.storyboard */,
@@ -227,6 +232,7 @@
 				2F08D78F20FD819300E84ECD /* AppDelegate.m in Sources */,
 				2F23D76720FDB8ED009E7ED4 /* FMDatabaseQueue.m in Sources */,
 				2F23D76620FDB8ED009E7ED4 /* FMDatabase.m in Sources */,
+				2F8C2EEE20FDEE0000DFFD18 /* InputViwController.m in Sources */,
 				2F23D76820FDB8ED009E7ED4 /* FMDatabasePool.m in Sources */,
 				2F23D76420FDB8ED009E7ED4 /* FMDatabaseAdditions.m in Sources */,
 				2F23D76520FDB8ED009E7ED4 /* FMResultSet.m in Sources */,

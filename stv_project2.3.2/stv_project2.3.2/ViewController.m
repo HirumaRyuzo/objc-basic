@@ -8,14 +8,17 @@
 
 #import "FMDB.h"
 #import "ViewController.h"
+#import "InputViwController.h"
 
 // 接続
 @interface ViewController () {
     // FMDBオブジェクト
     FMDatabase *_db;
+    NSMutableArray *uid;
+    NSMutableArray *limit;
 }
 
-@property (weak, nonatomic) IBOutlet UITextView *teString;
+//@property (weak, nonatomic) IBOutlet UITextView *teString;
 
 @end
 
@@ -24,17 +27,8 @@
 
 - (void)viewDidLoad{
     [super viewDidLoad];
-    
-    //    if(![db open]) {
-    //        return;    // dbのオープンに失敗した
-    //    }
-    //    [db setShouldCacheStatements:YES];
-    //    [db setCrashOnErrors:YES];
-    //
-    //    if(![db columnExists:@"tr_todo" columnName:@"（カラム名）"]) {
-    //        NSString* sql = [NSString stringWithFormat:@"ALTER TABLE （テーブル名） ADD COLUMN （カラム名） INTEGER DEFAULT 0"];
-    //        [db executeUpdate:sql];
-    
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
     //NSSearchPathForDirectoriesInDomains:メソッドを使用し、シミュレータであれば以下のようなDocumentsフォルダのパスを取得します。
     //Users/username/Library/Application Support/iPhone Simulator/5.1/Applications/xxxxxx/Documents/
     NSArray *paths = NSSearchPathForDirectoriesInDomains( NSDocumentDirectory, NSUserDomainMask, YES );
@@ -45,22 +39,64 @@
     //ファイルが既にある場合は参照、なければ新規にデータベースファイルを作成し、FMDatabaseインスタンスを返します。
     FMDatabase *db = [FMDatabase databaseWithPath:[dir stringByAppendingPathComponent:@"test.db"]];
 
-//    NSString *sql = @"CREATE TABLE IF NOT EXISTS tr_todo (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT);";
-    NSString *sql = @"CREATE TABLE IF NOT EXISTS tr_todo (todo_id INTEGER PRIMARY KEY,todo_title TEXT,todo_contents TEXT,created date,modified date,limit_date date,delete_flg TEXT);";
+    //例文  NSString *sql = @"CREATE TABLE IF NOT EXISTS tr_todo (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT);";
+    NSString *sql = @"CREATE TABLE IF NOT EXISTS tr_todo (todo_id INTEGER PRIMARY KEY,todo_title TEXT,todo_contents TEXT,created date,modified date,limit_date TEXT,delete_flg Integer);";
     
     //ディレクトリの場所を表示する
     NSLog(@"%@", NSHomeDirectory());
-    //検索できたらそのコードをスポットライトで検索して
+    //検索できたらそのコードをスポットライトで検索して出てきたファイルをSQLiteビューワーにドラッグ
     
     // DBオープン
     [db open];
     [db executeUpdate:sql];
+    NSString *select = [[NSString alloc] initWithFormat:@"SELECT * from tr_todo"];
+    FMResultSet *rs = [db executeQuery:select];
+    uid = [NSMutableArray new];
+    limit = [NSMutableArray new];
+    while([rs next]) {
+        [uid addObject:[rs stringForColumn:@"todo_title"]];
+        [limit addObject:[rs stringForColumn:@"limit_date"]];
+    }
+    NSLog(@"aaa%@",uid[0]);
     // DBクローズ
     [db close];
-
-
 }
 
+//Table Viewのセクション数を指定
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    // 今回はセクション１個
+    return 1;
+}
+
+//Table Viewのセルの数を指定
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    // 今回は要素８個
+    return 2;
+}
+
+//各セルの要素を設定する
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *CellIdentifier = @"tableCell";
+    
+    // tableCell の ID で UITableViewCell のインスタンスを生成
+    UITableViewCell *cell =
+    [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    
+    if(cell==nil){
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
+    }
+    
+    // Tag番号 1 で UILabel インスタンスの生成
+//    UILabel *titleLabel = (UILabel *)[cell viewWithTag:1];
+//    titleLabel.text = [NSString stringWithFormat:@"No.%d",(int)(indexPath.row+1)];
+    self.titleLabel.text = uid[indexPath.row];
+    // Tag番号 2 で UILabel インスタンスの生成
+//    UILabel *limitLabel = (UILabel *)[cell viewWithTag:2];
+//    limitLabel.text = [NSString stringWithFormat:@"No.%d",(int)(indexPath.row+1)];
+    self.limitLabel.text = limit[indexPath.row];
+    
+    return cell;
+}
 
 //// [Open]押した時
 //- (IBAction)proc01:(id)sender {
