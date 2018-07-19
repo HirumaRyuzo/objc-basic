@@ -41,7 +41,7 @@
     for (i = 0; i < [registerContent count]; i++) {
         wether = registerContent[i];
         NSString *wt_state = wether.wtState;
-        NSString *wt_date  = wether.wtDa;
+        NSString *wt_date  = wether.wtDate;
         NSString *wt_icon  = wether.wtIcon;
         
         [fm executeUpdate:createTableSql];
@@ -99,7 +99,7 @@
         // ↓whileの中に書かないと一行のみを繰り返す
         Wether *wetherList = [Wether new];
         wetherList.wtState = [results stringForColumn:@"wt_state"];
-        wetherList.wtDa  = [results stringForColumn:@"wt_date"];
+        wetherList.wtDate  = [results stringForColumn:@"wt_date"];
         wetherList.wtIcon  = [results stringForColumn:@"wt_icon"];
         
         [wetherArr addObject:wetherList];

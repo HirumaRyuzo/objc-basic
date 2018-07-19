@@ -70,7 +70,7 @@ const NSString *getWether = @"http://weather.livedoor.com/forecast/webservice/js
                  for (NSDictionary *forecast in self.forecasts) {
                      
                      Wether *wetherClass  = [Wether new];
-                     wetherClass.wtDa  = forecast[@"date"];
+                     wetherClass.wtDate  = forecast[@"date"];
                      wetherClass.wtState = forecast[@"telop"];
                      wetherClass.wtIcon  = forecast[@"image"][@"url"];
                      
@@ -136,7 +136,7 @@ const NSString *getWether = @"http://weather.livedoor.com/forecast/webservice/js
             });
         });
         
-        cell.cellDateLabel.text = wetherList.wtDa;
+        cell.cellDateLabel.text = wetherList.wtDate;
         cell.cellTelop.text     = wetherList.wtState;
     }
     return cell;
