@@ -111,18 +111,7 @@
 				2FE1372221008540005D1FD7 /* WetherTableViewCell.m */,
 				2FB0FF6C21008173001E5385 /* Main.storyboard */,
 				2FB0FF6F21008174001E5385 /* Assets.xcassets */,
-				2FE1372D21009D59005D1FD7 /* FMDatabase.h */,
-				2FE1372F21009D59005D1FD7 /* FMDatabase.m */,
-				2FE1372721009D59005D1FD7 /* FMDatabaseAdditions.h */,
-				2FE1372821009D59005D1FD7 /* FMDatabaseAdditions.m */,
 				2FE1373721009E88005D1FD7 /* New Group */,
-				2FE1372921009D59005D1FD7 /* FMDatabasePool.h */,
-				2FE1373021009D59005D1FD7 /* FMDatabasePool.m */,
-				2FE1372C21009D59005D1FD7 /* FMDatabaseQueue.h */,
-				2FE1372E21009D59005D1FD7 /* FMDatabaseQueue.m */,
-				2FE1373121009D59005D1FD7 /* FMDB.h */,
-				2FE1372A21009D59005D1FD7 /* FMResultSet.h */,
-				2FE1372B21009D59005D1FD7 /* FMResultSet.m */,
 				2FB0FF7121008174001E5385 /* LaunchScreen.storyboard */,
 				2FB0FF7421008174001E5385 /* Info.plist */,
 				2FB0FF7521008174001E5385 /* main.m */,
@@ -133,6 +122,17 @@
 		2FE1373721009E88005D1FD7 /* New Group */ = {
 			isa = PBXGroup;
 			children = (
+				2FE1372921009D59005D1FD7 /* FMDatabasePool.h */,
+				2FE1373021009D59005D1FD7 /* FMDatabasePool.m */,
+				2FE1372C21009D59005D1FD7 /* FMDatabaseQueue.h */,
+				2FE1372E21009D59005D1FD7 /* FMDatabaseQueue.m */,
+				2FE1373121009D59005D1FD7 /* FMDB.h */,
+				2FE1372A21009D59005D1FD7 /* FMResultSet.h */,
+				2FE1372B21009D59005D1FD7 /* FMResultSet.m */,
+				2FE1372D21009D59005D1FD7 /* FMDatabase.h */,
+				2FE1372F21009D59005D1FD7 /* FMDatabase.m */,
+				2FE1372721009D59005D1FD7 /* FMDatabaseAdditions.h */,
+				2FE1372821009D59005D1FD7 /* FMDatabaseAdditions.m */,
 			);
 			name = "New Group";
 			sourceTree = "<group>";

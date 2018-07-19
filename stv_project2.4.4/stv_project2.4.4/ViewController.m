@@ -46,12 +46,14 @@ const NSString *getWether = @"http://weather.livedoor.com/forecast/webservice/js
     
     // DBから入れ直す
     Model *dbModel = [Model new];
-    // selector生成
+    // SELという特別なselectorを格納するための型の変数
     SEL checkSelector = @selector(checkDBTable);
     self.isBoolDB     = [dbModel performSelector:checkSelector];
     
     SEL wetherSelector = @selector(fetchWether);
     self.wetherLists   = [dbModel performSelector:wetherSelector];
+    //DBの位置を特定できる
+    NSLog(@"%@", NSHomeDirectory());
 }
 
 // APIからいろいろ取ってくる
@@ -68,9 +70,9 @@ const NSString *getWether = @"http://weather.livedoor.com/forecast/webservice/js
                  for (NSDictionary *forecast in self.forecasts) {
                      
                      Wether *wetherClass  = [Wether new];
-                     wetherClass.wt_date  = forecast[@"date"];
-                     wetherClass.wt_state = forecast[@"telop"];
-                     wetherClass.wt_icon  = forecast[@"image"][@"url"];
+                     wetherClass.wtDa  = forecast[@"date"];
+                     wetherClass.wtState = forecast[@"telop"];
+                     wetherClass.wtIcon  = forecast[@"image"][@"url"];
                      
                      [self.wether addObject:wetherClass];
                      [self.wetherTable reloadData];
@@ -124,7 +126,7 @@ const NSString *getWether = @"http://weather.livedoor.com/forecast/webservice/js
         dispatch_queue_t q_main   = dispatch_get_main_queue();
         cell.cellImg.image = nil;
         dispatch_async(q_global, ^{
-            NSURL *url       = [NSURL URLWithString:wetherList.wt_icon];
+            NSURL *url       = [NSURL URLWithString:wetherList.wtIcon];
             NSData *data     = [NSData dataWithContentsOfURL:url];
             UIImage *imgData = [UIImage imageWithData:data];
             
@@ -134,8 +136,8 @@ const NSString *getWether = @"http://weather.livedoor.com/forecast/webservice/js
             });
         });
         
-        cell.cellDateLabel.text = wetherList.wt_date;
-        cell.cellTelop.text     = wetherList.wt_state;
+        cell.cellDateLabel.text = wetherList.wtDa;
+        cell.cellTelop.text     = wetherList.wtState;
     }
     return cell;
 }

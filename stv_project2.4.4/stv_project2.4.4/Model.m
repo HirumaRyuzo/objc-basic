@@ -40,9 +40,9 @@
     int i;
     for (i = 0; i < [registerContent count]; i++) {
         wether = registerContent[i];
-        NSString *wt_state = wether.wt_state;
-        NSString *wt_date  = wether.wt_date;
-        NSString *wt_icon  = wether.wt_icon;
+        NSString *wt_state = wether.wtState;
+        NSString *wt_date  = wether.wtDa;
+        NSString *wt_icon  = wether.wtIcon;
         
         [fm executeUpdate:createTableSql];
         
@@ -98,9 +98,9 @@
     while ([results next]) {
         // ↓whileの中に書かないと一行のみを繰り返す
         Wether *wetherList = [Wether new];
-        wetherList.wt_state = [results stringForColumn:@"wt_state"];
-        wetherList.wt_date  = [results stringForColumn:@"wt_date"];
-        wetherList.wt_icon  = [results stringForColumn:@"wt_icon"];
+        wetherList.wtState = [results stringForColumn:@"wt_state"];
+        wetherList.wtDa  = [results stringForColumn:@"wt_date"];
+        wetherList.wtIcon  = [results stringForColumn:@"wt_icon"];
         
         [wetherArr addObject:wetherList];
     }

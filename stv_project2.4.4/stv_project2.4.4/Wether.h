@@ -10,8 +10,8 @@
 
 @interface Wether : NSObject
 
-@property NSString *wt_date;
-@property NSString *wt_state;
-@property NSString *wt_icon;
+@property NSString *wtDate;
+@property NSString *wtState;
+@property NSString *wtIcon;
 
 @end
