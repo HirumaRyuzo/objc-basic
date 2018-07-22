@@ -7,90 +7,90 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2FF6132E2101D18200EDA71D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF6132D2101D18200EDA71D /* AppDelegate.m */; };
-		2FF613312101D18200EDA71D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF613302101D18200EDA71D /* ViewController.m */; };
-		2FF613342101D18200EDA71D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FF613322101D18200EDA71D /* Main.storyboard */; };
-		2FF613362101D18200EDA71D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FF613352101D18200EDA71D /* Assets.xcassets */; };
-		2FF613392101D18200EDA71D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FF613372101D18200EDA71D /* LaunchScreen.storyboard */; };
-		2FF6133C2101D18200EDA71D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF6133B2101D18200EDA71D /* main.m */; };
-		DF452378B0865407F6025A18 /* libPods-stv_project2.4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C5502344E3D12EEFBE9694A /* libPods-stv_project2.4.7.a */; };
+		015417BE2D365EC7A4793C9F /* libPods-stv_project2.4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 965BC1F41281614976A3D9C5 /* libPods-stv_project2.4.7.a */; };
+		2F9DAB5A2104605A00E78AFD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9DAB592104605A00E78AFD /* AppDelegate.m */; };
+		2F9DAB5D2104605A00E78AFD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9DAB5C2104605A00E78AFD /* ViewController.m */; };
+		2F9DAB602104605A00E78AFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F9DAB5E2104605A00E78AFD /* Main.storyboard */; };
+		2F9DAB622104605A00E78AFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F9DAB612104605A00E78AFD /* Assets.xcassets */; };
+		2F9DAB652104605A00E78AFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F9DAB632104605A00E78AFD /* LaunchScreen.storyboard */; };
+		2F9DAB682104605A00E78AFD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9DAB672104605A00E78AFD /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2FF613292101D18100EDA71D /* stv_project2.4.7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = stv_project2.4.7.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2FF6132C2101D18100EDA71D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		2FF6132D2101D18200EDA71D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2FF6132F2101D18200EDA71D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2FF613302101D18200EDA71D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		2FF613332101D18200EDA71D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2FF613352101D18200EDA71D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2FF613382101D18200EDA71D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		2FF6133A2101D18200EDA71D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2FF6133B2101D18200EDA71D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		3E34796EBAD3FF3C86B50A02 /* Pods-stv_project2.4.7.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stv_project2.4.7.debug.xcconfig"; path = "Pods/Target Support Files/Pods-stv_project2.4.7/Pods-stv_project2.4.7.debug.xcconfig"; sourceTree = "<group>"; };
-		5C5502344E3D12EEFBE9694A /* libPods-stv_project2.4.7.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-stv_project2.4.7.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6F279AA59EC672EE5E61EF09 /* Pods-stv_project2.4.7.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stv_project2.4.7.release.xcconfig"; path = "Pods/Target Support Files/Pods-stv_project2.4.7/Pods-stv_project2.4.7.release.xcconfig"; sourceTree = "<group>"; };
+		2F9DAB552104605A00E78AFD /* stv_project2.4.7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = stv_project2.4.7.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F9DAB582104605A00E78AFD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2F9DAB592104605A00E78AFD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2F9DAB5B2104605A00E78AFD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2F9DAB5C2104605A00E78AFD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2F9DAB5F2104605A00E78AFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2F9DAB612104605A00E78AFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2F9DAB642104605A00E78AFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2F9DAB662104605A00E78AFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F9DAB672104605A00E78AFD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		713B6202DA877D3AD420B4AA /* Pods-stv_project2.4.7.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stv_project2.4.7.release.xcconfig"; path = "Pods/Target Support Files/Pods-stv_project2.4.7/Pods-stv_project2.4.7.release.xcconfig"; sourceTree = "<group>"; };
+		965BC1F41281614976A3D9C5 /* libPods-stv_project2.4.7.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-stv_project2.4.7.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2AE5C3D5058BF7111893F50 /* Pods-stv_project2.4.7.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stv_project2.4.7.debug.xcconfig"; path = "Pods/Target Support Files/Pods-stv_project2.4.7/Pods-stv_project2.4.7.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2FF613262101D18100EDA71D /* Frameworks */ = {
+		2F9DAB522104605A00E78AFD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF452378B0865407F6025A18 /* libPods-stv_project2.4.7.a in Frameworks */,
+				015417BE2D365EC7A4793C9F /* libPods-stv_project2.4.7.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2FF613202101D18100EDA71D = {
+		2F9DAB4C2104605A00E78AFD = {
 			isa = PBXGroup;
 			children = (
-				2FF6132B2101D18100EDA71D /* stv_project2.4.7 */,
-				2FF6132A2101D18100EDA71D /* Products */,
-				52DC171A222D359FE78C564A /* Pods */,
-				E7BE0D3D45D3A7DCF5EF4634 /* Frameworks */,
+				2F9DAB572104605A00E78AFD /* stv_project2.4.7 */,
+				2F9DAB562104605A00E78AFD /* Products */,
+				556B0CB3A1D8796340BD35BE /* Pods */,
+				6565F61AF8C7078F2A293DFA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		2FF6132A2101D18100EDA71D /* Products */ = {
+		2F9DAB562104605A00E78AFD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2FF613292101D18100EDA71D /* stv_project2.4.7.app */,
+				2F9DAB552104605A00E78AFD /* stv_project2.4.7.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2FF6132B2101D18100EDA71D /* stv_project2.4.7 */ = {
+		2F9DAB572104605A00E78AFD /* stv_project2.4.7 */ = {
 			isa = PBXGroup;
 			children = (
-				2FF6132C2101D18100EDA71D /* AppDelegate.h */,
-				2FF6132D2101D18200EDA71D /* AppDelegate.m */,
-				2FF6132F2101D18200EDA71D /* ViewController.h */,
-				2FF613302101D18200EDA71D /* ViewController.m */,
-				2FF613322101D18200EDA71D /* Main.storyboard */,
-				2FF613352101D18200EDA71D /* Assets.xcassets */,
-				2FF613372101D18200EDA71D /* LaunchScreen.storyboard */,
-				2FF6133A2101D18200EDA71D /* Info.plist */,
-				2FF6133B2101D18200EDA71D /* main.m */,
+				2F9DAB582104605A00E78AFD /* AppDelegate.h */,
+				2F9DAB592104605A00E78AFD /* AppDelegate.m */,
+				2F9DAB5B2104605A00E78AFD /* ViewController.h */,
+				2F9DAB5C2104605A00E78AFD /* ViewController.m */,
+				2F9DAB5E2104605A00E78AFD /* Main.storyboard */,
+				2F9DAB612104605A00E78AFD /* Assets.xcassets */,
+				2F9DAB632104605A00E78AFD /* LaunchScreen.storyboard */,
+				2F9DAB662104605A00E78AFD /* Info.plist */,
+				2F9DAB672104605A00E78AFD /* main.m */,
 			);
 			path = stv_project2.4.7;
 			sourceTree = "<group>";
 		};
-		52DC171A222D359FE78C564A /* Pods */ = {
+		556B0CB3A1D8796340BD35BE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3E34796EBAD3FF3C86B50A02 /* Pods-stv_project2.4.7.debug.xcconfig */,
-				6F279AA59EC672EE5E61EF09 /* Pods-stv_project2.4.7.release.xcconfig */,
+				F2AE5C3D5058BF7111893F50 /* Pods-stv_project2.4.7.debug.xcconfig */,
+				713B6202DA877D3AD420B4AA /* Pods-stv_project2.4.7.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		E7BE0D3D45D3A7DCF5EF4634 /* Frameworks */ = {
+		6565F61AF8C7078F2A293DFA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5C5502344E3D12EEFBE9694A /* libPods-stv_project2.4.7.a */,
+				965BC1F41281614976A3D9C5 /* libPods-stv_project2.4.7.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -98,16 +98,16 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2FF613282101D18100EDA71D /* stv_project2.4.7 */ = {
+		2F9DAB542104605A00E78AFD /* stv_project2.4.7 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2FF6133F2101D18200EDA71D /* Build configuration list for PBXNativeTarget "stv_project2.4.7" */;
+			buildConfigurationList = 2F9DAB6B2104605A00E78AFD /* Build configuration list for PBXNativeTarget "stv_project2.4.7" */;
 			buildPhases = (
-				9986BAAFF0AA86DF54CC33BB /* [CP] Check Pods Manifest.lock */,
-				2FF613252101D18100EDA71D /* Sources */,
-				2FF613262101D18100EDA71D /* Frameworks */,
-				2FF613272101D18100EDA71D /* Resources */,
-				CB1E26CB96DE1413AF7F73AA /* [CP] Embed Pods Frameworks */,
-				481D02C7BE5C3EF96FB579D7 /* [CP] Copy Pods Resources */,
+				B31523982B52A092CC5C605F /* [CP] Check Pods Manifest.lock */,
+				2F9DAB512104605A00E78AFD /* Sources */,
+				2F9DAB522104605A00E78AFD /* Frameworks */,
+				2F9DAB532104605A00E78AFD /* Resources */,
+				9B1544E6809B839C71C56872 /* [CP] Embed Pods Frameworks */,
+				91552C09D576192CA865C7AA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -115,24 +115,24 @@
 			);
 			name = stv_project2.4.7;
 			productName = stv_project2.4.7;
-			productReference = 2FF613292101D18100EDA71D /* stv_project2.4.7.app */;
+			productReference = 2F9DAB552104605A00E78AFD /* stv_project2.4.7.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		2FF613212101D18100EDA71D /* Project object */ = {
+		2F9DAB4D2104605A00E78AFD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "比留間龍三";
 				TargetAttributes = {
-					2FF613282101D18100EDA71D = {
+					2F9DAB542104605A00E78AFD = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
 				};
 			};
-			buildConfigurationList = 2FF613242101D18100EDA71D /* Build configuration list for PBXProject "stv_project2.4.7" */;
+			buildConfigurationList = 2F9DAB502104605A00E78AFD /* Build configuration list for PBXProject "stv_project2.4.7" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -140,31 +140,31 @@
 				en,
 				Base,
 			);
-			mainGroup = 2FF613202101D18100EDA71D;
-			productRefGroup = 2FF6132A2101D18100EDA71D /* Products */;
+			mainGroup = 2F9DAB4C2104605A00E78AFD;
+			productRefGroup = 2F9DAB562104605A00E78AFD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2FF613282101D18100EDA71D /* stv_project2.4.7 */,
+				2F9DAB542104605A00E78AFD /* stv_project2.4.7 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2FF613272101D18100EDA71D /* Resources */ = {
+		2F9DAB532104605A00E78AFD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FF613392101D18200EDA71D /* LaunchScreen.storyboard in Resources */,
-				2FF613362101D18200EDA71D /* Assets.xcassets in Resources */,
-				2FF613342101D18200EDA71D /* Main.storyboard in Resources */,
+				2F9DAB652104605A00E78AFD /* LaunchScreen.storyboard in Resources */,
+				2F9DAB622104605A00E78AFD /* Assets.xcassets in Resources */,
+				2F9DAB602104605A00E78AFD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		481D02C7BE5C3EF96FB579D7 /* [CP] Copy Pods Resources */ = {
+		91552C09D576192CA865C7AA /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -182,25 +182,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-stv_project2.4.7/Pods-stv_project2.4.7-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9986BAAFF0AA86DF54CC33BB /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-stv_project2.4.7-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CB1E26CB96DE1413AF7F73AA /* [CP] Embed Pods Frameworks */ = {
+		9B1544E6809B839C71C56872 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -220,34 +202,52 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-stv_project2.4.7/Pods-stv_project2.4.7-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B31523982B52A092CC5C605F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-stv_project2.4.7-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2FF613252101D18100EDA71D /* Sources */ = {
+		2F9DAB512104605A00E78AFD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FF613312101D18200EDA71D /* ViewController.m in Sources */,
-				2FF6133C2101D18200EDA71D /* main.m in Sources */,
-				2FF6132E2101D18200EDA71D /* AppDelegate.m in Sources */,
+				2F9DAB5D2104605A00E78AFD /* ViewController.m in Sources */,
+				2F9DAB682104605A00E78AFD /* main.m in Sources */,
+				2F9DAB5A2104605A00E78AFD /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		2FF613322101D18200EDA71D /* Main.storyboard */ = {
+		2F9DAB5E2104605A00E78AFD /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2FF613332101D18200EDA71D /* Base */,
+				2F9DAB5F2104605A00E78AFD /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		2FF613372101D18200EDA71D /* LaunchScreen.storyboard */ = {
+		2F9DAB632104605A00E78AFD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2FF613382101D18200EDA71D /* Base */,
+				2F9DAB642104605A00E78AFD /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -255,7 +255,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		2FF6133D2101D18200EDA71D /* Debug */ = {
+		2F9DAB692104605A00E78AFD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -313,7 +313,7 @@
 			};
 			name = Debug;
 		};
-		2FF6133E2101D18200EDA71D /* Release */ = {
+		2F9DAB6A2104605A00E78AFD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -365,12 +365,16 @@
 			};
 			name = Release;
 		};
-		2FF613402101D18200EDA71D /* Debug */ = {
+		2F9DAB6C2104605A00E78AFD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3E34796EBAD3FF3C86B50A02 /* Pods-stv_project2.4.7.debug.xcconfig */;
+			baseConfigurationReference = F2AE5C3D5058BF7111893F50 /* Pods-stv_project2.4.7.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = stv_project2.4.7/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -382,12 +386,16 @@
 			};
 			name = Debug;
 		};
-		2FF613412101D18200EDA71D /* Release */ = {
+		2F9DAB6D2104605A00E78AFD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6F279AA59EC672EE5E61EF09 /* Pods-stv_project2.4.7.release.xcconfig */;
+			baseConfigurationReference = 713B6202DA877D3AD420B4AA /* Pods-stv_project2.4.7.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = stv_project2.4.7/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -402,25 +410,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2FF613242101D18100EDA71D /* Build configuration list for PBXProject "stv_project2.4.7" */ = {
+		2F9DAB502104605A00E78AFD /* Build configuration list for PBXProject "stv_project2.4.7" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2FF6133D2101D18200EDA71D /* Debug */,
-				2FF6133E2101D18200EDA71D /* Release */,
+				2F9DAB692104605A00E78AFD /* Debug */,
+				2F9DAB6A2104605A00E78AFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2FF6133F2101D18200EDA71D /* Build configuration list for PBXNativeTarget "stv_project2.4.7" */ = {
+		2F9DAB6B2104605A00E78AFD /* Build configuration list for PBXNativeTarget "stv_project2.4.7" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2FF613402101D18200EDA71D /* Debug */,
-				2FF613412101D18200EDA71D /* Release */,
+				2F9DAB6C2104605A00E78AFD /* Debug */,
+				2F9DAB6D2104605A00E78AFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 2FF613212101D18100EDA71D /* Project object */;
+	rootObject = 2F9DAB4D2104605A00E78AFD /* Project object */;
 }

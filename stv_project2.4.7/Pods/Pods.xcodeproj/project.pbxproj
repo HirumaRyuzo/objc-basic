@@ -3,26 +3,32 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2E47E230C179387836E279388AC19F1B /* Pods-stv_project2.4.7-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3972E39ACCC76A0D79AD8940EDA8B8 /* Pods-stv_project2.4.7-dummy.m */; };
+		2F12A5CB2104806F008524EB /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F12A5C72104806F008524EB /* TwitterKit.framework */; };
+		2F12A5CC2104806F008524EB /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F12A5C82104806F008524EB /* TwitterCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2AD20DB4B84E5FC9D75A900B3AC062EA /* Pods-stv_project2.4.7.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-stv_project2.4.7.debug.xcconfig"; sourceTree = "<group>"; };
+		2F12A5C72104806F008524EB /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwitterKit.framework; path = ../TwitterKit.framework; sourceTree = "<group>"; };
+		2F12A5C82104806F008524EB /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwitterCore.framework; path = ../TwitterCore.framework; sourceTree = "<group>"; };
+		2F12A5C92104806F008524EB /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = ../TwitterKitResources.bundle; sourceTree = "<group>"; };
+		2F12A5CA2104806F008524EB /* TwitterShareExtensionUIResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterShareExtensionUIResources.bundle; path = ../TwitterShareExtensionUIResources.bundle; sourceTree = "<group>"; };
 		3F3972E39ACCC76A0D79AD8940EDA8B8 /* Pods-stv_project2.4.7-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-stv_project2.4.7-dummy.m"; sourceTree = "<group>"; };
 		67329F1C88DDB329A049F1354D0C981E /* Pods-stv_project2.4.7-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-stv_project2.4.7-frameworks.sh"; sourceTree = "<group>"; };
 		7436F70E8A88F444B296609CC981255D /* Pods-stv_project2.4.7-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-stv_project2.4.7-acknowledgements.plist"; sourceTree = "<group>"; };
 		7A6C34F70AAC28788AE74832AC29B4C7 /* Pods-stv_project2.4.7-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-stv_project2.4.7-acknowledgements.markdown"; sourceTree = "<group>"; };
 		80F1E3FC67CBEF2362211BFA2B560FE3 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = iOS/TwitterKit.framework/TwitterKitResources.bundle; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		975372DB375F74155EF11C91D7B040B6 /* Pods-stv_project2.4.7-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-stv_project2.4.7-resources.sh"; sourceTree = "<group>"; };
 		A2B8D2BD7D82460A3A9CF7943F362F97 /* Pods-stv_project2.4.7.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-stv_project2.4.7.release.xcconfig"; sourceTree = "<group>"; };
 		A30C2A10172C882977206BD1600E8EDF /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwitterKit.framework; path = iOS/TwitterKit.framework; sourceTree = "<group>"; };
 		A7A315864F14A302BF6CD0B45E2C3642 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwitterCore.framework; path = iOS/TwitterCore.framework; sourceTree = "<group>"; };
-		F56476880CE797F84B0E7E3E7B2E117E /* libPods-stv_project2.4.7.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-stv_project2.4.7.a"; path = "libPods-stv_project2.4.7.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F56476880CE797F84B0E7E3E7B2E117E /* libPods-stv_project2.4.7.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-stv_project2.4.7.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +36,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F12A5CB2104806F008524EB /* TwitterKit.framework in Frameworks */,
+				2F12A5CC2104806F008524EB /* TwitterCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,7 +49,6 @@
 			children = (
 				411517A95D07289E303AEB5356B6B063 /* Frameworks */,
 			);
-			name = TwitterCore;
 			path = TwitterCore;
 			sourceTree = "<group>";
 		};
@@ -58,7 +65,6 @@
 				A86A200F0FADBA0EC660E9AB0FE3703C /* Frameworks */,
 				551130E16DB2C6CBB2ADDA8711677513 /* Resources */,
 			);
-			name = TwitterKit;
 			path = TwitterKit;
 			sourceTree = "<group>";
 		};
@@ -105,6 +111,10 @@
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
+				2F12A5C82104806F008524EB /* TwitterCore.framework */,
+				2F12A5C72104806F008524EB /* TwitterKit.framework */,
+				2F12A5C92104806F008524EB /* TwitterKitResources.bundle */,
+				2F12A5CA2104806F008524EB /* TwitterShareExtensionUIResources.bundle */,
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */,
 				6AD20DAD5E30DA011D51037C50AF6B9D /* Pods */,

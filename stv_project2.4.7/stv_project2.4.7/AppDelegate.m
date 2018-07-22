@@ -2,11 +2,12 @@
 //  AppDelegate.m
 //  stv_project2.4.7
 //
-//  Created by 比留間龍三 on 2018/07/20.
+//  Created by 比留間龍三 on 2018/07/22.
 //  Copyright © 2018年 比留間龍三. All rights reserved.
 //
 
 #import "AppDelegate.h"
+@import TwitterKit;
 
 @interface AppDelegate ()
 
@@ -16,8 +17,13 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    [[Twitter sharedInstance] startWithConsumerKey:@"if6skxHBNRfbHxUBep4tYblZE" consumerSecret:@"o8a350JSU8Fs4xc3elNYm2Nv2SCai4Rua7s6fFMFL1iJNDX3Vp"];
     return YES;
+}
+
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
+    return [[Twitter sharedInstance] application:app openURL:url options:options];
 }
 
 
