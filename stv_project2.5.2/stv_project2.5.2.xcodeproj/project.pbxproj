@@ -7,31 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2F44EB0F21057D49001A6557 /* stv_project2_5_2.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F44EB0E21057D49001A6557 /* stv_project2_5_2.m */; };
-		2F44EB1021057D49001A6557 /* stv_project2_5_2.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2F44EB0D21057D49001A6557 /* stv_project2_5_2.h */; };
+		2F44EB2421058EAA001A6557 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F44EB2321058EAA001A6557 /* AppDelegate.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2F44EB2721058EAA001A6557 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F44EB2621058EAA001A6557 /* ViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2F44EB2A21058EAA001A6557 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F44EB2821058EAA001A6557 /* Main.storyboard */; };
+		2F44EB2C21058EAA001A6557 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F44EB2B21058EAA001A6557 /* Assets.xcassets */; };
+		2F44EB2F21058EAA001A6557 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F44EB2D21058EAA001A6557 /* LaunchScreen.storyboard */; };
+		2F44EB3221058EAA001A6557 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F44EB3121058EAA001A6557 /* main.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		2F44EB0821057D49001A6557 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "include/$(PRODUCT_NAME)";
-			dstSubfolderSpec = 16;
-			files = (
-				2F44EB1021057D49001A6557 /* stv_project2_5_2.h in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		2F44EB0A21057D49001A6557 /* libstv_project2.5.2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libstv_project2.5.2.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F44EB0D21057D49001A6557 /* stv_project2_5_2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stv_project2_5_2.h; sourceTree = "<group>"; };
-		2F44EB0E21057D49001A6557 /* stv_project2_5_2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = stv_project2_5_2.m; sourceTree = "<group>"; };
+		2F44EB1F21058EAA001A6557 /* stv_project2.5.2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = stv_project2.5.2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F44EB2221058EAA001A6557 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2F44EB2321058EAA001A6557 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2F44EB2521058EAA001A6557 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2F44EB2621058EAA001A6557 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2F44EB2921058EAA001A6557 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2F44EB2B21058EAA001A6557 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2F44EB2E21058EAA001A6557 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2F44EB3021058EAA001A6557 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F44EB3121058EAA001A6557 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2F44EB0721057D49001A6557 /* Frameworks */ = {
+		2F44EB1C21058EAA001A6557 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,27 +39,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2F44EB0121057D49001A6557 = {
+		2F44EB1621058EAA001A6557 = {
 			isa = PBXGroup;
 			children = (
-				2F44EB0C21057D49001A6557 /* stv_project2.5.2 */,
-				2F44EB0B21057D49001A6557 /* Products */,
+				2F44EB2121058EAA001A6557 /* stv_project2.5.2 */,
+				2F44EB2021058EAA001A6557 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		2F44EB0B21057D49001A6557 /* Products */ = {
+		2F44EB2021058EAA001A6557 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2F44EB0A21057D49001A6557 /* libstv_project2.5.2.a */,
+				2F44EB1F21058EAA001A6557 /* stv_project2.5.2.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2F44EB0C21057D49001A6557 /* stv_project2.5.2 */ = {
+		2F44EB2121058EAA001A6557 /* stv_project2.5.2 */ = {
 			isa = PBXGroup;
 			children = (
-				2F44EB0D21057D49001A6557 /* stv_project2_5_2.h */,
-				2F44EB0E21057D49001A6557 /* stv_project2_5_2.m */,
+				2F44EB2221058EAA001A6557 /* AppDelegate.h */,
+				2F44EB2321058EAA001A6557 /* AppDelegate.m */,
+				2F44EB2521058EAA001A6557 /* ViewController.h */,
+				2F44EB2621058EAA001A6557 /* ViewController.m */,
+				2F44EB2821058EAA001A6557 /* Main.storyboard */,
+				2F44EB2B21058EAA001A6557 /* Assets.xcassets */,
+				2F44EB2D21058EAA001A6557 /* LaunchScreen.storyboard */,
+				2F44EB3021058EAA001A6557 /* Info.plist */,
+				2F44EB3121058EAA001A6557 /* main.m */,
 			);
 			path = stv_project2.5.2;
 			sourceTree = "<group>";
@@ -69,13 +74,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2F44EB0921057D49001A6557 /* stv_project2.5.2 */ = {
+		2F44EB1E21058EAA001A6557 /* stv_project2.5.2 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2F44EB1321057D49001A6557 /* Build configuration list for PBXNativeTarget "stv_project2.5.2" */;
+			buildConfigurationList = 2F44EB3521058EAA001A6557 /* Build configuration list for PBXNativeTarget "stv_project2.5.2" */;
 			buildPhases = (
-				2F44EB0621057D49001A6557 /* Sources */,
-				2F44EB0721057D49001A6557 /* Frameworks */,
-				2F44EB0821057D49001A6557 /* CopyFiles */,
+				2F44EB1B21058EAA001A6557 /* Sources */,
+				2F44EB1C21058EAA001A6557 /* Frameworks */,
+				2F44EB1D21058EAA001A6557 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -83,53 +88,88 @@
 			);
 			name = stv_project2.5.2;
 			productName = stv_project2.5.2;
-			productReference = 2F44EB0A21057D49001A6557 /* libstv_project2.5.2.a */;
-			productType = "com.apple.product-type.library.static";
+			productReference = 2F44EB1F21058EAA001A6557 /* stv_project2.5.2.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		2F44EB0221057D49001A6557 /* Project object */ = {
+		2F44EB1721058EAA001A6557 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "比留間龍三";
 				TargetAttributes = {
-					2F44EB0921057D49001A6557 = {
+					2F44EB1E21058EAA001A6557 = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
 				};
 			};
-			buildConfigurationList = 2F44EB0521057D49001A6557 /* Build configuration list for PBXProject "stv_project2.5.2" */;
+			buildConfigurationList = 2F44EB1A21058EAA001A6557 /* Build configuration list for PBXProject "stv_project2.5.2" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
-			mainGroup = 2F44EB0121057D49001A6557;
-			productRefGroup = 2F44EB0B21057D49001A6557 /* Products */;
+			mainGroup = 2F44EB1621058EAA001A6557;
+			productRefGroup = 2F44EB2021058EAA001A6557 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2F44EB0921057D49001A6557 /* stv_project2.5.2 */,
+				2F44EB1E21058EAA001A6557 /* stv_project2.5.2 */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		2F44EB1D21058EAA001A6557 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F44EB2F21058EAA001A6557 /* LaunchScreen.storyboard in Resources */,
+				2F44EB2C21058EAA001A6557 /* Assets.xcassets in Resources */,
+				2F44EB2A21058EAA001A6557 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		2F44EB0621057D49001A6557 /* Sources */ = {
+		2F44EB1B21058EAA001A6557 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F44EB0F21057D49001A6557 /* stv_project2_5_2.m in Sources */,
+				2F44EB2721058EAA001A6557 /* ViewController.m in Sources */,
+				2F44EB3221058EAA001A6557 /* main.m in Sources */,
+				2F44EB2421058EAA001A6557 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		2F44EB2821058EAA001A6557 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F44EB2921058EAA001A6557 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2F44EB2D21058EAA001A6557 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F44EB2E21058EAA001A6557 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
-		2F44EB1121057D49001A6557 /* Debug */ = {
+		2F44EB3321058EAA001A6557 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -187,7 +227,7 @@
 			};
 			name = Debug;
 		};
-		2F44EB1221057D49001A6557 /* Release */ = {
+		2F44EB3421058EAA001A6557 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -239,24 +279,36 @@
 			};
 			name = Release;
 		};
-		2F44EB1421057D49001A6557 /* Debug */ = {
+		2F44EB3621058EAA001A6557 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				OTHER_LDFLAGS = "-ObjC";
+				DEVELOPMENT_TEAM = 974LVD65BN;
+				INFOPLIST_FILE = stv_project2.5.2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stv.stv-project2-5-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		2F44EB1521057D49001A6557 /* Release */ = {
+		2F44EB3721058EAA001A6557 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				OTHER_LDFLAGS = "-ObjC";
+				DEVELOPMENT_TEAM = 974LVD65BN;
+				INFOPLIST_FILE = stv_project2.5.2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stv.stv-project2-5-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -264,25 +316,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2F44EB0521057D49001A6557 /* Build configuration list for PBXProject "stv_project2.5.2" */ = {
+		2F44EB1A21058EAA001A6557 /* Build configuration list for PBXProject "stv_project2.5.2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2F44EB1121057D49001A6557 /* Debug */,
-				2F44EB1221057D49001A6557 /* Release */,
+				2F44EB3321058EAA001A6557 /* Debug */,
+				2F44EB3421058EAA001A6557 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2F44EB1321057D49001A6557 /* Build configuration list for PBXNativeTarget "stv_project2.5.2" */ = {
+		2F44EB3521058EAA001A6557 /* Build configuration list for PBXNativeTarget "stv_project2.5.2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2F44EB1421057D49001A6557 /* Debug */,
-				2F44EB1521057D49001A6557 /* Release */,
+				2F44EB3621058EAA001A6557 /* Debug */,
+				2F44EB3721058EAA001A6557 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 2F44EB0221057D49001A6557 /* Project object */;
+	rootObject = 2F44EB1721058EAA001A6557 /* Project object */;
 }
