@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="egF-4b-EwN">
+                                <rect key="frame" x="0.0" y="240" width="375" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c3y-mS-Ppl">
+                                <rect key="frame" x="0.0" y="316" width="375" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PQ0-BD-akY">
+                                <rect key="frame" x="0.0" y="392" width="375" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="c3y-mS-Ppl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3dE-eG-mew"/>
+                            <constraint firstItem="egF-4b-EwN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7Zf-14-vZW"/>
+                            <constraint firstItem="c3y-mS-Ppl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="848-W6-08h"/>
+                            <constraint firstItem="egF-4b-EwN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="DFX-I5-PMN"/>
+                            <constraint firstItem="PQ0-BD-akY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Nes-hC-mrQ"/>
+                            <constraint firstItem="c3y-mS-Ppl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OL4-4q-qqh"/>
+                            <constraint firstItem="PQ0-BD-akY" firstAttribute="top" secondItem="c3y-mS-Ppl" secondAttribute="bottom" constant="40" id="RQx-Ha-Nq3"/>
+                            <constraint firstItem="PQ0-BD-akY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SFi-BU-RAD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="c3y-mS-Ppl" secondAttribute="trailing" id="brw-qr-UzD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PQ0-BD-akY" secondAttribute="trailing" id="fcN-ao-ToZ"/>
+                            <constraint firstItem="c3y-mS-Ppl" firstAttribute="top" secondItem="egF-4b-EwN" secondAttribute="bottom" constant="40" id="kDt-NK-XFJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="egF-4b-EwN" secondAttribute="trailing" id="wqH-MI-vjB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="labelLatitude" destination="egF-4b-EwN" id="2oX-m3-Bvb"/>
+                        <outlet property="labelLongitude" destination="c3y-mS-Ppl" id="Lgl-GV-2hr"/>
+                        <outlet property="labelTime" destination="PQ0-BD-akY" id="p9V-px-tmK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
