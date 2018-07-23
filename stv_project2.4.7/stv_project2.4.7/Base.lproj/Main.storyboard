@@ -17,7 +17,24 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6F8-7y-Q3R">
+                                <rect key="frame" x="0.0" y="313" width="375" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="xN1-lX-ygf"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6F8-7y-Q3R" secondAttribute="trailing" id="ke6-kF-CRA"/>
+                            <constraint firstItem="6F8-7y-Q3R" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lbc-Qp-qbn"/>
+                            <constraint firstItem="6F8-7y-Q3R" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="md8-ZC-diq"/>
+                            <constraint firstItem="6F8-7y-Q3R" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zyO-RW-taq"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>

@@ -10,14 +10,12 @@
 @import TwitterKit;
 
 @interface ViewController () <UINavigationControllerDelegate,UIImagePickerControllerDelegate>
-
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     [self tweetMain];
 }
 
@@ -60,14 +58,13 @@
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
     
     [self dismissViewControllerAnimated:YES completion:nil];
-    
     UIImage *image = info[UIImagePickerControllerOriginalImage];
     
-    // Twitter投稿データ編集
+    // Twitter投稿データ編集(初期値)
     TWTRComposer *composer = [TWTRComposer new];
-    [composer setText:@"testtest"];
+    [composer setText:@"テストtest"];
     [composer setImage:image];
-    [composer setURL:[NSURL URLWithString:@"https://yahoo.co.jp"]];
+    [composer setURL:[NSURL URLWithString:@"https://disneyparks.disney.go.com/jp/disneyland/?name=DisneylandHomePage"]];
     
     // Twitter投稿画面表示
     [composer showFromViewController:self completion:^(TWTRComposerResult result) {
@@ -79,11 +76,5 @@
         }
     }];
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 
 @end
