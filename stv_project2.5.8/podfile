@@ -1,0 +1,10 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'stv_project2.5.8' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+pod 'Firebase/Messaging'
+  # Pods for stv_project2.5.8
+pod 'Firebase/Core'
+end
