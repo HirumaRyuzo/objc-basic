@@ -14,6 +14,7 @@
 		2F01BB562106175D002EB72A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F01BB552106175D002EB72A /* Assets.xcassets */; };
 		2F01BB592106175D002EB72A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F01BB572106175D002EB72A /* LaunchScreen.storyboard */; };
 		2F01BB5C2106175D002EB72A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F01BB5B2106175D002EB72A /* main.m */; };
+		2F48A47B2107158F0053FB69 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2F48A47A2107158F0053FB69 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		2F01BB582106175D002EB72A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F01BB5A2106175D002EB72A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F01BB5B2106175D002EB72A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2F48A4792107134C0053FB69 /* stv_project2.5.8.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = stv_project2.5.8.entitlements; sourceTree = "<group>"; };
+		2F48A47A2107158F0053FB69 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		73AC2ED7EE9869F0C3C0A31B /* libPods-stv_project2.5.8.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-stv_project2.5.8.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -65,6 +68,8 @@
 		2F01BB4B2106175D002EB72A /* stv_project2.5.8 */ = {
 			isa = PBXGroup;
 			children = (
+				2F48A47A2107158F0053FB69 /* GoogleService-Info.plist */,
+				2F48A4792107134C0053FB69 /* stv_project2.5.8.entitlements */,
 				2F01BB4C2106175D002EB72A /* AppDelegate.h */,
 				2F01BB4D2106175D002EB72A /* AppDelegate.m */,
 				2F01BB4F2106175D002EB72A /* ViewController.h */,
@@ -127,6 +132,11 @@
 				TargetAttributes = {
 					2F01BB482106175D002EB72A = {
 						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -154,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F01BB592106175D002EB72A /* LaunchScreen.storyboard in Resources */,
+				2F48A47B2107158F0053FB69 /* GoogleService-Info.plist in Resources */,
 				2F01BB562106175D002EB72A /* Assets.xcassets in Resources */,
 				2F01BB542106175D002EB72A /* Main.storyboard in Resources */,
 			);
@@ -330,7 +341,9 @@
 			baseConfigurationReference = 02339AC4B68C1FD22603E142 /* Pods-stv_project2.5.8.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = stv_project2.5.8/stv_project2.5.8.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PCCZJUYRT6;
 				INFOPLIST_FILE = stv_project2.5.8/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -347,7 +360,9 @@
 			baseConfigurationReference = 052DA1A6C9F7D3A695242E9D /* Pods-stv_project2.5.8.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = stv_project2.5.8/stv_project2.5.8.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PCCZJUYRT6;
 				INFOPLIST_FILE = stv_project2.5.8/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
