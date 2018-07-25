@@ -15,18 +15,19 @@
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
-    NSLog(@"- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation");
-    NSLog(@"absoluteString : %@",[url absoluteString]);
-    NSLog(@"scheme         : %@",[url scheme]);
-    NSLog(@"query          : %@",[url query]);
-    NSString *absoluteString = [url absoluteString];
-    if ([absoluteString isEqualToString:@"testscheme://"]) {
-        NSLog(@"Open URL Schemes !!");
-    }
+//スキームで開かれた時の処理
+- (BOOL)application:(UIApplication *)app
+            openURL:(NSURL *)url
+            options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
+    NSLog(@"scheme: %@", url.scheme);
+    NSLog(@"user: %@", url.user);
+    NSLog(@"password: %@", url.password);
+    NSLog(@"host: %@", url.host);
+    NSLog(@"port: %@", url.port);
+    NSLog(@"fragment: %@", url.fragment);
+
     return YES;
 }
-
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.

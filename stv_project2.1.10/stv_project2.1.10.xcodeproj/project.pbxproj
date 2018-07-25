@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2F01E8FB20F5DC8F00428D6F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F01E8FA20F5DC8F00428D6F /* AppDelegate.m */; };
-		2F01E8FE20F5DC8F00428D6F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F01E8FD20F5DC8F00428D6F /* ViewController.m */; };
+		2F01E8FB20F5DC8F00428D6F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F01E8FA20F5DC8F00428D6F /* AppDelegate.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2F01E8FE20F5DC8F00428D6F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F01E8FD20F5DC8F00428D6F /* ViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		2F01E90120F5DC8F00428D6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F01E8FF20F5DC8F00428D6F /* Main.storyboard */; };
 		2F01E90320F5DC8F00428D6F /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F01E90220F5DC8F00428D6F /* Media.xcassets */; };
 		2F01E90620F5DC8F00428D6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F01E90420F5DC8F00428D6F /* LaunchScreen.storyboard */; };
-		2F01E90920F5DC8F00428D6F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F01E90820F5DC8F00428D6F /* main.m */; };
+		2F01E90920F5DC8F00428D6F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F01E90820F5DC8F00428D6F /* main.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		2F0E4A3D20FEFA030037A9C2 /* dList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2F0E4A3C20FEFA030037A9C2 /* dList.plist */; };
 /* End PBXBuildFile section */
 
