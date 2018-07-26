@@ -52,7 +52,7 @@
 
 // セルの数を指定 要素の数によって可変にする
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [self.DImg count];
+    return self.DImg.count;
 }
 
 // 各セルの要素を指定 tagで指定する
