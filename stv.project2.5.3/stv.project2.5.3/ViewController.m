@@ -54,7 +54,6 @@
 
 //撮影ボタンを押した際に呼ばれるメソッド。
 - (IBAction)takePhoto:(UIButton *)sender {
-    
     AVCapturePhotoSettings *settings = [AVCapturePhotoSettings new];
     settings.flashMode = AVCaptureFlashModeAuto;
     [self.stillImageOutput capturePhotoWithSettings:settings delegate:self];
@@ -62,7 +61,6 @@
 
 // 写真キャプチャの結果を
 - (void)captureOutput:(AVCapturePhotoOutput *)output didFinishProcessingPhoto:(AVCapturePhoto *)photo error:(NSError *)error {
-    
     // 適した形に自動的に変換してくれる
     NSData *imageData = [photo fileDataRepresentation];
     UIImage *resultImage = [UIImage imageWithData:imageData];
