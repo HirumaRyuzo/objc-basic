@@ -7,9 +7,10 @@
 //
 
 #import "ViewController.h"
+#import <MapKit/MapKit.h>
 
-@interface ViewController ()
-
+@interface ViewController () <MKMapViewDelegate>
+@property IBOutlet MKMapView *mapView;
 @end
 
 @implementation ViewController
@@ -43,14 +44,14 @@
     
     
     // ピンを全て削除
-    [_mapView removeAnnotations: _mapView.annotations];
+    [self.mapView removeAnnotations: self.mapView.annotations];
     // 新しいピンを作成
-    MKPointAnnotation *annotation = [[MKPointAnnotation alloc] init];
+    MKPointAnnotation *annotation = [MKPointAnnotation new];
     annotation.coordinate = CLLocationCoordinate2DMake(35.623655, 139.724858);
     annotation.title = @"株式会社スマートテック・ベンチャーズ";
     annotation.subtitle = @"品川年金事務所の上";
     // ピンを追加
-    [_mapView addAnnotation:annotation];
+    [self.mapView addAnnotation:annotation];
 }
 
 ////画像をピンに刺す
