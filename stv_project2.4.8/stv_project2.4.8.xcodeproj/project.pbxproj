@@ -13,7 +13,7 @@
 		2F44EAD02105656B001A6557 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F44EACF2105656B001A6557 /* Assets.xcassets */; };
 		2F44EAD32105656B001A6557 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F44EAD12105656B001A6557 /* LaunchScreen.storyboard */; };
 		2F44EAD62105656B001A6557 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F44EAD52105656B001A6557 /* main.m */; };
-		2F44EADE2105683D001A6557 /* instagram.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F44EADD2105683D001A6557 /* instagram.m */; };
+		2F44EADE2105683D001A6557 /* Instagram.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F44EADD2105683D001A6557 /* Instagram.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +27,8 @@
 		2F44EAD22105656B001A6557 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F44EAD42105656B001A6557 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F44EAD52105656B001A6557 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2F44EADC2105683D001A6557 /* instagram.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = instagram.h; sourceTree = "<group>"; };
-		2F44EADD2105683D001A6557 /* instagram.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = instagram.m; sourceTree = "<group>"; };
+		2F44EADC2105683D001A6557 /* Instagram.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Instagram.h; sourceTree = "<group>"; };
+		2F44EADD2105683D001A6557 /* Instagram.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Instagram.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +63,8 @@
 			children = (
 				2F44EAC62105656A001A6557 /* AppDelegate.h */,
 				2F44EAC72105656A001A6557 /* AppDelegate.m */,
-				2F44EADC2105683D001A6557 /* instagram.h */,
-				2F44EADD2105683D001A6557 /* instagram.m */,
+				2F44EADC2105683D001A6557 /* Instagram.h */,
+				2F44EADD2105683D001A6557 /* Instagram.m */,
 				2F44EAC92105656A001A6557 /* ViewController.h */,
 				2F44EACA2105656A001A6557 /* ViewController.m */,
 				2F44EACC2105656A001A6557 /* Main.storyboard */,
@@ -147,7 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F44EACB2105656A001A6557 /* ViewController.m in Sources */,
-				2F44EADE2105683D001A6557 /* instagram.m in Sources */,
+				2F44EADE2105683D001A6557 /* Instagram.m in Sources */,
 				2F44EAD62105656B001A6557 /* main.m in Sources */,
 				2F44EAC82105656A001A6557 /* AppDelegate.m in Sources */,
 			);
