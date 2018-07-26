@@ -10,7 +10,6 @@
 
 @interface ViewController ()<UIImagePickerControllerDelegate,UINavigationControllerDelegate>
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
-- (IBAction)selectImage:(id)sender;
 
 @end
 
@@ -24,14 +23,13 @@
     //UIImagePickerのソースの選択。今回はカメラロールから。
     UIImagePickerControllerSourceType sourseType = UIImagePickerControllerSourceTypePhotoLibrary;
     
-    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+    UIImagePickerController *picker = [UIImagePickerController new];
     picker.sourceType = sourseType;
     picker.delegate = self;
     [self presentViewController:picker animated:YES completion:NULL];
 }
 
--(void) imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
-{
+-(void) imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
     //infoに選んだ写真が入っているので取得
     UIImage *image = [info objectForKey:UIImagePickerControllerOriginalImage];
     
