@@ -52,22 +52,21 @@ NSString *const weather = @"http://weather.livedoor.com/forecast/webservice/json
     // 上から順にボタンが配置
     [alertController addAction:[UIAlertAction actionWithTitle:@"今日" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
         [self selectedActionWith:1];
-        NSLog(@"今日が選択されました");
+        
         
     }]];
     [alertController addAction:[UIAlertAction actionWithTitle:@"明日" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
         [self selectedActionWith:2];
-        NSLog(@"明日が選択されました");
+        
         
     }]];
     [alertController addAction:[UIAlertAction actionWithTitle:@"明後日" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
         [self selectedActionWith:3];
-        NSLog(@"明後日が選択されました");
+       
         
     }]];
     [alertController addAction:[UIAlertAction actionWithTitle:@"やっぱいーや" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
         [self selectedActionWith:0];
-        NSLog(@"キャンセルが選択されました");
         
     }]];
 
@@ -82,17 +81,19 @@ NSString *const weather = @"http://weather.livedoor.com/forecast/webservice/json
         case 1:
             //"今日"のボタンが押されたときの処理
             NSLog(@"セレクトアクションwith");
+            NSLog(@"今日が選択されました");
             break;
         case 2:
             //"明日"のボタンが押されたときの処理
-
+            NSLog(@"明日が選択されました");
             break;
         case 3:
             //"明後日"のボタンが押されたときの処理
-
+            NSLog(@"明後日が選択されました");
             break;
         case 0:
             //"キャンセル"のボタンが押されたときの処理
+            NSLog(@"キャンセルが選択されました");
 
             break;
     }
