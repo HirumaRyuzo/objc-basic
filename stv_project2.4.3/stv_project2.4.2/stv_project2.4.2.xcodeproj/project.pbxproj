@@ -13,6 +13,8 @@
 		2FB0FF2620FF46BC001E5385 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FB0FF2520FF46BC001E5385 /* Assets.xcassets */; };
 		2FB0FF2920FF46BC001E5385 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FB0FF2720FF46BC001E5385 /* LaunchScreen.storyboard */; };
 		2FB0FF2C20FF46BC001E5385 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB0FF2B20FF46BC001E5385 /* main.m */; };
+		2FB0FF34210046B6001E5385 /* Wether.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB0FF33210046B6001E5385 /* Wether.m */; };
+		2FB0FF3721004703001E5385 /* WetherTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB0FF3621004703001E5385 /* WetherTableViewCell.m */; };
 		40B2EEAB7D22FE4C677F9232 /* libPods-stv_project2.4.2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4901C862D4CB2E6E094F9393 /* libPods-stv_project2.4.2.a */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +31,10 @@
 		2FB0FF2820FF46BC001E5385 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2FB0FF2A20FF46BC001E5385 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FB0FF2B20FF46BC001E5385 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2FB0FF32210046B6001E5385 /* Wether.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Wether.h; sourceTree = "<group>"; };
+		2FB0FF33210046B6001E5385 /* Wether.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Wether.m; sourceTree = "<group>"; };
+		2FB0FF3521004703001E5385 /* WetherTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WetherTableViewCell.h; sourceTree = "<group>"; };
+		2FB0FF3621004703001E5385 /* WetherTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WetherTableViewCell.m; sourceTree = "<group>"; };
 		4901C862D4CB2E6E094F9393 /* libPods-stv_project2.4.2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-stv_project2.4.2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -67,6 +73,10 @@
 			children = (
 				2FB0FF1C20FF46BB001E5385 /* AppDelegate.h */,
 				2FB0FF1D20FF46BB001E5385 /* AppDelegate.m */,
+				2FB0FF32210046B6001E5385 /* Wether.h */,
+				2FB0FF33210046B6001E5385 /* Wether.m */,
+				2FB0FF3521004703001E5385 /* WetherTableViewCell.h */,
+				2FB0FF3621004703001E5385 /* WetherTableViewCell.m */,
 				2FB0FF1F20FF46BB001E5385 /* ViewController.h */,
 				2FB0FF2020FF46BB001E5385 /* ViewController.m */,
 				2FB0FF2220FF46BB001E5385 /* Main.storyboard */,
@@ -189,7 +199,9 @@
 			files = (
 				2FB0FF2120FF46BB001E5385 /* ViewController.m in Sources */,
 				2FB0FF2C20FF46BC001E5385 /* main.m in Sources */,
+				2FB0FF34210046B6001E5385 /* Wether.m in Sources */,
 				2FB0FF1E20FF46BB001E5385 /* AppDelegate.m in Sources */,
+				2FB0FF3721004703001E5385 /* WetherTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
