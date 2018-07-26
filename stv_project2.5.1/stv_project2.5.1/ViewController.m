@@ -14,8 +14,7 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
     
     // メール送信ボタン配置
@@ -23,8 +22,7 @@
 }
 
 // メール送信ボタン配置
-- (void)setSendToMailButton
-{
+- (void)setSendToMailButton {
     UIButton *sendToMailButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     [sendToMailButton setTitle:@"Open Mailer" forState:UIControlStateNormal];
     [sendToMailButton sizeToFit];
@@ -35,8 +33,7 @@
 }
 
 // この記事へのリンクをメールボタンイベント
-- (void)sendToMailButtonTapEvent:(UIButton *)button
-{
+- (void)sendToMailButtonTapEvent:(UIButton *)button {
     // メールビュー生成
     MFMailComposeViewController *picker = [[MFMailComposeViewController alloc] init];
     picker.mailComposeDelegate = self;
@@ -56,8 +53,7 @@
 }
 
 // アプリ内メーラーのデリゲートメソッド
-- (void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error
-{
+- (void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error {
     switch (result) {
         case MFMailComposeResultCancelled:
             // キャンセル
