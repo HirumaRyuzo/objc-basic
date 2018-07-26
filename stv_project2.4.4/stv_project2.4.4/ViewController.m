@@ -41,6 +41,8 @@ const NSString *getWether = @"http://weather.livedoor.com/forecast/webservice/js
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
+    
     self.wetherTable.delegate = self;
     self.wetherTable.dataSource = self;
     
