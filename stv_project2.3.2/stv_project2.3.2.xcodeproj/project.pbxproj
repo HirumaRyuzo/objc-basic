@@ -7,118 +7,105 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2F08D78F20FD819300E84ECD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F08D78E20FD819300E84ECD /* AppDelegate.m */; };
-		2F08D79220FD819300E84ECD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F08D79120FD819300E84ECD /* ViewController.m */; };
-		2F08D79520FD819300E84ECD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F08D79320FD819300E84ECD /* Main.storyboard */; };
-		2F08D79720FD819400E84ECD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F08D79620FD819400E84ECD /* Assets.xcassets */; };
-		2F08D79A20FD819400E84ECD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F08D79820FD819400E84ECD /* LaunchScreen.storyboard */; };
-		2F08D79D20FD819400E84ECD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F08D79C20FD819400E84ECD /* main.m */; };
-		2F23D74720FDB7BF009E7ED4 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F23D74620FDB7BF009E7ED4 /* libsqlite3.tbd */; };
-		2F8C2EEE20FDEE0000DFFD18 /* InputViwController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8C2EED20FDEE0000DFFD18 /* InputViwController.m */; };
-		2F9EB62C20FD94F500B66287 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9EB62B20FD94F500B66287 /* libsqlite3.dylib */; };
-		FE4459C83116532115763818 /* libPods-stv_project2.3.2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7AA83490AA24CEE98C452DA /* libPods-stv_project2.3.2.a */; };
+		1BD01E64434A24EC52606E50 /* libPods-stv_project2.3.2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D10F1BD4D792AC4EC738A6DE /* libPods-stv_project2.3.2.a */; };
+		2FA6A8EA2109B41B00C8F891 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA6A8E92109B41B00C8F891 /* AppDelegate.m */; };
+		2FA6A8ED2109B41B00C8F891 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA6A8EC2109B41B00C8F891 /* ViewController.m */; };
+		2FA6A8F02109B41B00C8F891 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FA6A8EE2109B41B00C8F891 /* Main.storyboard */; };
+		2FA6A8F22109B41B00C8F891 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FA6A8F12109B41B00C8F891 /* Assets.xcassets */; };
+		2FA6A8F52109B41B00C8F891 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FA6A8F32109B41B00C8F891 /* LaunchScreen.storyboard */; };
+		2FA6A8F82109B41B00C8F891 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA6A8F72109B41B00C8F891 /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1F0CC3EA75AF56E301552175 /* Pods-stv_project2.3.2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stv_project2.3.2.release.xcconfig"; path = "Pods/Target Support Files/Pods-stv_project2.3.2/Pods-stv_project2.3.2.release.xcconfig"; sourceTree = "<group>"; };
-		2F08D78A20FD819300E84ECD /* stv_project2.3.2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = stv_project2.3.2.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F08D78D20FD819300E84ECD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		2F08D78E20FD819300E84ECD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2F08D79020FD819300E84ECD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2F08D79120FD819300E84ECD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		2F08D79420FD819300E84ECD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2F08D79620FD819400E84ECD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2F08D79920FD819400E84ECD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		2F08D79B20FD819400E84ECD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2F08D79C20FD819400E84ECD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2F23D74620FDB7BF009E7ED4 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
-		2F8C2EEC20FDEE0000DFFD18 /* InputViwController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputViwController.h; sourceTree = "<group>"; };
-		2F8C2EED20FDEE0000DFFD18 /* InputViwController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputViwController.m; sourceTree = "<group>"; };
-		2F9EB62B20FD94F500B66287 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = ../../../../usr/lib/libsqlite3.dylib; sourceTree = "<group>"; };
-		49165F84CADA853B12BDB916 /* Pods-stv_project2.3.2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stv_project2.3.2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-stv_project2.3.2/Pods-stv_project2.3.2.debug.xcconfig"; sourceTree = "<group>"; };
-		A7AA83490AA24CEE98C452DA /* libPods-stv_project2.3.2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-stv_project2.3.2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		21A8C669766D6A965B201C7E /* Pods-stv_project2.3.2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stv_project2.3.2.release.xcconfig"; path = "Pods/Target Support Files/Pods-stv_project2.3.2/Pods-stv_project2.3.2.release.xcconfig"; sourceTree = "<group>"; };
+		2FA6A8E52109B41B00C8F891 /* stv_project2.3.2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = stv_project2.3.2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FA6A8E82109B41B00C8F891 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2FA6A8E92109B41B00C8F891 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2FA6A8EB2109B41B00C8F891 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2FA6A8EC2109B41B00C8F891 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2FA6A8EF2109B41B00C8F891 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2FA6A8F12109B41B00C8F891 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2FA6A8F42109B41B00C8F891 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2FA6A8F62109B41B00C8F891 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FA6A8F72109B41B00C8F891 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		49790619C3FF331C01403EC4 /* Pods-stv_project2.3.2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stv_project2.3.2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-stv_project2.3.2/Pods-stv_project2.3.2.debug.xcconfig"; sourceTree = "<group>"; };
+		D10F1BD4D792AC4EC738A6DE /* libPods-stv_project2.3.2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-stv_project2.3.2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2F08D78720FD819300E84ECD /* Frameworks */ = {
+		2FA6A8E22109B41B00C8F891 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F23D74720FDB7BF009E7ED4 /* libsqlite3.tbd in Frameworks */,
-				2F9EB62C20FD94F500B66287 /* libsqlite3.dylib in Frameworks */,
-				FE4459C83116532115763818 /* libPods-stv_project2.3.2.a in Frameworks */,
+				1BD01E64434A24EC52606E50 /* libPods-stv_project2.3.2.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2F08D78120FD819300E84ECD = {
+		2ED66572096F0280432951FE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2F08D78C20FD819300E84ECD /* stv_project2.3.2 */,
-				2F08D78B20FD819300E84ECD /* Products */,
-				4B0A67530117BAE8EAD508BF /* Pods */,
-				D113DB4BCADD1EB6ED83FC8A /* Frameworks */,
+				D10F1BD4D792AC4EC738A6DE /* libPods-stv_project2.3.2.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2FA6A8DC2109B41B00C8F891 = {
+			isa = PBXGroup;
+			children = (
+				2FA6A8E72109B41B00C8F891 /* stv_project2.3.2 */,
+				2FA6A8E62109B41B00C8F891 /* Products */,
+				57FF0A190051226D14560416 /* Pods */,
+				2ED66572096F0280432951FE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		2F08D78B20FD819300E84ECD /* Products */ = {
+		2FA6A8E62109B41B00C8F891 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2F08D78A20FD819300E84ECD /* stv_project2.3.2.app */,
+				2FA6A8E52109B41B00C8F891 /* stv_project2.3.2.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2F08D78C20FD819300E84ECD /* stv_project2.3.2 */ = {
+		2FA6A8E72109B41B00C8F891 /* stv_project2.3.2 */ = {
 			isa = PBXGroup;
 			children = (
-				2F08D78D20FD819300E84ECD /* AppDelegate.h */,
-				2F08D78E20FD819300E84ECD /* AppDelegate.m */,
-				2F08D79020FD819300E84ECD /* ViewController.h */,
-				2F08D79120FD819300E84ECD /* ViewController.m */,
-				2F8C2EEC20FDEE0000DFFD18 /* InputViwController.h */,
-				2F8C2EED20FDEE0000DFFD18 /* InputViwController.m */,
-				2F08D79320FD819300E84ECD /* Main.storyboard */,
-				2F08D79620FD819400E84ECD /* Assets.xcassets */,
-				2F08D79820FD819400E84ECD /* LaunchScreen.storyboard */,
-				2F08D79B20FD819400E84ECD /* Info.plist */,
-				2F08D79C20FD819400E84ECD /* main.m */,
+				2FA6A8E82109B41B00C8F891 /* AppDelegate.h */,
+				2FA6A8E92109B41B00C8F891 /* AppDelegate.m */,
+				2FA6A8EB2109B41B00C8F891 /* ViewController.h */,
+				2FA6A8EC2109B41B00C8F891 /* ViewController.m */,
+				2FA6A8EE2109B41B00C8F891 /* Main.storyboard */,
+				2FA6A8F12109B41B00C8F891 /* Assets.xcassets */,
+				2FA6A8F32109B41B00C8F891 /* LaunchScreen.storyboard */,
+				2FA6A8F62109B41B00C8F891 /* Info.plist */,
+				2FA6A8F72109B41B00C8F891 /* main.m */,
 			);
 			path = stv_project2.3.2;
 			sourceTree = "<group>";
 		};
-		4B0A67530117BAE8EAD508BF /* Pods */ = {
+		57FF0A190051226D14560416 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				49165F84CADA853B12BDB916 /* Pods-stv_project2.3.2.debug.xcconfig */,
-				1F0CC3EA75AF56E301552175 /* Pods-stv_project2.3.2.release.xcconfig */,
+				49790619C3FF331C01403EC4 /* Pods-stv_project2.3.2.debug.xcconfig */,
+				21A8C669766D6A965B201C7E /* Pods-stv_project2.3.2.release.xcconfig */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		D113DB4BCADD1EB6ED83FC8A /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				2F23D74620FDB7BF009E7ED4 /* libsqlite3.tbd */,
-				A7AA83490AA24CEE98C452DA /* libPods-stv_project2.3.2.a */,
-				2F9EB62B20FD94F500B66287 /* libsqlite3.dylib */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2F08D78920FD819300E84ECD /* stv_project2.3.2 */ = {
+		2FA6A8E42109B41B00C8F891 /* stv_project2.3.2 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2F08D7A020FD819400E84ECD /* Build configuration list for PBXNativeTarget "stv_project2.3.2" */;
+			buildConfigurationList = 2FA6A8FB2109B41B00C8F891 /* Build configuration list for PBXNativeTarget "stv_project2.3.2" */;
 			buildPhases = (
-				A6E8F692112A65F8A656A9F9 /* [CP] Check Pods Manifest.lock */,
-				2F08D78620FD819300E84ECD /* Sources */,
-				2F08D78720FD819300E84ECD /* Frameworks */,
-				2F08D78820FD819300E84ECD /* Resources */,
+				11CB3AEFFA4F7B1550871DEF /* [CP] Check Pods Manifest.lock */,
+				2FA6A8E12109B41B00C8F891 /* Sources */,
+				2FA6A8E22109B41B00C8F891 /* Frameworks */,
+				2FA6A8E32109B41B00C8F891 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -126,24 +113,24 @@
 			);
 			name = stv_project2.3.2;
 			productName = stv_project2.3.2;
-			productReference = 2F08D78A20FD819300E84ECD /* stv_project2.3.2.app */;
+			productReference = 2FA6A8E52109B41B00C8F891 /* stv_project2.3.2.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		2F08D78220FD819300E84ECD /* Project object */ = {
+		2FA6A8DD2109B41B00C8F891 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "比留間龍三";
 				TargetAttributes = {
-					2F08D78920FD819300E84ECD = {
+					2FA6A8E42109B41B00C8F891 = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
 				};
 			};
-			buildConfigurationList = 2F08D78520FD819300E84ECD /* Build configuration list for PBXProject "stv_project2.3.2" */;
+			buildConfigurationList = 2FA6A8E02109B41B00C8F891 /* Build configuration list for PBXProject "stv_project2.3.2" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -151,31 +138,31 @@
 				en,
 				Base,
 			);
-			mainGroup = 2F08D78120FD819300E84ECD;
-			productRefGroup = 2F08D78B20FD819300E84ECD /* Products */;
+			mainGroup = 2FA6A8DC2109B41B00C8F891;
+			productRefGroup = 2FA6A8E62109B41B00C8F891 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2F08D78920FD819300E84ECD /* stv_project2.3.2 */,
+				2FA6A8E42109B41B00C8F891 /* stv_project2.3.2 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2F08D78820FD819300E84ECD /* Resources */ = {
+		2FA6A8E32109B41B00C8F891 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F08D79A20FD819400E84ECD /* LaunchScreen.storyboard in Resources */,
-				2F08D79720FD819400E84ECD /* Assets.xcassets in Resources */,
-				2F08D79520FD819300E84ECD /* Main.storyboard in Resources */,
+				2FA6A8F52109B41B00C8F891 /* LaunchScreen.storyboard in Resources */,
+				2FA6A8F22109B41B00C8F891 /* Assets.xcassets in Resources */,
+				2FA6A8F02109B41B00C8F891 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		A6E8F692112A65F8A656A9F9 /* [CP] Check Pods Manifest.lock */ = {
+		11CB3AEFFA4F7B1550871DEF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -196,32 +183,31 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2F08D78620FD819300E84ECD /* Sources */ = {
+		2FA6A8E12109B41B00C8F891 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F08D79220FD819300E84ECD /* ViewController.m in Sources */,
-				2F08D79D20FD819400E84ECD /* main.m in Sources */,
-				2F08D78F20FD819300E84ECD /* AppDelegate.m in Sources */,
-				2F8C2EEE20FDEE0000DFFD18 /* InputViwController.m in Sources */,
+				2FA6A8ED2109B41B00C8F891 /* ViewController.m in Sources */,
+				2FA6A8F82109B41B00C8F891 /* main.m in Sources */,
+				2FA6A8EA2109B41B00C8F891 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		2F08D79320FD819300E84ECD /* Main.storyboard */ = {
+		2FA6A8EE2109B41B00C8F891 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2F08D79420FD819300E84ECD /* Base */,
+				2FA6A8EF2109B41B00C8F891 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		2F08D79820FD819400E84ECD /* LaunchScreen.storyboard */ = {
+		2FA6A8F32109B41B00C8F891 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2F08D79920FD819400E84ECD /* Base */,
+				2FA6A8F42109B41B00C8F891 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -229,7 +215,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		2F08D79E20FD819400E84ECD /* Debug */ = {
+		2FA6A8F92109B41B00C8F891 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -287,7 +273,7 @@
 			};
 			name = Debug;
 		};
-		2F08D79F20FD819400E84ECD /* Release */ = {
+		2FA6A8FA2109B41B00C8F891 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -339,36 +325,36 @@
 			};
 			name = Release;
 		};
-		2F08D7A120FD819400E84ECD /* Debug */ = {
+		2FA6A8FC2109B41B00C8F891 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 49165F84CADA853B12BDB916 /* Pods-stv_project2.3.2.debug.xcconfig */;
+			baseConfigurationReference = 49790619C3FF331C01403EC4 /* Pods-stv_project2.3.2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PCCZJUYRT6;
 				INFOPLIST_FILE = stv_project2.3.2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.stv.stv-project2-3-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		2F08D7A220FD819400E84ECD /* Release */ = {
+		2FA6A8FD2109B41B00C8F891 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1F0CC3EA75AF56E301552175 /* Pods-stv_project2.3.2.release.xcconfig */;
+			baseConfigurationReference = 21A8C669766D6A965B201C7E /* Pods-stv_project2.3.2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PCCZJUYRT6;
 				INFOPLIST_FILE = stv_project2.3.2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.stv.stv-project2-3-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -378,25 +364,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2F08D78520FD819300E84ECD /* Build configuration list for PBXProject "stv_project2.3.2" */ = {
+		2FA6A8E02109B41B00C8F891 /* Build configuration list for PBXProject "stv_project2.3.2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2F08D79E20FD819400E84ECD /* Debug */,
-				2F08D79F20FD819400E84ECD /* Release */,
+				2FA6A8F92109B41B00C8F891 /* Debug */,
+				2FA6A8FA2109B41B00C8F891 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2F08D7A020FD819400E84ECD /* Build configuration list for PBXNativeTarget "stv_project2.3.2" */ = {
+		2FA6A8FB2109B41B00C8F891 /* Build configuration list for PBXNativeTarget "stv_project2.3.2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2F08D7A120FD819400E84ECD /* Debug */,
-				2F08D7A220FD819400E84ECD /* Release */,
+				2FA6A8FC2109B41B00C8F891 /* Debug */,
+				2FA6A8FD2109B41B00C8F891 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 2F08D78220FD819300E84ECD /* Project object */;
+	rootObject = 2FA6A8DD2109B41B00C8F891 /* Project object */;
 }

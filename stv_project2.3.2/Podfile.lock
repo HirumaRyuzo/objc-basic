@@ -1,22 +1,18 @@
 PODS:
-  - FMDB/standalone (2.7.2):
-    - sqlite3
-  - sqlite3 (3.24.0):
-    - sqlite3/common (= 3.24.0)
-  - sqlite3/common (3.24.0)
+  - FMDB (2.7.2):
+    - FMDB/standard (= 2.7.2)
+  - FMDB/standard (2.7.2)
 
 DEPENDENCIES:
-  - FMDB/standalone
+  - FMDB
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - FMDB
-    - sqlite3
 
 SPEC CHECKSUMS:
   FMDB: 6198a90e7b6900cfc046e6bc0ef6ebb7be9236aa
-  sqlite3: 3ba3b687e159a637b40df3438b860f7b3fe60a96
 
-PODFILE CHECKSUM: 9b3f7ad90cf4edb493190889757f5a31ed6bf39c
+PODFILE CHECKSUM: 2df6b6511e5db5678a1de1d21cda160e371b7b50
 
 COCOAPODS: 1.5.3
