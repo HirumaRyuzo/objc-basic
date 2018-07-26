@@ -18,22 +18,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ft1-d3-mdB">
-                                <rect key="frame" x="16" y="35" width="349" height="451"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ft1-d3-mdB">
+                                <rect key="frame" x="20" y="35" width="335" height="451"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="451" id="aPc-gq-cVy"/>
+                                    <constraint firstAttribute="width" constant="335" id="c9r-Hy-u2j"/>
+                                </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3iH-Tz-a5E">
-                                <rect key="frame" x="162" y="581" width="62" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3iH-Tz-a5E">
+                                <rect key="frame" x="156.5" y="575" width="62" height="47"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="29"/>
                                 <state key="normal" title="Filter"/>
                                 <connections>
                                     <action selector="changeFilter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TSZ-cx-hnd"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Syc-qb-Uuh">
-                                <rect key="frame" x="138" y="516" width="105" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Syc-qb-Uuh">
+                                <rect key="frame" x="135" y="506" width="105" height="49"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                 <state key="normal" title="Camera"/>
                                 <connections>
@@ -42,6 +43,14 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Syc-qb-Uuh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BH2-OY-Ap9"/>
+                            <constraint firstItem="Syc-qb-Uuh" firstAttribute="top" secondItem="ft1-d3-mdB" secondAttribute="bottom" constant="20" id="NfR-2W-uub"/>
+                            <constraint firstItem="3iH-Tz-a5E" firstAttribute="top" secondItem="Syc-qb-Uuh" secondAttribute="bottom" constant="20" id="UoH-ym-Yjd"/>
+                            <constraint firstItem="3iH-Tz-a5E" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bNu-iX-j0a"/>
+                            <constraint firstItem="ft1-d3-mdB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="qsU-WB-B5L"/>
+                            <constraint firstItem="ft1-d3-mdB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wXU-S5-4gH"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
