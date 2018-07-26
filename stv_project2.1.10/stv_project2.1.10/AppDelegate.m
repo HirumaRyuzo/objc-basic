@@ -14,20 +14,20 @@
 
 @implementation AppDelegate
 
-
-//スキームで開かれた時の処理
-- (BOOL)application:(UIApplication *)app
-            openURL:(NSURL *)url
-            options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
-    NSLog(@"scheme: %@", url.scheme);
-    NSLog(@"user: %@", url.user);
-    NSLog(@"password: %@", url.password);
-    NSLog(@"host: %@", url.host);
-    NSLog(@"port: %@", url.port);
-    NSLog(@"fragment: %@", url.fragment);
-
-    return YES;
-}
+//
+////スキームで開かれた時の処理
+//- (BOOL)application:(UIApplication *)app
+//            openURL:(NSURL *)url
+//            options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
+//    NSLog(@"scheme: %@", url.scheme);
+//    NSLog(@"user: %@", url.user);
+//    NSLog(@"password: %@", url.password);
+//    NSLog(@"host: %@", url.host);
+//    NSLog(@"port: %@", url.port);
+//    NSLog(@"fragment: %@", url.fragment);
+//
+//    return YES;
+//}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
