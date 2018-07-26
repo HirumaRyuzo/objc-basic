@@ -38,7 +38,7 @@
 //            NSLog(@"fragment: %@", url.fragment);
 //            NSLog(@"query: %@", url.query);
     
-    //stv261://?number=1&english=one&japanese=いち&
+    //stv261://?number=1&english=one&japanese=いち
     //日本語OKにする
     NSString *encodeUrl = [url.query stringByRemovingPercentEncoding];
     NSLog(@"encode - %@", encodeUrl);
