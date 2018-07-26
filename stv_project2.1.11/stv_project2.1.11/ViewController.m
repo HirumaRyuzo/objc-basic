@@ -23,8 +23,9 @@
                  @"img4.JPG",@"img5.JPG",@"img6.JPG",@"img7.JPG"];
     self.label2Array = @[@"2013/8/23/16:04",@"2013/8/23/16:15",@"2013/8/23/16:47",@"2013/8/23/17:10",
                     @"2013/8/23/1715:",@"2013/8/23/17:21",@"2013/8/23/17:33",@"2013/8/23/17:41"];
-    _table.estimatedRowHeight = 50;
-    _table.rowHeight = UITableViewAutomaticDimension;
+    self.table.estimatedRowHeight = 50;
+    //
+    self.table.rowHeight = UITableViewAutomaticDimension;
 }
 
 //Table Viewのセクション数を指定
@@ -63,12 +64,12 @@
     self.plist.image = img;
     
     // Tag番号 ２ で UILabel インスタンスの生成
-    UILabel *label1 = (UILabel *)[cell viewWithTag:2];
-    label1.text = [NSString stringWithFormat:@"No.%d",(int)(indexPath.row+1)];
+    UILabel *titleLabel = (UILabel *)[cell viewWithTag:2];
+    titleLabel.text = [NSString stringWithFormat:@"No.%d",(int)(indexPath.row+1)];
     
     // Tag番号 ３ で UILabel インスタンスの生成
-    UILabel *label2 = (UILabel *)[cell viewWithTag:3];
-    label2.text = self.label2Array[indexPath.row];
+    UILabel *dateLabel = (UILabel *)[cell viewWithTag:3];
+    dateLabel.text = self.label2Array[indexPath.row];
     
     return cell;
 }
