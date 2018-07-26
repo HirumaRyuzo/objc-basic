@@ -25,20 +25,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
- 
     
     // ユーザから位置情報の利用について承認
     if (nil == self.locationManager) {
-        self.locationManager = [[CLLocationManager alloc] init];
-        // iOS 8以上
-        if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0) {
+        self.locationManager = [[CLLocationManager alloc] init]; {
             // NSLocationWhenInUseUsageDescriptionに設定したメッセージでユーザに確認
             [ self.locationManager requestWhenInUseAuthorization];
             // NSLocationAlwaysUsageDescriptionに設定したメッセージでユーザに確認
             //[locationManager requestAlwaysAuthorization];
         }
     }
-    
     
     if (nil == self.locationManager)
         self.locationManager = [[CLLocationManager alloc] init];
@@ -49,7 +45,6 @@
     
     // 情報の更新を開始すれば、位置情報を取得
     [self.locationManager startUpdatingLocation];
-    
 }
 
 // GPSで位置情報の更新があったときに呼ばれる
@@ -72,7 +67,6 @@
     NSDateFormatter *df = [[NSDateFormatter alloc] init];
     [df setDateFormat:@"yyyy/MM/dd HH:mm:ss"];
     self.labelTime.text = [df stringFromDate:timestamp];
-    
 }
 
 @end
