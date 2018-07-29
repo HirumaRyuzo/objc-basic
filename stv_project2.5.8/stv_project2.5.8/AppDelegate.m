@@ -7,8 +7,9 @@
 //
 
 #import "AppDelegate.h"
+@import UserNotifications;
 
-@interface AppDelegate ()
+@interface AppDelegate ()<UIApplicationDelegate, UNUserNotificationCenterDelegate>
 @end
 
 @implementation AppDelegate
@@ -16,13 +17,11 @@
 // version check
 #define SYSTEM_VERSION_GRATERTHAN_OR_EQUALTO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
 
--(BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
-    [FIRApp configure];
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [self registerForRemoteNotifications];
     return YES;
 }
 
-//
 - (void)registerForRemoteNotifications {
     // 上か同じ以上なら
     if(SYSTEM_VERSION_GRATERTHAN_OR_EQUALTO(@"10.0")){
@@ -51,5 +50,25 @@
     completionHandler();
 }
 
-@end
+// DeviceToken受信成功
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    NSString *token = deviceToken.description;
+    
+    // <aaaa bbbb cccc dddd>みたいな形式でくるので、"<"、">"、"(空白)"を取ってあげると便利だよ
+    token = [token stringByReplacingOccurrencesOfString:@"<" withString:@""];
+    token = [token stringByReplacingOccurrencesOfString:@">" withString:@""];
+    token = [token stringByReplacingOccurrencesOfString:@" " withString:@""];
+    
+    NSLog(@"deviceToken: %@", token);
+}
 
+// DeviceToken受信失敗
+- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
+    NSLog(@"deviceToken error: %@", [error description]);
+}
+// 通常のPush通知の受信
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
+    NSLog(@"pushInfo: %@", [userInfo description]);
+}
+
+@end
