@@ -7,6 +7,4 @@ target 'stv_project2.3.2' do
 
   # Pods for stv_project2.3.2
 
-pod 'FMDB'
-
 end
