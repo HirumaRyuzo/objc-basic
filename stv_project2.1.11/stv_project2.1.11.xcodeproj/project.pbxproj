@@ -13,6 +13,7 @@
 		2F47E21620F6080700457A96 /* plist.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F47E21520F6080700457A96 /* plist.xcassets */; };
 		2F47E21920F6080700457A96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F47E21720F6080700457A96 /* LaunchScreen.storyboard */; };
 		2F47E21C20F6080700457A96 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F47E21B20F6080700457A96 /* main.m */; };
+		2FCFFF11210EECC300A27D5C /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2FCFFF10210EECC300A27D5C /* Property List.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		2F47E21820F6080700457A96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F47E21A20F6080700457A96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F47E21B20F6080700457A96 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2FCFFF10210EECC300A27D5C /* Property List.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Property List.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				2F47E20D20F6080700457A96 /* AppDelegate.m */,
 				2F47E20F20F6080700457A96 /* ViewController.h */,
 				2F47E21020F6080700457A96 /* ViewController.m */,
+				2FCFFF10210EECC300A27D5C /* Property List.plist */,
 				2F47E21220F6080700457A96 /* Main.storyboard */,
 				2F47E21520F6080700457A96 /* plist.xcassets */,
 				2F47E21720F6080700457A96 /* LaunchScreen.storyboard */,
@@ -130,6 +133,7 @@
 			files = (
 				2F47E21920F6080700457A96 /* LaunchScreen.storyboard in Resources */,
 				2F47E21620F6080700457A96 /* plist.xcassets in Resources */,
+				2FCFFF11210EECC300A27D5C /* Property List.plist in Resources */,
 				2F47E21420F6080700457A96 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

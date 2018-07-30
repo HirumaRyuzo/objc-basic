@@ -18,14 +18,21 @@
 
 - (void)viewDidLoad{
     [super viewDidLoad];
-    NSLog(@"viewDidLoad");
+    
+
+    
+
     self.imgArray = @[@"img0.JPG",@"img1.JPG",@"img2.JPG",@"img3.JPG",
                  @"img4.JPG",@"img5.JPG",@"img6.JPG",@"img7.JPG"];
     self.label2Array = @[@"2013/8/23/16:04",@"2013/8/23/16:15",@"2013/8/23/16:47",@"2013/8/23/17:10",
                     @"2013/8/23/1715:",@"2013/8/23/17:21",@"2013/8/23/17:33",@"2013/8/23/17:41"];
+    //使うとテーブルを表示するときに見積もりの高さを先に計算するので、
+    //実際のセルの高さの計算を遅らせることができる
     self.table.estimatedRowHeight = 50;
-    //
+    //ストーリーボード inspecterのrowHeightの高さに指定　↑で高さ指定してるから不要？
     self.table.rowHeight = UITableViewAutomaticDimension;
+    
+    
 }
 
 //Table Viewのセクション数を指定

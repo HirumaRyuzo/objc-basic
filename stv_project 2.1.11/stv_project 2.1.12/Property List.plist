@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ToykoDisneyLand</key>
+	<array>
+		<string>img1</string>
+		<string>img2</string>
+		<string>img3</string>
+	</array>
+	<key>ToykoDisneySea</key>
+	<array>
+		<string>img4</string>
+		<string>img5</string>
+		<string>img6</string>
+	</array>
+</dict>
+</plist>
