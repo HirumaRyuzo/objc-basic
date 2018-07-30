@@ -6,19 +6,20 @@
 //  Copyright © 2018年 比留間龍三. All rights reserved.
 //
 
-#import "ViewController2.h"
-#import "ViewController.h"
+#import "SecondViewController.h"
 
-@interface ViewController2 ()
+@interface SecondViewController ()
 @end
 
-@implementation ViewController2
+@implementation SecondViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
 }
 
+
 - (IBAction)backPop:(id)sender {
-  [self.navigationController popViewControllerAnimated:YES];
+    [self.navigationController popViewControllerAnimated:YES];
 }
+
 @end

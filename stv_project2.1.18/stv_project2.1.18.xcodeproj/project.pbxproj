@@ -7,16 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F00738F210F34AF009AF76A /* Second.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F00738E210F34AF009AF76A /* Second.storyboard */; };
 		2F08D6F120FB4B6100E84ECD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F08D6F020FB4B6100E84ECD /* AppDelegate.m */; };
 		2F08D6F420FB4B6100E84ECD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F08D6F320FB4B6100E84ECD /* ViewController.m */; };
 		2F08D6F720FB4B6100E84ECD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F08D6F520FB4B6100E84ECD /* Main.storyboard */; };
 		2F08D6F920FB4B6200E84ECD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F08D6F820FB4B6200E84ECD /* Assets.xcassets */; };
 		2F08D6FC20FB4B6200E84ECD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F08D6FA20FB4B6200E84ECD /* LaunchScreen.storyboard */; };
 		2F08D6FF20FB4B6200E84ECD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F08D6FE20FB4B6200E84ECD /* main.m */; };
-		2F08D70720FB4FF600E84ECD /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F08D70620FB4FF600E84ECD /* ViewController2.m */; };
+		2F08D70720FB4FF600E84ECD /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F08D70620FB4FF600E84ECD /* SecondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F00738E210F34AF009AF76A /* Second.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Second.storyboard; sourceTree = "<group>"; };
 		2F08D6EC20FB4B6100E84ECD /* stv_project2.1.18.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = stv_project2.1.18.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F08D6EF20FB4B6100E84ECD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2F08D6F020FB4B6100E84ECD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -27,8 +29,8 @@
 		2F08D6FB20FB4B6200E84ECD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F08D6FD20FB4B6200E84ECD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F08D6FE20FB4B6200E84ECD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2F08D70520FB4FF600E84ECD /* ViewController2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
-		2F08D70620FB4FF600E84ECD /* ViewController2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
+		2F08D70520FB4FF600E84ECD /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		2F08D70620FB4FF600E84ECD /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,9 +67,10 @@
 				2F08D6F020FB4B6100E84ECD /* AppDelegate.m */,
 				2F08D6F220FB4B6100E84ECD /* ViewController.h */,
 				2F08D6F320FB4B6100E84ECD /* ViewController.m */,
-				2F08D70520FB4FF600E84ECD /* ViewController2.h */,
-				2F08D70620FB4FF600E84ECD /* ViewController2.m */,
+				2F08D70520FB4FF600E84ECD /* SecondViewController.h */,
+				2F08D70620FB4FF600E84ECD /* SecondViewController.m */,
 				2F08D6F520FB4B6100E84ECD /* Main.storyboard */,
+				2F00738E210F34AF009AF76A /* Second.storyboard */,
 				2F08D6F820FB4B6200E84ECD /* Assets.xcassets */,
 				2F08D6FA20FB4B6200E84ECD /* LaunchScreen.storyboard */,
 				2F08D6FD20FB4B6200E84ECD /* Info.plist */,
@@ -133,6 +136,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F00738F210F34AF009AF76A /* Second.storyboard in Resources */,
 				2F08D6FC20FB4B6200E84ECD /* LaunchScreen.storyboard in Resources */,
 				2F08D6F920FB4B6200E84ECD /* Assets.xcassets in Resources */,
 				2F08D6F720FB4B6100E84ECD /* Main.storyboard in Resources */,
@@ -147,7 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F08D6F420FB4B6100E84ECD /* ViewController.m in Sources */,
-				2F08D70720FB4FF600E84ECD /* ViewController2.m in Sources */,
+				2F08D70720FB4FF600E84ECD /* SecondViewController.m in Sources */,
 				2F08D6FF20FB4B6200E84ECD /* main.m in Sources */,
 				2F08D6F120FB4B6100E84ECD /* AppDelegate.m in Sources */,
 			);

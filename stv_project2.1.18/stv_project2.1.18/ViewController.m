@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "ViewController2.h"
+#import "SecondViewController.h"
 
 @interface ViewController ()
 @end
@@ -19,7 +19,9 @@
 }
 
 - (IBAction)goPush:(id)sender {
-    ViewController *vc = [[ViewController alloc] init];
-    [self.navigationController pushViewController:vc animated:YES];
+    UIStoryboard *second = [UIStoryboard storyboardWithName:@"Second" bundle:[NSBundle mainBundle]];
+    UIViewController *secondView = [second instantiateInitialViewController];
+    // navigationControllerで遷移
+    [self.navigationController pushViewController:secondView animated:YES];
 }
 @end

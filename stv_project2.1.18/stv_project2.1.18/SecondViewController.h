@@ -8,6 +8,5 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController2 : UIViewController
-- (IBAction)backPop:(id)sender;
+@interface SecondViewController : UIViewController
 @end
