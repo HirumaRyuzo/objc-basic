@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F0073B4210F536D009AF76A /* Wether.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F0073B3210F536D009AF76A /* Wether.m */; };
 		2FB0FF1E20FF46BB001E5385 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB0FF1D20FF46BB001E5385 /* AppDelegate.m */; };
 		2FB0FF2120FF46BB001E5385 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB0FF2020FF46BB001E5385 /* ViewController.m */; };
 		2FB0FF2420FF46BB001E5385 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FB0FF2220FF46BB001E5385 /* Main.storyboard */; };
@@ -19,6 +20,8 @@
 /* Begin PBXFileReference section */
 		05776F503A2E8F60CD2750F4 /* Pods-stv_project2.4.2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stv_project2.4.2.release.xcconfig"; path = "Pods/Target Support Files/Pods-stv_project2.4.2/Pods-stv_project2.4.2.release.xcconfig"; sourceTree = "<group>"; };
 		18348B033FB035F31FC1FC76 /* Pods-stv_project2.4.2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stv_project2.4.2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-stv_project2.4.2/Pods-stv_project2.4.2.debug.xcconfig"; sourceTree = "<group>"; };
+		2F0073B2210F536D009AF76A /* Wether.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Wether.h; sourceTree = "<group>"; };
+		2F0073B3210F536D009AF76A /* Wether.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Wether.m; sourceTree = "<group>"; };
 		2FB0FF1920FF46BB001E5385 /* stv_project2.4.2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = stv_project2.4.2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FB0FF1C20FF46BB001E5385 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2FB0FF1D20FF46BB001E5385 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -65,6 +68,8 @@
 		2FB0FF1B20FF46BB001E5385 /* stv_project2.4.2 */ = {
 			isa = PBXGroup;
 			children = (
+				2F0073B2210F536D009AF76A /* Wether.h */,
+				2F0073B3210F536D009AF76A /* Wether.m */,
 				2FB0FF1C20FF46BB001E5385 /* AppDelegate.h */,
 				2FB0FF1D20FF46BB001E5385 /* AppDelegate.m */,
 				2FB0FF1F20FF46BB001E5385 /* ViewController.h */,
@@ -189,6 +194,7 @@
 			files = (
 				2FB0FF2120FF46BB001E5385 /* ViewController.m in Sources */,
 				2FB0FF2C20FF46BC001E5385 /* main.m in Sources */,
+				2F0073B4210F536D009AF76A /* Wether.m in Sources */,
 				2FB0FF1E20FF46BB001E5385 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
