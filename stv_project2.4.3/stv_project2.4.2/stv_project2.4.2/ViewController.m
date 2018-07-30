@@ -12,7 +12,7 @@
 #import "Wether.h"
 
 // 天気APIの取得
-const NSString *getWether = @"http://weather.livedoor.com/forecast/webservice/json/v1?city=130010";
+NSString *const GetWether = @"http://weather.livedoor.com/forecast/webservice/json/v1?city=130010";
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *wetherTable;
@@ -35,7 +35,7 @@ const NSString *getWether = @"http://weather.livedoor.com/forecast/webservice/js
 - (void)connectAPI {
     self.wether = [NSMutableArray new];
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-    [manager GET:(NSString *)getWether parameters:nil progress:nil
+    [manager GET:(NSString *)GetWether parameters:nil progress:nil
          success:^(NSURLSessionTask *task, id responseObject) {
          @try {
              if ((self.forecasts = responseObject[@"forecasts"])) {
