@@ -27,7 +27,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <state key="normal" title="進む"/>
                                 <connections>
-                                    <segue destination="nsS-XZ-imT" kind="presentation" id="0g3-8x-dlQ"/>
+                                    <action selector="goBscreen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LeU-UV-136"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="画面A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="33e-sX-tfL">
@@ -55,55 +55,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
-        </scene>
-        <!--View Controller2-->
-        <scene sceneID="dt7-Nn-20X">
-            <objects>
-                <viewController storyboardIdentifier="ViewController2" id="nsS-XZ-imT" customClass="ViewController2" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="c6Z-8G-oae">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B7Q-hU-4FF">
-                                <rect key="frame" x="147.5" y="293.5" width="80" height="80"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="80" id="ZA1-iy-x6W"/>
-                                    <constraint firstAttribute="height" constant="80" id="fAi-HD-5SU"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                <state key="normal" title="戻る"/>
-                                <connections>
-                                    <action selector="dismiss:" destination="nsS-XZ-imT" eventType="touchUpInside" id="xCa-GT-e6s"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="画面B" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pcc-FK-Aaa">
-                                <rect key="frame" x="80" y="110" width="214" height="153"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="214" id="0aX-jx-NLH"/>
-                                    <constraint firstAttribute="height" constant="153" id="tzh-KR-1ce"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="214" id="ugB-H6-uiT"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="153" id="zki-2u-DnD"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="55"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <accessibility key="accessibilityConfiguration" identifier="ViewController2"/>
-                        <constraints>
-                            <constraint firstItem="Pcc-FK-Aaa" firstAttribute="top" secondItem="ZcH-Ko-MBQ" secondAttribute="top" constant="90" id="3gl-3g-bRd"/>
-                            <constraint firstItem="B7Q-hU-4FF" firstAttribute="centerX" secondItem="c6Z-8G-oae" secondAttribute="centerX" id="7vI-4g-B7o"/>
-                            <constraint firstItem="B7Q-hU-4FF" firstAttribute="centerY" secondItem="c6Z-8G-oae" secondAttribute="centerY" id="GTF-GF-jgT"/>
-                            <constraint firstItem="B7Q-hU-4FF" firstAttribute="top" secondItem="Pcc-FK-Aaa" secondAttribute="bottom" constant="30.5" id="HhI-Ro-kBg"/>
-                            <constraint firstItem="Pcc-FK-Aaa" firstAttribute="centerX" secondItem="c6Z-8G-oae" secondAttribute="centerX" id="KvM-tV-Z5R"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="ZcH-Ko-MBQ"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wGU-bG-7NC" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="993" y="133"/>
         </scene>
     </scenes>
 </document>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller2-->
+        <scene sceneID="WjR-Kw-rA0">
+            <objects>
+                <viewController storyboardIdentifier="ViewController2" id="4Tv-SA-VXP" customClass="ViewController2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GFT-Wm-40x">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b9E-aZ-wmv">
+                                <rect key="frame" x="147.5" y="293.5" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="ugr-Y8-7ap"/>
+                                    <constraint firstAttribute="width" constant="80" id="ui9-8w-lrY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="戻る"/>
+                                <connections>
+                                    <action selector="dismiss:" destination="4Tv-SA-VXP" eventType="touchUpInside" id="EXh-dx-6d5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="画面B" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VOU-eX-rWX">
+                                <rect key="frame" x="80" y="110" width="214" height="153"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="214" id="1rX-Vl-q88"/>
+                                    <constraint firstAttribute="width" constant="214" id="Iv3-vK-Iz5"/>
+                                    <constraint firstAttribute="height" constant="153" id="OOn-8Q-KZm"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="153" id="cP3-om-XFq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="55"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <accessibility key="accessibilityConfiguration" identifier="ViewController2"/>
+                        <constraints>
+                            <constraint firstItem="b9E-aZ-wmv" firstAttribute="centerY" secondItem="GFT-Wm-40x" secondAttribute="centerY" id="1c1-cS-tOP"/>
+                            <constraint firstItem="VOU-eX-rWX" firstAttribute="centerX" secondItem="GFT-Wm-40x" secondAttribute="centerX" id="W4d-Sm-s9u"/>
+                            <constraint firstItem="VOU-eX-rWX" firstAttribute="top" secondItem="E9Q-QN-RVK" secondAttribute="top" constant="90" id="eQT-ZM-Emn"/>
+                            <constraint firstItem="b9E-aZ-wmv" firstAttribute="centerX" secondItem="GFT-Wm-40x" secondAttribute="centerX" id="iZG-gO-bhK"/>
+                            <constraint firstItem="b9E-aZ-wmv" firstAttribute="top" secondItem="VOU-eX-rWX" secondAttribute="bottom" constant="30.5" id="y28-hC-WdA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="E9Q-QN-RVK"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ey2-cS-P7G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047" y="133"/>
+        </scene>
+    </scenes>
+</document>

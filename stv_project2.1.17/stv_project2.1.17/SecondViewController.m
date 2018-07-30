@@ -6,7 +6,7 @@
 //  Copyright © 2018年 比留間龍三. All rights reserved.
 //
 
-#import "ViewController2.h"
+#import "SecondViewController.h"
 
 @interface ViewController2 ()
 

@@ -9,6 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController2 : UIViewController
-- (IBAction)dismiss:(id)sender;
 
 @end
