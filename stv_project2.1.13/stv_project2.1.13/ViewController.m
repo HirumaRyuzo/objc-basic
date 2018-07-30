@@ -8,10 +8,10 @@
 
 #import "ViewController.h"
 
-@interface ViewController (){
-    NSArray *photos;
-    NSArray *imageTitles;
-}
+@interface ViewController ()
+@property NSArray *photos;
+@property NSArray *imageTitles;
+
 @end
 
 @implementation ViewController
@@ -19,9 +19,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // 配列要素
-    photos = @[@"mickey", @"minnie", @"chip", @"dale",
+    self.photos = @[@"mickey", @"minnie", @"chip", @"dale",
                @"pooh", @"piglet", @"r2d2", @"c3po",@"darth", @"storm"];
-    imageTitles = @[
+    self.imageTitles = @[
                @"TokyoDisneyLand",
                @"TokyoDisneySea",
                ];
@@ -34,7 +34,7 @@
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     // itemの数を設定する、配列の全要素数を入れる
-    return photos.count;
+    return self.photos.count;
     ////    セクション毎の表示するセルの数
     //    if (section == 0) {
     //        return 2;
@@ -55,7 +55,7 @@
                                                                                   withReuseIdentifier:@"HeaderView"
                                                                                          forIndexPath:indexPath];
         UILabel *label = [headerView viewWithTag:1];
-        label.text = imageTitles[indexPath.section];
+        label.text = self.imageTitles[indexPath.section];
         reusableview = headerView;
     }
     return reusableview;
@@ -69,14 +69,14 @@
     //storyboard上の画像につけたタグに合わせて UIImageView のインスタンスを生成
     UIImageView *imageView = (UIImageView *)[cell viewWithTag:1];
     // 配列のindexをcellのindexと同じにする
-    NSString *imgName = photos[(int)(indexPath.row)];
+    NSString *imgName = self.photos[(int)(indexPath.row)];
     // 配列の名前の画像を呼び出す
     UIImage *image = [UIImage imageNamed:imgName];
     // UIImageをimageViewの画像として設定
     imageView.image = image;
     
     UILabel *label = (UILabel *)[cell viewWithTag:2];
-    label.text = photos[(int)(indexPath.row)];
+    label.text = self.photos[(int)(indexPath.row)];
     
     return cell;
 }
