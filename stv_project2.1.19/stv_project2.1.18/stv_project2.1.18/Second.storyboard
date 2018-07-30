@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="j23-2k-sRR">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Second View Controller-->
+        <scene sceneID="CIt-Lq-IXV">
+            <objects>
+                <viewController storyboardIdentifier="Second" useStoryboardIdentifierAsRestorationIdentifier="YES" id="j23-2k-sRR" customClass="SecondViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uXe-mu-QgW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="画面B" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gw8-PJ-84g">
+                                <rect key="frame" x="115.5" y="230" width="144" height="66"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="55"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="画面Aからの文字" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bkn-U0-mmj">
+                                <rect key="frame" x="121" y="323" width="133" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Bkn-U0-mmj" firstAttribute="top" secondItem="Gw8-PJ-84g" secondAttribute="bottom" constant="27" id="4zf-q2-SRm"/>
+                            <constraint firstItem="Bkn-U0-mmj" firstAttribute="centerY" secondItem="uXe-mu-QgW" secondAttribute="centerY" id="AnD-12-LdK"/>
+                            <constraint firstItem="Bkn-U0-mmj" firstAttribute="centerX" secondItem="uXe-mu-QgW" secondAttribute="centerX" id="Ysz-3i-dX4"/>
+                            <constraint firstItem="Gw8-PJ-84g" firstAttribute="centerX" secondItem="uXe-mu-QgW" secondAttribute="centerX" id="a6t-pa-u32"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="NwJ-vb-Nnc"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="1rB-43-ceN"/>
+                    <connections>
+                        <outlet property="fromALabel" destination="Bkn-U0-mmj" id="sjo-cS-ffU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dAl-9f-U0H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1960.8" y="617.54122938530736"/>
+        </scene>
+    </scenes>
+</document>
