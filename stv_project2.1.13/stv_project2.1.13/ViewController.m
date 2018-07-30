@@ -10,7 +10,7 @@
 
 @interface ViewController (){
     NSArray *photos;
-    NSArray *titles;
+    NSArray *imageTitles;
 }
 @end
 
@@ -21,7 +21,7 @@
     // 配列要素
     photos = @[@"mickey", @"minnie", @"chip", @"dale",
                @"pooh", @"piglet", @"r2d2", @"c3po",@"darth", @"storm"];
-    titles = @[
+    imageTitles = @[
                @"TokyoDisneyLand",
                @"TokyoDisneySea",
                ];
@@ -55,7 +55,7 @@
                                                                                   withReuseIdentifier:@"HeaderView"
                                                                                          forIndexPath:indexPath];
         UILabel *label = [headerView viewWithTag:1];
-        label.text = titles[indexPath.section];
+        label.text = imageTitles[indexPath.section];
         reusableview = headerView;
     }
     return reusableview;
@@ -64,8 +64,7 @@
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     
     UICollectionViewCell *cell;
-    //dequeueReusableCellWithReuseIdentifier の働きは再利用できるセルがあればそれを使う
-    // 再利用できるセルがなければ生成する
+    //dequeueReusableCellWithReuseIdentifier の働きは再利用できるセルがなければ生成する
     cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
     //storyboard上の画像につけたタグに合わせて UIImageView のインスタンスを生成
     UIImageView *imageView = (UIImageView *)[cell viewWithTag:1];
