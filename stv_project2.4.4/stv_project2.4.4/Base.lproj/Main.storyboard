@@ -23,22 +23,13 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="115" id="22s-G8-qGs" customClass="WetherTableViewCell">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="115"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="191" id="22s-G8-qGs" customClass="WetherTableViewCell">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="191"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="22s-G8-qGs" id="rAv-Ui-CZZ">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="114.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="190.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VSz-qK-81t">
-                                                    <rect key="frame" x="198" y="21.5" width="152" height="93"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="93" id="GDd-rY-Rch"/>
-                                                        <constraint firstAttribute="width" constant="152" id="MkQ-fO-Q3Z"/>
-                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="93" id="ht6-yg-fWX"/>
-                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="152" id="jdl-ji-BeW"/>
-                                                    </constraints>
-                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AMd-u9-UDt">
                                                     <rect key="frame" x="20" y="71.5" width="335" height="40"/>
                                                     <constraints>
@@ -49,7 +40,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nGQ-jA-Msz">
-                                                    <rect key="frame" x="35" y="21.5" width="143" height="40"/>
+                                                    <rect key="frame" x="35" y="21.5" width="0.0" height="40"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="jIp-XF-H6b"/>
                                                     </constraints>
@@ -57,19 +48,24 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VSz-qK-81t">
+                                                    <rect key="frame" x="188" y="21" width="152" height="79.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="152" id="92Y-3v-BDe"/>
+                                                    </constraints>
+                                                </imageView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="AMd-u9-UDt" firstAttribute="leading" secondItem="rAv-Ui-CZZ" secondAttribute="leading" constant="20" id="2P7-pW-Ekk"/>
+                                                <constraint firstItem="VSz-qK-81t" firstAttribute="top" secondItem="rAv-Ui-CZZ" secondAttribute="topMargin" constant="10" id="3fB-LH-wtV"/>
                                                 <constraint firstAttribute="bottom" secondItem="AMd-u9-UDt" secondAttribute="bottom" constant="10" id="733-Yz-bwF"/>
+                                                <constraint firstItem="VSz-qK-81t" firstAttribute="centerY" secondItem="rAv-Ui-CZZ" secondAttribute="centerY" id="9iQ-gr-GRH"/>
                                                 <constraint firstItem="nGQ-jA-Msz" firstAttribute="leading" secondItem="rAv-Ui-CZZ" secondAttribute="leadingMargin" constant="20" id="CTM-c3-Cts"/>
                                                 <constraint firstItem="AMd-u9-UDt" firstAttribute="top" secondItem="nGQ-jA-Msz" secondAttribute="bottom" constant="10" id="DQF-hh-Mny"/>
                                                 <constraint firstAttribute="trailing" secondItem="AMd-u9-UDt" secondAttribute="trailing" constant="20" id="DzJ-IA-Xsa"/>
-                                                <constraint firstItem="VSz-qK-81t" firstAttribute="top" secondItem="rAv-Ui-CZZ" secondAttribute="topMargin" constant="10" id="PLm-jD-g2P"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="VSz-qK-81t" secondAttribute="trailing" constant="10" id="X7c-RK-3wh"/>
-                                                <constraint firstItem="VSz-qK-81t" firstAttribute="leading" secondItem="nGQ-jA-Msz" secondAttribute="trailing" constant="20" id="ZId-Uj-kaw"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="VSz-qK-81t" secondAttribute="trailing" constant="20" id="Xbv-CN-cdb"/>
                                                 <constraint firstItem="nGQ-jA-Msz" firstAttribute="top" secondItem="rAv-Ui-CZZ" secondAttribute="topMargin" constant="10" id="cko-3q-P9k"/>
                                                 <constraint firstItem="AMd-u9-UDt" firstAttribute="leading" secondItem="rAv-Ui-CZZ" secondAttribute="leading" constant="20" id="hxl-N3-VwS"/>
-                                                <constraint firstItem="VSz-qK-81t" firstAttribute="bottom" secondItem="rAv-Ui-CZZ" secondAttribute="bottomMargin" constant="10" id="leq-Z1-66n"/>
                                                 <constraint firstItem="AMd-u9-UDt" firstAttribute="top" secondItem="nGQ-jA-Msz" secondAttribute="bottom" constant="10" id="t5M-fC-TGh"/>
                                                 <constraint firstAttribute="bottom" secondItem="AMd-u9-UDt" secondAttribute="bottom" constant="10" id="vS6-nj-1fw"/>
                                             </constraints>
