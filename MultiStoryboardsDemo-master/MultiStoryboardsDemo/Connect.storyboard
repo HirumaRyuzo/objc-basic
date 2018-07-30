@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="WNi-0U-ukP">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Connect-->
+        <scene sceneID="vg9-yI-L72">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="WNi-0U-ukP" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Connect" image="connect35" id="xeH-bH-pte"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pEd-Vp-w7j">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="aIk-rH-h4w" kind="relationship" relationship="rootViewController" id="7Bf-8O-tw8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WUl-5m-Oug" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-375" y="-6"/>
+        </scene>
+        <!--Connect-->
+        <scene sceneID="1nk-yG-cIi">
+            <objects>
+                <viewController id="aIk-rH-h4w" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L9C-wy-tK8"/>
+                        <viewControllerLayoutGuide type="bottom" id="KL3-vr-ske"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1vg-fB-UHg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Connect" id="V7s-xZ-GcI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tES-2j-4Tc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="-6"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="connect35" width="35" height="35"/>
+    </resources>
+</document>
