@@ -43,12 +43,12 @@ typedef NS_ENUM(NSInteger, Class){
     NSString *path = [bundle pathForResource:@"Property List" ofType:@"plist"];
     //プロパティリストの中身データを取得
     NSDictionary *dictionary = [NSDictionary dictionaryWithContentsOfFile:path];
-    NSArray *tdl = [dictionary objectForKey:@"ToykoDisneyLand"];
-    NSArray *tds = [dictionary objectForKey:@"ToykoDisneySea"];
+    NSArray *disneyLandArray = [dictionary objectForKey:@"ToykoDisneyLand"];
+    NSArray *disneySeaArray = [dictionary objectForKey:@"ToykoDisneySea"];
     
     //取得できた配列データをメンバ変数に代入
-    self.imgTdlTitles = tdl;
-    self.imgTdsTitles   = tds;
+    self.imgTdlTitles = disneyLandArray;
+    self.imgTdsTitles   = disneySeaArray;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
