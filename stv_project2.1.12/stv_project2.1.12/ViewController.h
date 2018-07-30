@@ -10,5 +10,4 @@
 
 @interface ViewController : UIViewController <UICollectionViewDelegate>
 
-@property IBOutlet UICollectionView *collectionView;
 @end

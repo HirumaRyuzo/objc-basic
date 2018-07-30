@@ -10,7 +10,7 @@
 
 @interface ViewController ()
 @property NSArray *photos;
-@property NSArray *titles;
+@property  (weak, nonatomic)IBOutlet UICollectionView *collectionView;
 
 @end
 
@@ -21,6 +21,16 @@
     // 配列要素
     self.photos = @[@"mickey", @"minnie", @"chip", @"dale",
                @"pooh", @"piglet", @"r2d2", @"c3po",@"darth", @"storm"];
+}
+
+//セクションなくてもこいつがないとエラーでる！
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
+    return 1;
+}
+
+//同上
+-(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    return self.photos.count;
 }
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
