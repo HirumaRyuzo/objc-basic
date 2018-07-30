@@ -12,8 +12,8 @@
 
 @property (weak, nonatomic) IBOutlet UITableView *cellTable;
 
-@property (nonatomic) NSArray *DName;
-@property (nonatomic) NSArray *DImg;
+@property (nonatomic) NSArray *disneyName;
+@property (nonatomic) NSArray *disneyImg;
 
 @end
 
@@ -23,7 +23,7 @@
     [super viewDidLoad];
     
     // Assetから写真をarrayに代入
-    self.DImg = @[[UIImage imageNamed:@"img0"],
+    self.disneyImg = @[[UIImage imageNamed:@"img0"],
                        [UIImage imageNamed:@"img1"],
                        [UIImage imageNamed:@"img4"]];
     
@@ -32,10 +32,10 @@
     // ファイルパスを通す
     NSString *path    = [bundle pathForResource:@"dList" ofType:@"plist"];
     // plistのデータを取得
-    NSDictionary *dic = [NSDictionary dictionaryWithContentsOfFile:path];
-    NSArray *disney   = [dic objectForKey:@"disney"];
+    NSDictionary *dictionary = [NSDictionary dictionaryWithContentsOfFile:path];
+    NSArray *disney   = [dictionary objectForKey:@"disney"];
     // インスタンス変数に代入する
-    self.DName = disney;
+    self.disneyName = disney;
 }
 
 // cellを可変にする
@@ -52,7 +52,7 @@
 
 // セルの数を指定 要素の数によって可変にする
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.DImg.count;
+    return self.disneyImg.count;
 }
 
 // 各セルの要素を指定 tagで指定する
@@ -62,13 +62,13 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     
-    UIImage *img = self.DImg[indexPath.row];
+    UIImage *img = self.disneyImg[indexPath.row];
     
     UIImageView *imageView = (UIImageView *)[cell viewWithTag:1];
     imageView.image = img;
     
     UILabel *label = (UILabel *)[cell viewWithTag:2];
-    label.text = self.DName[indexPath.row];
+    label.text = self.disneyName[indexPath.row];
     
     return cell;
 }
