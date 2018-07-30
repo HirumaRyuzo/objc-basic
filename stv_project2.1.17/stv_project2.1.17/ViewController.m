@@ -20,7 +20,7 @@
 - (IBAction)goBscreen:(id)sender {
     UIStoryboard *storyboardB = [UIStoryboard storyboardWithName:@"StoryboardB" bundle:nil];
     // 画面遷移
-    UIViewController *initialViewController = [storyboardB instantiateViewControllerWithIdentifier:@"View Controller2"];
+    UIViewController *initialViewController = [storyboardB instantiateViewControllerWithIdentifier:@"ViewController2"];
     
     [self presentViewController:initialViewController animated:YES completion:nil];
 }
