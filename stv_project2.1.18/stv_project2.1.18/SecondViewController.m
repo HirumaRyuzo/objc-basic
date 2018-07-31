@@ -18,8 +18,4 @@
 }
 
 
-- (IBAction)backPop:(id)sender {
-    [self.navigationController popViewControllerAnimated:YES];
-}
-
 @end
