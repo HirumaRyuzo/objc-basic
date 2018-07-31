@@ -77,7 +77,7 @@ NSString *const getWeather = @"http://weather.livedoor.com/forecast/webservice/j
     }]];
     [alertController addAction:[UIAlertAction actionWithTitle:@"明後日" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
         [self selectedActionWith:3];
-        @try {
+            @try {
             Wether *wetherClass = [Wether new];
             wetherClass = self.wether[2];
             NSLog(@"%@", wetherClass.cellTelop);
