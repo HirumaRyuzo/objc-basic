@@ -53,7 +53,7 @@ static CGFloat const CellMargin = 2.0f;
     [super viewDidLoad];
     //今月を表示する
     self.selectedDate = [NSDate date];
-    self.week = @[@"月", @"火", @"水", @"木",@"金", @"土", @"日"];
+    self.week = @[@"日",@"月", @"火", @"水", @"木",@"金", @"土"];
 }
 
 #pragma mark - Action methods
@@ -140,21 +140,34 @@ static CGFloat const CellMargin = 2.0f;
     DayCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:ReuseIdentifier forIndexPath:indexPath];
 
     //セルを指定して曜日によって文字色を変える
+    
     if (indexPath.row % 7 == 0) {//0の位置＝1番左の列＝日曜日の文字色が赤
         cell.label.textColor = [UIColor colorWithRed:0.831 green:0.349 blue:0.224 alpha:1.0];
     }else if (indexPath.row % 7 == 6) {//6の位置＝1番右の列＝土曜日の文字色が青
         cell.label.textColor = [UIColor colorWithRed:0.400 green:0.471 blue:0.980 alpha:1.0];
-    }else {//今月の日付＝黒
+    }else {//それ以外は黒
         cell.label.textColor = [UIColor blackColor];
     }
     
     if(indexPath.section == 0) {//セクション0のセルは曜日
         cell.label.text = self.week[indexPath.row];
     
-    }else if (indexPath.section == 1) {//セクション1のセルは日付
+    }else /*if (indexPath.section == 1)*/ {//セクション1のセルは日付
         NSDateFormatter *dateFormatter = [NSDateFormatter new];
         dateFormatter.dateFormat = @"d";
         cell.label.text = [dateFormatter stringFromDate: [self dateForCellAtIndexPath:indexPath]];
+        
+        NSDateComponents* components1 = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:self.selectedDate];
+        NSDateComponents* components2 = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate: [self dateForCellAtIndexPath:indexPath]];
+        if (components1.month == components2.month ) {
+            // same month and day
+        } else {
+            cell.label.textColor = [UIColor grayColor];
+            // not same month and day
+        }
+        
+        
+//        //前月・次月日付背景色を設定
 
     }
     return cell;
