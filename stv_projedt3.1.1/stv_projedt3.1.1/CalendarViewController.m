@@ -12,7 +12,7 @@
 @implementation NSDate (Extension)
 
 //1ヶ月前の日付を返します。
-- (NSDate *)monthAgoDate{
+- (NSDate *)monthAgoDate {
     NSInteger addValue = -1;
     NSCalendar *calendar = [NSCalendar currentCalendar];
     NSDateComponents *dateComponents = [NSDateComponents new];
@@ -21,7 +21,7 @@
 }
 
 //receivrから1ヶ月後の日付を返します。
-- (NSDate *)monthLaterDate{
+- (NSDate *)monthLaterDate {
     NSInteger addValue = 1;
     NSCalendar *calendar = [NSCalendar currentCalendar];
     NSDateComponents *dateComponents = [NSDateComponents new];
@@ -40,16 +40,17 @@ static CGFloat const CellMargin = 2.0f;
 @property (nonatomic) NSArray *week;
 //カレンダーで選択された日付表示
 @property (nonatomic, strong) NSDate *selectedDate;
+//参照されても解放されない
+//データが消えたら復旧できないからその場合はstlongのほうが良い
 
 @end
-
 
 
 @implementation CalendarViewController
 
 #pragma mark - LifeCycle methods
 
-- (void)viewDidLoad{
+- (void)viewDidLoad {
     [super viewDidLoad];
     //今月を表示する
     self.selectedDate = [NSDate date];
@@ -70,23 +71,21 @@ static CGFloat const CellMargin = 2.0f;
 
 #pragma mark - private methods
 
-
-- (void)setSelectedDate:(NSDate *)selectedDate{
+- (void)setSelectedDate:(NSDate *)selectedDate {
     //self.selectedDateだと落ちる...
     _selectedDate = selectedDate;
 
     //タイトルテキストを更新する
     NSDateFormatter *formatter = [NSDateFormatter new];
-    formatter.dateFormat = @"yyyy/M";
+    formatter.dateFormat = @"yyyy年M月";
     self.title = [formatter stringFromDate:selectedDate];
     
     //ストーリーボードツールバー表示
     self.navigationController.toolbarHidden = NO;
 }
 
-
 //最初に表示される月
-- (NSDate *)firstDateOfMonth{
+- (NSDate *)firstDateOfMonth {
     NSDateComponents *components = [[NSCalendar currentCalendar] components:NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitDay fromDate:self.selectedDate];
     components.day = 1;
     
@@ -95,7 +94,7 @@ static CGFloat const CellMargin = 2.0f;
 }
 
 //指定されたindexPathの戻り日付
-- (NSDate *)dateForCellAtIndexPath:(NSIndexPath *)indexPath{
+- (NSDate *)dateForCellAtIndexPath:(NSIndexPath *)indexPath {
     //「月の初日が週の何日目か」を計算する
     NSInteger ordinalityOfFirstDay = [[NSCalendar currentCalendar] ordinalityOfUnit:NSCalendarUnitDay
                                                                              inUnit:NSCalendarUnitWeekOfMonth
@@ -111,22 +110,22 @@ static CGFloat const CellMargin = 2.0f;
     return date;
 }
 
-//曜日のセクションと日付のセクションを分けたい
+
 #pragma mark - UICollectionViewDataSource methods
 
-//曜日と日付のセクション
-- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
+//曜日と日付のセクションに分ける
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
     return 2;
 }
 
 //分けたセクションのセクション0には曜日、セクション1には日付を表示させる
 //セクション毎のセルの数（これのみだと月の一週目が2回続くだけになる）
 - (NSInteger)collectionView:(UICollectionView *)collectionView
-     numberOfItemsInSection:(NSInteger)section{
-    if(section==0){//セクション0には曜日の7個
+     numberOfItemsInSection:(NSInteger)section {
+    if(section == 0) {//セクション0には曜日の7個
     return self.week.count;
 
-    }else if(section==1) {
+    }else if(section == 1) {
 //    セクション1では週数を計算
     NSRange rangeOfWeeks = [[NSCalendar currentCalendar] rangeOfUnit:NSCalendarUnitWeekOfMonth
                                                               inUnit:NSCalendarUnitMonth
@@ -138,57 +137,36 @@ static CGFloat const CellMargin = 2.0f;
     return 0;
 }
 
-//インデックスパス毎にセルの内容を作成（Array weekから曜日がうまく呼び出せてない）
--(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
+//セルの内容をインデックスパス指定で作成
+-(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     DayCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:ReuseIdentifier forIndexPath:indexPath];
 
-    if(indexPath.section==0){//セクション0のセル
-        NSString *weekString = [NSString stringWithFormat:@"%@",self.week];
-        NSString *weekUTFNonLossyASCIIStringEncoding = [NSString stringWithCString:[weekString cStringUsingEncoding:NSUTF8StringEncoding] encoding:NSNonLossyASCIIStringEncoding];
-        cell.label.text = weekUTFNonLossyASCIIStringEncoding;
+    //セルを指定して曜日によって文字色を変える
+    if (indexPath.row % 7 == 0) {//0の位置＝1番左の列＝日曜日の文字色が赤
+        cell.label.textColor = [UIColor colorWithRed:0.831 green:0.349 blue:0.224 alpha:1.0];
+    
+    } else if (indexPath.row % 7 == 6) {//6の位置＝1番右の列＝土曜日の文字色が青
+        cell.label.textColor = [UIColor colorWithRed:0.400 green:0.471 blue:0.980 alpha:1.0];
+    
+    } else {//今月の日付＝黒
+        cell.label.textColor = [UIColor blackColor];
+    }
+    //背景色＝青
+    //[cell setBackgroundColor:[UIColor blueColor]];
+    
+    if(indexPath.section == 0) {//セクション0のセルは曜日
+        cell.label.text = self.week[indexPath.row];
         
-    }else if(indexPath.section==1){//セクション1のセル
+    } else if (indexPath.section == 1) {//セクション1のセルは日付
         NSDateFormatter *formatter = [NSDateFormatter new];
         formatter.dateFormat = @"d";
-        cell.label.text = [formatter stringFromDate:[self dateForCellAtIndexPath:indexPath]];
+        cell.label.text = [formatter stringFromDate: [self dateForCellAtIndexPath:indexPath]];
+        
+//        else {//今月の日付じゃない場所＝灰色（これ一番最初にこないと土日の色の反映が先にくる）
+//            cell.label.textColor = [UIColor lightGrayColor];
         
     }
     return cell;
-}
-
-//曜日ラベルに色付けしたい！！
--(void)setupCalendarLabel:(NSArray *)array{
-    int calendarTitle = 7;
-    
-    for(int j=0; j<calendarTitle; j++){
-        
-        UILabel *calendarBaseLabel = [UILabel new];
-//        calendarBaseLabel.frame = CGRectMake(
-//                                             calendarLabelIntervalX + calendarLabelX * (j % calendarTitle),
-//                                             calendarLabelY,
-//                                             calendarLabelWidth,
-//                                             calendarLabelHeight
-//                                             );
-//
-        //日曜日のとき「赤」
-        if(j == 0){
-            calendarBaseLabel.textColor = [UIColor colorWithRed:0.831 green:0.349 blue:0.224 alpha:1.0];
-            
-            //土曜日のとき「青」
-        }else if(j == 6){
-            calendarBaseLabel.textColor = [UIColor colorWithRed:0.400 green:0.471 blue:0.980 alpha:1.0];
-            
-            //平日「グレー」
-        }else{
-            calendarBaseLabel.textColor = [UIColor lightGrayColor];
-        }
-        
-        //曜日の配置を行う
-        calendarBaseLabel.text = [array objectAtIndex:j];
-        calendarBaseLabel.textAlignment = NSTextAlignmentCenter;
-//        calendarBaseLabel.font = [UIFont systemFontOfSize:calendarLableFontSize];
-        [self.view addSubview:calendarBaseLabel];
-    }
 }
 
 
@@ -197,13 +175,13 @@ static CGFloat const CellMargin = 2.0f;
 //セルの高さ（セクションindex毎に高さを変更できる）
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
     
-    if(indexPath.section==0){
+    if(indexPath.section == 0) {
     NSInteger numberOfMargin = 8;
     CGFloat width = floorf((collectionView.frame.size.width - CellMargin * numberOfMargin) / DaysPerWeek);
     CGFloat height = width * 0.8f;
     return CGSizeMake(width, height);
     
-    }else if(indexPath.section==1){
+    }else if (indexPath.section == 1) {
     NSInteger numberOfMargin = 8;
     CGFloat width = floorf((collectionView.frame.size.width - CellMargin * numberOfMargin) / DaysPerWeek);
     CGFloat height = width * 1.7f;
@@ -228,4 +206,3 @@ static CGFloat const CellMargin = 2.0f;
 }
 
 @end
-
