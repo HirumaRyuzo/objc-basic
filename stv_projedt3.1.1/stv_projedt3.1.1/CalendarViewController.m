@@ -39,7 +39,7 @@ static CGFloat const CellMargin = 2.0f;
 
 @property (nonatomic) NSArray *week;
 //カレンダーで選択された日付表示
-@property (nonatomic, strong) NSDate *selectedDate;
+@property (nonatomic) NSDate *selectedDate;
 //参照されても解放されない
 //データが消えたら復旧できないからその場合はstlongのほうが良い
 
@@ -76,9 +76,9 @@ static CGFloat const CellMargin = 2.0f;
     _selectedDate = selectedDate;
 
     //タイトルテキストを更新する
-    NSDateFormatter *formatter = [NSDateFormatter new];
-    formatter.dateFormat = @"yyyy年M月";
-    self.title = [formatter stringFromDate:selectedDate];
+    NSDateFormatter *titleText = [NSDateFormatter new];
+    titleText.dateFormat = @"yyyy年M月";
+    self.title = [titleText stringFromDate:selectedDate];
     
     //ストーリーボードツールバー表示
     self.navigationController.toolbarHidden = NO;
@@ -109,7 +109,6 @@ static CGFloat const CellMargin = 2.0f;
                                                                 options:0];
     return date;
 }
-
 
 #pragma mark - UICollectionViewDataSource methods
 
@@ -144,34 +143,25 @@ static CGFloat const CellMargin = 2.0f;
     //セルを指定して曜日によって文字色を変える
     if (indexPath.row % 7 == 0) {//0の位置＝1番左の列＝日曜日の文字色が赤
         cell.label.textColor = [UIColor colorWithRed:0.831 green:0.349 blue:0.224 alpha:1.0];
-    
     } else if (indexPath.row % 7 == 6) {//6の位置＝1番右の列＝土曜日の文字色が青
         cell.label.textColor = [UIColor colorWithRed:0.400 green:0.471 blue:0.980 alpha:1.0];
-    
     } else {//今月の日付＝黒
         cell.label.textColor = [UIColor blackColor];
     }
-    //背景色＝青
-    //[cell setBackgroundColor:[UIColor blueColor]];
     
     if(indexPath.section == 0) {//セクション0のセルは曜日
         cell.label.text = self.week[indexPath.row];
-        
+    
     } else if (indexPath.section == 1) {//セクション1のセルは日付
-        NSDateFormatter *formatter = [NSDateFormatter new];
-        formatter.dateFormat = @"d";
-        cell.label.text = [formatter stringFromDate: [self dateForCellAtIndexPath:indexPath]];
-        
-//        else {//今月の日付じゃない場所＝灰色（これ一番最初にこないと土日の色の反映が先にくる）
-//            cell.label.textColor = [UIColor lightGrayColor];
-        
+        NSDateFormatter *dateFormatter = [NSDateFormatter new];
+        dateFormatter.dateFormat = @"d";
+        cell.label.text = [dateFormatter stringFromDate: [self dateForCellAtIndexPath:indexPath]];
+
     }
     return cell;
 }
 
-
-#pragma mark - UICollectionViewDelegateFlowLayout methods
-
+#pragma mark - UICollectionViewLayout methods
 //セルの高さ（セクションindex毎に高さを変更できる）
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
     
