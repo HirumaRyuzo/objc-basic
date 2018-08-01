@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2F0073E7210FEDB0009AF76A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F0073E6210FEDB0009AF76A /* AppDelegate.m */; };
-		2F0073EA210FEDB0009AF76A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F0073E9210FEDB0009AF76A /* ViewController.m */; };
 		2F0073ED210FEDB0009AF76A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F0073EB210FEDB0009AF76A /* Main.storyboard */; };
 		2F0073EF210FEDB1009AF76A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F0073EE210FEDB1009AF76A /* Assets.xcassets */; };
 		2F0073F2210FEDB1009AF76A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F0073F0210FEDB1009AF76A /* LaunchScreen.storyboard */; };
@@ -21,8 +20,6 @@
 		2F0073E2210FEDB0009AF76A /* stv_projedt3.1.1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = stv_projedt3.1.1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F0073E5210FEDB0009AF76A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2F0073E6210FEDB0009AF76A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2F0073E8210FEDB0009AF76A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2F0073E9210FEDB0009AF76A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		2F0073EC210FEDB0009AF76A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2F0073EE210FEDB1009AF76A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F0073F1210FEDB1009AF76A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -66,8 +63,6 @@
 			children = (
 				2F0073E5210FEDB0009AF76A /* AppDelegate.h */,
 				2F0073E6210FEDB0009AF76A /* AppDelegate.m */,
-				2F0073E8210FEDB0009AF76A /* ViewController.h */,
-				2F0073E9210FEDB0009AF76A /* ViewController.m */,
 				2F8648E821101B7300CE0E64 /* CalendarViewController.h */,
 				2F8648E921101B7300CE0E64 /* CalendarViewController.m */,
 				2F8648EB21101E4200CE0E64 /* DayCell.h */,
@@ -151,7 +146,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F0073EA210FEDB0009AF76A /* ViewController.m in Sources */,
 				2F8648ED21101E4200CE0E64 /* DayCell.m in Sources */,
 				2F0073F5210FEDB1009AF76A /* main.m in Sources */,
 				2F8648EA21101B7300CE0E64 /* CalendarViewController.m in Sources */,
