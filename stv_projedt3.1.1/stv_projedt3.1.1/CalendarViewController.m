@@ -120,18 +120,18 @@ static CGFloat const CellMargin = 2.0f;
 //セクション毎のセルの数（これのみだと月の一週目が2回続くだけになる）
 - (NSInteger)collectionView:(UICollectionView *)collectionView
      numberOfItemsInSection:(NSInteger)section {
-    if(section == 0) {//セクション0には曜日の7個
+    if (section == 0) {//セクション0には曜日の7個
     return self.week.count;
 
-    }else if (section == 1) {
-//    セクション1では週数を計算
-    NSRange rangeOfWeeks = [[NSCalendar currentCalendar] rangeOfUnit:NSCalendarUnitWeekOfMonth
-                                                              inUnit:NSCalendarUnitMonth
-                                                             forDate:self.firstDateOfMonth];
-    NSUInteger numberOfWeeks = rangeOfWeeks.length;
-    NSInteger numberOfItems = numberOfWeeks * DaysPerWeek;
+    } else if (section == 1) {
+//      セクション1では週数を計算
+        NSRange rangeOfWeeks = [[NSCalendar currentCalendar] rangeOfUnit:NSCalendarUnitWeekOfMonth
+                                                                  inUnit:NSCalendarUnitMonth
+                                                                 forDate:self.firstDateOfMonth];
+        NSUInteger numberOfWeeks = rangeOfWeeks.length;
+        NSInteger numberOfItems = numberOfWeeks * DaysPerWeek;
         return numberOfItems;
-}
+    }
     return 0;
 }
 
@@ -143,16 +143,16 @@ static CGFloat const CellMargin = 2.0f;
     
     if (indexPath.row % 7 == 0) {//0の位置＝1番左の列＝日曜日の文字色が赤
         cell.label.textColor = [UIColor colorWithRed:0.831 green:0.349 blue:0.224 alpha:1.0];
-    }else if (indexPath.row % 7 == 6) {//6の位置＝1番右の列＝土曜日の文字色が青
+    } else if (indexPath.row % 7 == 6) {//6の位置＝1番右の列＝土曜日の文字色が青
         cell.label.textColor = [UIColor colorWithRed:0.400 green:0.471 blue:0.980 alpha:1.0];
-    }else {//それ以外は黒
+    } else {//それ以外は黒
         cell.label.textColor = [UIColor blackColor];
     }
     
-    if(indexPath.section == 0) {//セクション0のセルは曜日
+    if (indexPath.section == 0) {//セクション0のセルは曜日
         cell.label.text = self.week[indexPath.row];
     
-    }else /*if (indexPath.section == 1)*/ {//セクション1のセルは日付
+    } else /*if (indexPath.section == 1)*/ {//セクション1のセルは日付
         NSDateFormatter *dateFormatter = [NSDateFormatter new];
         dateFormatter.dateFormat = @"d";
         cell.label.text = [dateFormatter stringFromDate: [self dateForCellAtIndexPath:indexPath]];
@@ -166,7 +166,6 @@ static CGFloat const CellMargin = 2.0f;
             // not same month and day
         }
         
-        
 //        //前月・次月日付背景色を設定
 
     }
@@ -175,19 +174,21 @@ static CGFloat const CellMargin = 2.0f;
 
 #pragma mark - UICollectionViewLayout methods
 //セルの高さ（セクションindex毎に高さを変更できる）
-- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-    
-    if(indexPath.section == 0) {
-    NSInteger numberOfMargin = 8;
-    CGFloat width = floorf((collectionView.frame.size.width - CellMargin * numberOfMargin) / DaysPerWeek);
-    CGFloat height = width * 0.8f;
-    return CGSizeMake(width, height);
-    
-    }else if (indexPath.section == 1) {
-    NSInteger numberOfMargin = 8;
-    CGFloat width = floorf((collectionView.frame.size.width - CellMargin * numberOfMargin) / DaysPerWeek);
-    CGFloat height = width * 1.7f;
-    return CGSizeMake(width, height);
+- (CGSize)collectionView:(UICollectionView *)collectionView
+                  layout:(UICollectionViewLayout *)collectionViewLayout
+  sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.section == 0) {
+        NSInteger numberOfMargin = 8;
+        CGFloat width = floorf((collectionView.frame.size.width - CellMargin * numberOfMargin) / DaysPerWeek);
+        CGFloat height = width * 0.8f;
+        return CGSizeMake(width, height);
+        
+    } else if (indexPath.section == 1) {
+        NSInteger numberOfMargin = 8;
+        CGFloat width = floorf((collectionView.frame.size.width - CellMargin * numberOfMargin) / DaysPerWeek);
+        CGFloat height = width * 1.7f;
+        return CGSizeMake(width, height);
     }
     return CGSizeMake(100, 100);//100て?
 }
