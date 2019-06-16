@@ -1,0 +1,21 @@
+//
+//  ViewController.h
+//  stv_project2.1.8
+//
+//  Created by 比留間龍三 on 2018/07/03.
+//  Copyright © 2018年 比留間龍三. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface ViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
+//ラベルを定義
+@property(weak, nonatomic) IBOutlet UILabel *characterLabel;
+//ピッカーを定義
+@property(weak, nonatomic) IBOutlet UIPickerView *characterPicker;
+//ツーツバーを定義
+@property(weak, nonatomic) IBOutlet UIToolbar *toolBar;
+//Doneボタン
+- (IBAction)doneButton:(id)sender;
+
+@end
